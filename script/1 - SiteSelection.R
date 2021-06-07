@@ -21,6 +21,8 @@ rv_pr <- rv_pr %>%
 rv_pr <- st_transform(rv_pr, crs = "+init=epsg:6624")
 # save cleaned shapefiles as .rds objects
 saveRDS(rv_pr, "output/RuellesRosemontPlateau.rds")
+# save ruelles as a shapefile so that centreline can be calculated in QGIS 
+write_sf(rv_pr, dsn = 'output/ruelles-shp/', layer = 'cleanruelles',  driver="ESRI Shapefile")
 # get the extent of our study area so we can clip the roads layer 
 bb <- st_bbox(rv_pr)
 
