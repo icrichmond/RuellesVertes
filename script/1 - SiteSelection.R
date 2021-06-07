@@ -93,6 +93,8 @@ saveRDS(lns_ss, "output/FinalRuelles.rds")
 spt <- st_line_sample(lns_ss, sample = c(0.25, 0.50, 0.75))
 # extract coordinates (EPSG 6624)
 spt_sin <- as.data.frame(st_coordinates(spt))
+
+####NOT DONE THIS PART#####
 spt_sin <- pivot_wider(spt_sin, id_cols = L1, values_from=c(X,Y))
 # produce final list of ruelles and sampling points 
 spt <- tibble(spt)
