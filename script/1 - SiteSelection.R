@@ -11,7 +11,11 @@ rv <- read_sf("input/ruelles/ruelles-vertes.shp")
 rv$PROPRIETAI <- as.factor(rv$PROPRIETAI)
 rv_pr <- subset(rv, PROPRIETAI == "Rosemont - La Petite-Patrie" | 
                   PROPRIETAI == "Plateau - Mont-Royal")
-# ruelles already have unique IDs but there are multiple entries per alley 
+# merge all polygons that belong to the same alley
+rv_pr <- rv_pr %>%
+  dplyr::group_by(RUELLE_ID, PROPRIETAI) %>%
+  dplyr::summarise(geometry = st_union(geometry))
+#ruelles already have unique IDs
 
 # transform to projection with units as metres with Quebec Albers 
 rv_pr <- st_transform(rv_pr, crs = "+init=epsg:6624")
@@ -48,9 +52,9 @@ lng$Length <- as.double(lng$Length)
 lns <- cbind(lns, lng)
 # see length distributions 
 ggplot(data = lns, (aes(x = Length))) + geom_histogram()
-# majority of alleys are less than 200 m in length
-# remove any that are greater than 200 m
-lns_ss <- subset(lns, Length <= 200)
+# majority of alleys are less than 600 m in length
+# remove any that are greater than 600 m
+lns_ss <- subset(lns, Length <= 600)
 
 ## Major Roads ##
 # remove any that are directly adjacent to a major road 
@@ -79,6 +83,7 @@ y <- as_tibble(y) %>%
   select(-geometry)
 # remove any ruelles from lns_ss that are found in y 
 lns_ss <- anti_join(lns_ss, y)
+saveRDS(lns_ss, "output/FinalRuelles.rds")
 
 #### Final Sites ####
 # we need to create three sampling points along the ruelles 
