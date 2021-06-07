@@ -1,3 +1,6 @@
+# Large roads shapefile
+/input/roads/
+
 # History files
 .Rhistory
 .Rapp.history
@@ -13,6 +16,9 @@
 
 # Output files from R CMD build
 /*.tar.gz
+
+# .rds output files
+/*.rds
 
 # Output files from R CMD check
 /*.Rcheck/
