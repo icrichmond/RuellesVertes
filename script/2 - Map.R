@@ -2,7 +2,7 @@
 # Authors: Isabella Richmond & Emily Kroft 
 
 #### Load Packages ####
-easypackages::packages("sf", "tidyverse", "mapview")
+easypackages::packages("sf", "tidyverse", "mapview", "ggspatial")
 
 #### Load Data ####
 # Ruelles Vertes
@@ -24,4 +24,13 @@ mapview(rv_pr)
 mapview(lns_ss)
 
 #### Map ####
-# ggplot works well for mapping sf objects
+ggplot() + 
+  geom_sf(data = rv_pr, col = "black") + 
+  geom_sf(data = parcs, fill = "palegreen4") + 
+  geom_sf(data = mjrds,  col = "gray44") + 
+  coord_sf(crs = "+init=epsg:6624") + 
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  annotation_north_arrow(location = "br", which_north = "true", style = north_arrow_fancy_orienteering) +
+  theme(panel.grid.major = element_line(color = gray(.1), linetype = "dashed", size = 0.1),
+        panel.background = element_rect(fill = NA))
+ggsave("graphics/AllRuelles_MjrRds_Parcs_RosemontPlateau.jpg",dpi = 400)
