@@ -41,39 +41,6 @@ saveRDS(rds, "output/ParksRosemontPlateau.rds")
 
 #### Eliminating Outliers #### 
 # we are removing any ruelles that fall outside a set of criteria.
-
-## Long Ruelles ## 
-# calculate the centreline since ruelles vertes are polygons (QGIS?)
-# st_cast doesn't work for this - temporarily using to work through code
-lns <- st_cast(rv_pr, "LINESTRING")
-# calculate length in meters
-lng <- as_tibble(st_length(lns)) %>%
-  rename(Length = value)
-lng$Length <- as.double(lng$Length)
-# add length to dataframe 
-lns <- cbind(lns, lng)
-# see length distributions 
-ggplot(data = lns, (aes(x = Length))) + geom_histogram()
-# majority of alleys are less than 600 m in length
-# remove any that are greater than 600 m
-lns_ss <- subset(lns, Length <= 600)
-
-## Major Roads ##
-# remove any that are directly adjacent to a major road 
-# road classifications can be found here: https://nrn-rrn.readthedocs.io/en/latest/feature_catalog.html#terms-and-definitions
-mjrds <- subset(rds, rdcls_en == "Freeway" | rdcls_en == "Expressway-Highway" |
-                  rdcls_en == "Arterial")
-saveRDS(mjrds, "output/MajorRoadsRosemontPlateau.rds")
-# identify all ruelles that are within 50 m of a major road
-x <- sf::st_join(lns_ss, mjrds, left = F, join = st_is_within_distance, dist = 50) %>%
-  group_by(RUELLE_ID) %>%
-  summarise(MajorRoads = list(rdsegnamen))
-# remove geometry so x is not an sf object 
-x <- as_tibble(x) %>%
-  select(-geometry)
-# remove any ruelles from lns_ss that are found in x
-lns_ss <- anti_join(lns_ss, x)
-
 ## Parks ##
 # remove any that are within 50 m of a large park
 parcs <- subset(parcs, Type == "Parc")
