@@ -47,10 +47,13 @@ y <- as_tibble(y) %>%
 lns_ss <- anti_join(rv_pr, y)
 saveRDS(lns_ss, "output/FinalRuelles.rds")
 
+
 #### Final Sites ####
 # we need to create three sampling points along the ruelles 
 # 1/4 in, 1/2 in, 3/4 in 
-spt <- st_line_sample(lns_ss, sample = c(0.25, 0.50, 0.75))
+samples_per_polygon <- rep(3, nrow(lns_ss))
+
+spt <- st_sample(lns_ss,size = samples_per_polygon)
 # extract coordinates (EPSG 6624)
 spt_sin <- as.data.frame(st_coordinates(spt))
 # add unique identifier for each ruelle's three points
@@ -62,3 +65,5 @@ spt_sin <- pivot_wider(spt_sin, id_cols = L1, names_from = row, values_from = c(
 # create final dataset of ruelle IDs and sampling points
 final <- cbind(lns_ss, spt_sin)
 write_csv(final, "output/Ruelles_SamplingPoints.csv")
+
+st_cen
