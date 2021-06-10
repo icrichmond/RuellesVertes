@@ -9,8 +9,7 @@ easypackages::packages("sf", "tidyverse")
 rv <- read_sf("input/ruelles/ruelles-vertes.shp")
 # select the alleys in the Plateau or Rosemont
 rv$PROPRIETAI <- as.factor(rv$PROPRIETAI)
-rv_pr <- subset(rv, PROPRIETAI == "Rosemont - La Petite-Patrie" | 
-                  PROPRIETAI == "Plateau - Mont-Royal")
+rv_pr <- subset(rv, PROPRIETAI == "Rosemont - La Petite-Patrie")
 # merge all polygons that belong to the same alley
 rv_pr <- rv_pr %>%
   dplyr::group_by(RUELLE_ID, PROPRIETAI) %>%
@@ -22,36 +21,30 @@ rv_pr <- st_transform(rv_pr, crs = "+init=epsg:6624")
 # save cleaned shapefiles as .rds objects
 saveRDS(rv_pr, "output/RuellesRosemontPlateau.rds")
 # save ruelles as a shapefile so that centreline can be calculated in QGIS 
-write_sf(rv_pr, dsn = 'output/ruelles-shp/', layer = 'cleanruelles',  driver="ESRI Shapefile")
+write_sf(rv_pr, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
 # get the extent of our study area so we can clip the roads layer 
 bb <- st_bbox(rv_pr)
 
-## Montreal Roads ## 
-rds <- read_sf("input/roads/road_segment_1.shp")
-# reproject and clip so that it roads are in the same projection
-rds <- st_transform(rds, crs = "+init=epsg:6624")
-rds <- st_crop(rds, bb)
-saveRDS(rds, "output/RoadsRosemontPlateau.rds")
-
 ## Montreal Parks ##
+# read in parks shapefile 
 parcs <- read_sf("input/parcs/Espace_Vert.shp")
+# filter for Montreal's large parks 
 parcs <- st_transform(parcs, crs="+init=epsg:6624")
 parcs <- st_crop(parcs,bb)
-saveRDS(rds, "output/ParksRosemontPlateau.rds")
+saveRDS(parcs, "output/ParksRosemont.rds")
 
 #### Eliminating Outliers #### 
 # we are removing any ruelles that fall outside a set of criteria.
 ## Parks ##
-# remove any that are within 50 m of a large park
-parcs <- subset(parcs, Type == "Parc")
-saveRDS(parcs, "output/ParksRosemontPlateau.rds")
-y <- sf::st_join(lns, parcs, left = F, join = st_is_within_distance, dist = 50) %>%
+# remove any that are within 100 m of a large park
+parcs_g <- subset(parcs, TYPO1 == "Grand parc")
+y <- sf::st_join(rv_pr, parcs_g, left = F, join = st_is_within_distance, dist = 100) %>%
   group_by(RUELLE_ID) %>%
   summarize(Parcs = list(Nom))
 y <- as_tibble(y) %>%
   select(-geometry)
 # remove any ruelles from lns_ss that are found in y 
-lns_ss <- anti_join(lns_ss, y)
+lns_ss <- anti_join(rv_pr, y)
 saveRDS(lns_ss, "output/FinalRuelles.rds")
 
 #### Final Sites ####
