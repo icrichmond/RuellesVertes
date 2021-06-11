@@ -9,21 +9,21 @@ easypackages::packages("sf", "tidyverse")
 rv <- read_sf("input/ruelles/ruelles-vertes.shp")
 # select the alleys in the Plateau or Rosemont
 rv$PROPRIETAI <- as.factor(rv$PROPRIETAI)
-rv_pr <- subset(rv, PROPRIETAI == "Rosemont - La Petite-Patrie")
+rv_r <- subset(rv, PROPRIETAI == "Rosemont - La Petite-Patrie")
 # merge all polygons that belong to the same alley
-rv_pr <- rv_pr %>%
-  dplyr::group_by(RUELLE_ID, PROPRIETAI) %>%
+rv_r <- rv_r %>%
+  dplyr::group_by(RUELLE_ID) %>%
   dplyr::summarise(geometry = st_union(geometry))
 #ruelles already have unique IDs
 
 # transform to projection with units as metres with Quebec Albers 
-rv_pr <- st_transform(rv_pr, crs = "+init=epsg:6624")
+rv_r <- st_transform(rv_r, crs = "+init=epsg:6624")
 # save cleaned shapefiles as .rds objects
-saveRDS(rv_pr, "output/RuellesRosemontPlateau.rds")
-# save ruelles as a shapefile so that centreline can be calculated in QGIS 
-write_sf(rv_pr, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
+saveRDS(rv_r, "output/RuellesRosemont.rds")
+# save ruelles as a shapefile so that sampling points can be calculated in QGIS 
+write_sf(rv_r, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
 # get the extent of our study area so we can clip the roads layer 
-bb <- st_bbox(rv_pr)
+bb <- st_bbox(rv_r)
 
 ## Montreal Parks ##
 # read in parks shapefile 
@@ -38,32 +38,63 @@ saveRDS(parcs, "output/ParksRosemont.rds")
 ## Parks ##
 # remove any that are within 100 m of a large park
 parcs_g <- subset(parcs, TYPO1 == "Grand parc")
-y <- sf::st_join(rv_pr, parcs_g, left = F, join = st_is_within_distance, dist = 100) %>%
+y <- sf::st_join(rv_r, parcs_g, left = F, join = st_is_within_distance, dist = 100) %>%
   group_by(RUELLE_ID) %>%
   summarize(Parcs = list(Nom))
 y <- as_tibble(y) %>%
   select(-geometry)
 # remove any ruelles from lns_ss that are found in y 
-lns_ss <- anti_join(rv_pr, y)
+lns_ss <- anti_join(rv_r, y)
 saveRDS(lns_ss, "output/FinalRuelles.rds")
 
 
 #### Final Sites ####
-# we need to create three sampling points along the ruelles 
+# Emily created create three sampling points along the ruelles in QGIS
 # 1/4 in, 1/2 in, 3/4 in 
-samples_per_polygon <- rep(3, nrow(lns_ss))
-
-spt <- st_sample(lns_ss,size = samples_per_polygon)
-# extract coordinates (EPSG 6624)
-spt_sin <- as.data.frame(st_coordinates(spt))
-# add unique identifier for each ruelle's three points
-spt_sin <- spt_sin %>%
-  group_by(L1) %>%
-  mutate(row = row_number())
-# one row per ruelle 
-spt_sin <- pivot_wider(spt_sin, id_cols = L1, names_from = row, values_from = c(X,Y))
-# create final dataset of ruelle IDs and sampling points
-final <- cbind(lns_ss, spt_sin)
-write_csv(final, "output/Ruelles_SamplingPoints.csv")
-
-st_cen
+# for oddly shaped ruelles, more sampling points were added 
+# import shapefile 
+spt <- read_sf("output/sampling_points/ruellessites.shp")
+spt <- st_transform(spt, crs = "+init=epsg:6624")
+# id column has some accidental duplicates so will generate
+# unique ID based on row number and remove original id column 
+spt <- spt %>% 
+  tibble::rowid_to_column("Uniq_S_ID") %>%
+  dplyr::select(-id)
+saveRDS(spt, "output/ruellessitesID.rds")
+# extract coordinates into more readable format 
+spt <- spt %>%
+  dplyr::mutate(lat = sf::st_coordinates(.)[,1],
+                lon = sf::st_coordinates(.)[,2])
+# associate sampling points with their ruelles 
+rv_sp <- st_join(rv_r, spt, join = st_intersects)
+# five ruelles have NA values because the end/extension 
+# of the ruelle was given a different ID. But they are
+# effectively sampled - so drop all NAs from dataset
+rv_sp <- drop_na(rv_sp)
+# join spt dataframe based on sampling id 
+spt_df <- as.data.frame(spt)
+rv_sp <- inner_join(rv_sp, spt_df, by = "Uniq_S_ID")
+# remove ruelle polygon geometry 
+rv_sp <- select(rv_sp, -c(lat.x, lon.x, geometry.x, geometry.y)) %>%
+  rename(lat = lat.y) %>%
+  rename(long = lon.y)
+# create consecutive sampling ID within each group
+rv_sp <- rv_sp %>% 
+  dplyr::group_by(RUELLE_ID) %>%
+  dplyr::mutate(Group_S_ID = paste0(RUELLE_ID, "_", 1:n()))
+# save as long dataset 
+write_csv(rv_sp, "output/Ruelles_SamplingPoints_Long.csv")
+  
+# create wide dataset 
+# remove Group_S_ID column and recreate without ruelle id 
+rv_sp_w <- select(rv_sp, -Group_S_ID)
+rv_sp_w <- rv_sp_w %>% 
+  dplyr::group_by(RUELLE_ID) %>%
+  dplyr::mutate(Group_S_ID = paste0("S", 1:n()))
+# pivot wider
+rv_sp_w <- pivot_wider(rv_sp_w, 
+                       id_cols = RUELLE_ID,
+                       names_from = Group_S_ID,
+                       values_from = c(lat,long))
+# save wide dataset
+write_csv(rv_sp_w, "output/Ruelles_SamplingPoints_Wide.csv")
