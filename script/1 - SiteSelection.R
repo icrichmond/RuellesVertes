@@ -33,6 +33,17 @@ parcs <- st_transform(parcs, crs="+init=epsg:6624")
 parcs <- st_crop(parcs,bb)
 saveRDS(parcs, "output/ParksRosemont.rds")
 
+## Montreal Roads ##
+# for mapping 
+rds <- read_sf("input/roads/road_segment_1.shp")
+# reproject and clip so that it roads are in the same projection
+rds <- st_transform(rds, crs = "+init=epsg:6624")
+rds <- st_crop(rds, bb)
+# select only major roads
+mjrds <- subset(rds, rdcls_en == "Freeway" | rdcls_en == "Expressway-Highway" |
+                  rdcls_en == "Arterial")
+saveRDS(mjrds, "output/MajorRoadsRosemont.rds")
+
 #### Eliminating Outliers #### 
 # we are removing any ruelles that fall outside a set of criteria.
 ## Parks ##
