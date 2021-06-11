@@ -22,6 +22,7 @@ rv_r <- st_transform(rv_r, crs = "+init=epsg:6624")
 saveRDS(rv_r, "output/RuellesRosemont.rds")
 # save ruelles as a shapefile so that sampling points can be calculated in QGIS 
 write_sf(rv_r, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
+st_write(rv_r, "output/rosemontruelles.kml", driver = "kml")
 # get the extent of our study area so we can clip the roads layer 
 bb <- st_bbox(rv_r)
 
@@ -72,6 +73,7 @@ spt <- spt %>%
   tibble::rowid_to_column("Uniq_S_ID") %>%
   dplyr::select(-id)
 saveRDS(spt, "output/ruellessitesID.rds")
+st_write(spt, "output/ruellessitesID.kml", driver = "kml")
 # extract coordinates into more readable format 
 spt <- spt %>%
   dplyr::mutate(lat = sf::st_coordinates(.)[,1],
