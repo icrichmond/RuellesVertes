@@ -73,7 +73,6 @@ spt <- spt %>%
   tibble::rowid_to_column("Uniq_S_ID") %>%
   dplyr::select(-id)
 saveRDS(spt, "output/ruellessitesID.rds")
-st_write(spt, "output/ruellessitesID.kml", driver = "kml")
 # extract coordinates into more readable format 
 spt <- spt %>%
   dplyr::mutate(lat = sf::st_coordinates(.)[,1],
@@ -95,6 +94,13 @@ rv_sp <- select(rv_sp, -c(lat.x, lon.x, geometry.x, geometry.y)) %>%
 rv_sp <- rv_sp %>% 
   dplyr::group_by(RUELLE_ID) %>%
   dplyr::mutate(Group_S_ID = paste0(RUELLE_ID, "_", 1:n()))
+# join rv_sp to spt to save kml layer for google maps 
+rv_sp <- arrange(rv_sp, Uniq_S_ID)
+spt <- cbind(rv_sp, spt)
+spt <- st_as_sf(spt)
+spt <- select(spt, -c(Uniq_S_ID.1, lat.1, lon))
+st_write(spt, "output/ruellessitesID.kml", driver = "kml")
+
 # save as long dataset 
 write_csv(rv_sp, "output/Ruelles_SamplingPoints_Long.csv")
   
