@@ -40,3 +40,4 @@ rv_sp_w <- rv_sp_w %>%
 
 #### Full Dataset #### 
 full <- inner_join(grp, rv_sp_w)
+write.csv(full, "output/RuellesVertes_SamplingGrouped.csv")
