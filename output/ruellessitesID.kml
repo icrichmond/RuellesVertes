@@ -703,66 +703,36 @@
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
 		<SimpleData name="Uniq_S_ID">70</SimpleData>
-		<SimpleData name="lat">-394846.558670087</SimpleData>
-		<SimpleData name="long">185808.912024835</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_1</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5563617163487,45.5514408260062</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
-		<SimpleData name="Uniq_S_ID">71</SimpleData>
-		<SimpleData name="lat">-394856.256834397</SimpleData>
-		<SimpleData name="long">185789.12776964</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_2</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.556467809533,45.551256998867</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
-		<SimpleData name="Uniq_S_ID">72</SimpleData>
-		<SimpleData name="lat">-394834.145019769</SimpleData>
-		<SimpleData name="long">185831.799692613</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_3</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.556223737059,45.5516542402339</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
-		<SimpleData name="Uniq_S_ID">73</SimpleData>
 		<SimpleData name="lat">-394816.300397439</SimpleData>
 		<SimpleData name="long">185839.946150626</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_4</SimpleData>
+		<SimpleData name="Group_S_ID">RPP-T-1000062_1</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>-73.5560032503975,45.5517386519511</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
-		<SimpleData name="Uniq_S_ID">74</SimpleData>
+		<SimpleData name="Uniq_S_ID">71</SimpleData>
 		<SimpleData name="lat">-394840.739771501</SimpleData>
 		<SimpleData name="long">185854.299433813</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_5</SimpleData>
+		<SimpleData name="Group_S_ID">RPP-T-1000062_2</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>-73.556328037767,45.5518522047899</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000062</SimpleData>
-		<SimpleData name="Uniq_S_ID">75</SimpleData>
+		<SimpleData name="Uniq_S_ID">72</SimpleData>
 		<SimpleData name="lat">-394798.84370168</SimpleData>
 		<SimpleData name="long">185831.411766037</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000062_6</SimpleData>
+		<SimpleData name="Group_S_ID">RPP-T-1000062_3</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>-73.555772796697,45.5516729746183</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000058</SimpleData>
-		<SimpleData name="Uniq_S_ID">76</SimpleData>
+		<SimpleData name="Uniq_S_ID">73</SimpleData>
 		<SimpleData name="lat">-396175.595107158</SimpleData>
 		<SimpleData name="long">186131.666933085</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000058_1</SimpleData>
@@ -772,7 +742,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000058</SimpleData>
-		<SimpleData name="Uniq_S_ID">77</SimpleData>
+		<SimpleData name="Uniq_S_ID">74</SimpleData>
 		<SimpleData name="lat">-396212.448131538</SimpleData>
 		<SimpleData name="long">186151.451188273</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000058_2</SimpleData>
@@ -782,7 +752,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000058</SimpleData>
-		<SimpleData name="Uniq_S_ID">78</SimpleData>
+		<SimpleData name="Uniq_S_ID">75</SimpleData>
 		<SimpleData name="lat">-396135.638670201</SimpleData>
 		<SimpleData name="long">186111.882677885</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000058_3</SimpleData>
@@ -792,7 +762,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000110</SimpleData>
-		<SimpleData name="Uniq_S_ID">79</SimpleData>
+		<SimpleData name="Uniq_S_ID">76</SimpleData>
 		<SimpleData name="lat">-396230.680680441</SimpleData>
 		<SimpleData name="long">186005.202870478</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000110_1</SimpleData>
@@ -802,7 +772,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000110</SimpleData>
-		<SimpleData name="Uniq_S_ID">80</SimpleData>
+		<SimpleData name="Uniq_S_ID">77</SimpleData>
 		<SimpleData name="lat">-396272.964676833</SimpleData>
 		<SimpleData name="long">186026.926758532</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000110_2</SimpleData>
@@ -812,7 +782,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000110</SimpleData>
-		<SimpleData name="Uniq_S_ID">81</SimpleData>
+		<SimpleData name="Uniq_S_ID">78</SimpleData>
 		<SimpleData name="lat">-396194.603509206</SimpleData>
 		<SimpleData name="long">185986.582395005</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000110_3</SimpleData>
@@ -822,7 +792,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000116</SimpleData>
-		<SimpleData name="Uniq_S_ID">82</SimpleData>
+		<SimpleData name="Uniq_S_ID">79</SimpleData>
 		<SimpleData name="lat">-397083.246304951</SimpleData>
 		<SimpleData name="long">186393.711332756</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000116_1</SimpleData>
@@ -832,7 +802,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000116</SimpleData>
-		<SimpleData name="Uniq_S_ID">83</SimpleData>
+		<SimpleData name="Uniq_S_ID">80</SimpleData>
 		<SimpleData name="lat">-397092.944469262</SimpleData>
 		<SimpleData name="long">186377.224453428</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000116_2</SimpleData>
@@ -842,7 +812,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000116</SimpleData>
-		<SimpleData name="Uniq_S_ID">84</SimpleData>
+		<SimpleData name="Uniq_S_ID">81</SimpleData>
 		<SimpleData name="lat">-397074.905883645</SimpleData>
 		<SimpleData name="long">186410.974065224</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000116_3</SimpleData>
@@ -852,7 +822,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000017</SimpleData>
-		<SimpleData name="Uniq_S_ID">85</SimpleData>
+		<SimpleData name="Uniq_S_ID">82</SimpleData>
 		<SimpleData name="lat">-397072.57832421</SimpleData>
 		<SimpleData name="long">186771.939740855</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000017_1</SimpleData>
@@ -862,7 +832,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000017</SimpleData>
-		<SimpleData name="Uniq_S_ID">86</SimpleData>
+		<SimpleData name="Uniq_S_ID">83</SimpleData>
 		<SimpleData name="lat">-397019.820310363</SimpleData>
 		<SimpleData name="long">186744.00902764</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000017_2</SimpleData>
@@ -872,7 +842,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000017</SimpleData>
-		<SimpleData name="Uniq_S_ID">87</SimpleData>
+		<SimpleData name="Uniq_S_ID">84</SimpleData>
 		<SimpleData name="lat">-397119.517439471</SimpleData>
 		<SimpleData name="long">186795.603261774</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000017_3</SimpleData>
@@ -882,7 +852,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000106</SimpleData>
-		<SimpleData name="Uniq_S_ID">88</SimpleData>
+		<SimpleData name="Uniq_S_ID">85</SimpleData>
 		<SimpleData name="lat">-397512.487057321</SimpleData>
 		<SimpleData name="long">186707.543929834</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000106_1</SimpleData>
@@ -892,7 +862,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000106</SimpleData>
-		<SimpleData name="Uniq_S_ID">89</SimpleData>
+		<SimpleData name="Uniq_S_ID">86</SimpleData>
 		<SimpleData name="lat">-397460.116970047</SimpleData>
 		<SimpleData name="long">186680.001143193</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000106_2</SimpleData>
@@ -902,7 +872,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000106</SimpleData>
-		<SimpleData name="Uniq_S_ID">90</SimpleData>
+		<SimpleData name="Uniq_S_ID">87</SimpleData>
 		<SimpleData name="lat">-397562.141658589</SimpleData>
 		<SimpleData name="long">186732.759157047</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000106_3</SimpleData>
@@ -912,7 +882,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000028</SimpleData>
-		<SimpleData name="Uniq_S_ID">91</SimpleData>
+		<SimpleData name="Uniq_S_ID">88</SimpleData>
 		<SimpleData name="lat">-397872.288953232</SimpleData>
 		<SimpleData name="long">186210.997917142</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000028_1</SimpleData>
@@ -922,7 +892,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000028</SimpleData>
-		<SimpleData name="Uniq_S_ID">92</SimpleData>
+		<SimpleData name="Uniq_S_ID">89</SimpleData>
 		<SimpleData name="lat">-397811.384481364</SimpleData>
 		<SimpleData name="long">186164.44672845</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000028_2</SimpleData>
@@ -932,7 +902,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000028</SimpleData>
-		<SimpleData name="Uniq_S_ID">93</SimpleData>
+		<SimpleData name="Uniq_S_ID">90</SimpleData>
 		<SimpleData name="lat">-397930.09001252</SimpleData>
 		<SimpleData name="long">186255.221546401</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000028_3</SimpleData>
@@ -942,7 +912,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000049</SimpleData>
-		<SimpleData name="Uniq_S_ID">94</SimpleData>
+		<SimpleData name="Uniq_S_ID">91</SimpleData>
 		<SimpleData name="lat">-397762.50573324</SimpleData>
 		<SimpleData name="long">186238.540703784</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000049_1</SimpleData>
@@ -952,7 +922,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000049</SimpleData>
-		<SimpleData name="Uniq_S_ID">95</SimpleData>
+		<SimpleData name="Uniq_S_ID">92</SimpleData>
 		<SimpleData name="lat">-397731.471607447</SimpleData>
 		<SimpleData name="long">186214.877182866</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000049_2</SimpleData>
@@ -962,7 +932,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000049</SimpleData>
-		<SimpleData name="Uniq_S_ID">96</SimpleData>
+		<SimpleData name="Uniq_S_ID">93</SimpleData>
 		<SimpleData name="lat">-397795.479491894</SimpleData>
 		<SimpleData name="long">186263.368004421</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000049_3</SimpleData>
@@ -972,7 +942,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000115</SimpleData>
-		<SimpleData name="Uniq_S_ID">97</SimpleData>
+		<SimpleData name="Uniq_S_ID">94</SimpleData>
 		<SimpleData name="lat">-397562.723548449</SimpleData>
 		<SimpleData name="long">186084.921781108</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000115_1</SimpleData>
@@ -982,7 +952,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000115</SimpleData>
-		<SimpleData name="Uniq_S_ID">98</SimpleData>
+		<SimpleData name="Uniq_S_ID">95</SimpleData>
 		<SimpleData name="lat">-397495.22432485</SimpleData>
 		<SimpleData name="long">186033.715473542</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000115_2</SimpleData>
@@ -992,7 +962,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000115</SimpleData>
-		<SimpleData name="Uniq_S_ID">99</SimpleData>
+		<SimpleData name="Uniq_S_ID">96</SimpleData>
 		<SimpleData name="lat">-397615.093635724</SimpleData>
 		<SimpleData name="long">186124.490291494</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000115_3</SimpleData>
@@ -1002,7 +972,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000037</SimpleData>
-		<SimpleData name="Uniq_S_ID">100</SimpleData>
+		<SimpleData name="Uniq_S_ID">97</SimpleData>
 		<SimpleData name="lat">-397291.756837622</SimpleData>
 		<SimpleData name="long">185763.718579152</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000037_1</SimpleData>
@@ -1012,7 +982,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000037</SimpleData>
-		<SimpleData name="Uniq_S_ID">101</SimpleData>
+		<SimpleData name="Uniq_S_ID">98</SimpleData>
 		<SimpleData name="lat">-397258.783078967</SimpleData>
 		<SimpleData name="long">185739.667131656</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000037_2</SimpleData>
@@ -1022,7 +992,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000037</SimpleData>
-		<SimpleData name="Uniq_S_ID">102</SimpleData>
+		<SimpleData name="Uniq_S_ID">99</SimpleData>
 		<SimpleData name="lat">-397314.644505394</SimpleData>
 		<SimpleData name="long">185782.339054625</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000037_3</SimpleData>
@@ -1032,7 +1002,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000108</SimpleData>
-		<SimpleData name="Uniq_S_ID">103</SimpleData>
+		<SimpleData name="Uniq_S_ID">100</SimpleData>
 		<SimpleData name="lat">-397070.250764776</SimpleData>
 		<SimpleData name="long">185818.028299287</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000108_1</SimpleData>
@@ -1042,7 +1012,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000108</SimpleData>
-		<SimpleData name="Uniq_S_ID">104</SimpleData>
+		<SimpleData name="Uniq_S_ID">101</SimpleData>
 		<SimpleData name="lat">-397036.113226405</SimpleData>
 		<SimpleData name="long">185792.037218934</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000108_2</SimpleData>
@@ -1052,7 +1022,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000108</SimpleData>
-		<SimpleData name="Uniq_S_ID">105</SimpleData>
+		<SimpleData name="Uniq_S_ID">102</SimpleData>
 		<SimpleData name="lat">-397101.672817141</SimpleData>
 		<SimpleData name="long">185842.467673351</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000108_3</SimpleData>
@@ -1062,7 +1032,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000054</SimpleData>
-		<SimpleData name="Uniq_S_ID">106</SimpleData>
+		<SimpleData name="Uniq_S_ID">103</SimpleData>
 		<SimpleData name="lat">-396967.062296516</SimpleData>
 		<SimpleData name="long">185838.200481047</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000054_1</SimpleData>
@@ -1072,7 +1042,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000054</SimpleData>
-		<SimpleData name="Uniq_S_ID">107</SimpleData>
+		<SimpleData name="Uniq_S_ID">104</SimpleData>
 		<SimpleData name="lat">-396974.820827964</SimpleData>
 		<SimpleData name="long">185828.502316736</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000054_2</SimpleData>
@@ -1082,7 +1052,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000054</SimpleData>
-		<SimpleData name="Uniq_S_ID">108</SimpleData>
+		<SimpleData name="Uniq_S_ID">105</SimpleData>
 		<SimpleData name="lat">-396958.527911923</SimpleData>
 		<SimpleData name="long">185849.838278219</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000054_3</SimpleData>
@@ -1092,7 +1062,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000014</SimpleData>
-		<SimpleData name="Uniq_S_ID">109</SimpleData>
+		<SimpleData name="Uniq_S_ID">106</SimpleData>
 		<SimpleData name="lat">-396838.270674476</SimpleData>
 		<SimpleData name="long">185767.209918297</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000014_4</SimpleData>
@@ -1102,7 +1072,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000014</SimpleData>
-		<SimpleData name="Uniq_S_ID">110</SimpleData>
+		<SimpleData name="Uniq_S_ID">107</SimpleData>
 		<SimpleData name="lat">-396859.99456253</SimpleData>
 		<SimpleData name="long">185777.29600918</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000014_5</SimpleData>
@@ -1112,7 +1082,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000014</SimpleData>
-		<SimpleData name="Uniq_S_ID">111</SimpleData>
+		<SimpleData name="Uniq_S_ID">108</SimpleData>
 		<SimpleData name="lat">-396812.279594125</SimpleData>
 		<SimpleData name="long">185754.020414835</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000014_6</SimpleData>
@@ -1122,7 +1092,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000056</SimpleData>
-		<SimpleData name="Uniq_S_ID">112</SimpleData>
+		<SimpleData name="Uniq_S_ID">109</SimpleData>
 		<SimpleData name="lat">-396879.390891152</SimpleData>
 		<SimpleData name="long">185712.512271589</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000056_1</SimpleData>
@@ -1132,7 +1102,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000056</SimpleData>
-		<SimpleData name="Uniq_S_ID">113</SimpleData>
+		<SimpleData name="Uniq_S_ID">110</SimpleData>
 		<SimpleData name="lat">-396909.261237227</SimpleData>
 		<SimpleData name="long">185728.029334478</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000056_2</SimpleData>
@@ -1142,7 +1112,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000056</SimpleData>
-		<SimpleData name="Uniq_S_ID">114</SimpleData>
+		<SimpleData name="Uniq_S_ID">111</SimpleData>
 		<SimpleData name="lat">-396852.236031083</SimpleData>
 		<SimpleData name="long">185698.546914976</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000056_3</SimpleData>
@@ -1152,7 +1122,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000068</SimpleData>
-		<SimpleData name="Uniq_S_ID">115</SimpleData>
+		<SimpleData name="Uniq_S_ID">112</SimpleData>
 		<SimpleData name="lat">-396910.425016944</SimpleData>
 		<SimpleData name="long">185653.54743258</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000068_1</SimpleData>
@@ -1162,7 +1132,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000068</SimpleData>
-		<SimpleData name="Uniq_S_ID">116</SimpleData>
+		<SimpleData name="Uniq_S_ID">113</SimpleData>
 		<SimpleData name="lat">-396875.511625428</SimpleData>
 		<SimpleData name="long">185635.702810245</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000068_2</SimpleData>
@@ -1172,7 +1142,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000068</SimpleData>
-		<SimpleData name="Uniq_S_ID">117</SimpleData>
+		<SimpleData name="Uniq_S_ID">114</SimpleData>
 		<SimpleData name="lat">-396943.398775599</SimpleData>
 		<SimpleData name="long">185669.840348621</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000068_3</SimpleData>
@@ -1182,7 +1152,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000041</SimpleData>
-		<SimpleData name="Uniq_S_ID">118</SimpleData>
+		<SimpleData name="Uniq_S_ID">115</SimpleData>
 		<SimpleData name="lat">-396945.726335034</SimpleData>
 		<SimpleData name="long">185595.746373286</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000041_1</SimpleData>
@@ -1192,7 +1162,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000041</SimpleData>
-		<SimpleData name="Uniq_S_ID">119</SimpleData>
+		<SimpleData name="Uniq_S_ID">116</SimpleData>
 		<SimpleData name="lat">-396912.364649807</SimpleData>
 		<SimpleData name="long">185579.065530674</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000041_2</SimpleData>
@@ -1202,7 +1172,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000041</SimpleData>
-		<SimpleData name="Uniq_S_ID">120</SimpleData>
+		<SimpleData name="Uniq_S_ID">117</SimpleData>
 		<SimpleData name="lat">-396975.984607681</SimpleData>
 		<SimpleData name="long">185612.039289335</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000041_3</SimpleData>
@@ -1212,7 +1182,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000027</SimpleData>
-		<SimpleData name="Uniq_S_ID">121</SimpleData>
+		<SimpleData name="Uniq_S_ID">118</SimpleData>
 		<SimpleData name="lat">-396987.234478282</SimpleData>
 		<SimpleData name="long">185541.824579719</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000027_1</SimpleData>
@@ -1222,7 +1192,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000027</SimpleData>
-		<SimpleData name="Uniq_S_ID">122</SimpleData>
+		<SimpleData name="Uniq_S_ID">119</SimpleData>
 		<SimpleData name="lat">-396948.829747612</SimpleData>
 		<SimpleData name="long">185522.816177677</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000027_2</SimpleData>
@@ -1232,7 +1202,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000027</SimpleData>
-		<SimpleData name="Uniq_S_ID">123</SimpleData>
+		<SimpleData name="Uniq_S_ID">120</SimpleData>
 		<SimpleData name="lat">-397020.596163509</SimpleData>
 		<SimpleData name="long">185559.281275483</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000027_3</SimpleData>
@@ -1242,7 +1212,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000016</SimpleData>
-		<SimpleData name="Uniq_S_ID">124</SimpleData>
+		<SimpleData name="Uniq_S_ID">121</SimpleData>
 		<SimpleData name="lat">-396754.478534836</SimpleData>
 		<SimpleData name="long">185497.213023892</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000016_1</SimpleData>
@@ -1252,7 +1222,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000016</SimpleData>
-		<SimpleData name="Uniq_S_ID">125</SimpleData>
+		<SimpleData name="Uniq_S_ID">122</SimpleData>
 		<SimpleData name="lat">-396724.608188761</SimpleData>
 		<SimpleData name="long">185482.859740717</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000016_2</SimpleData>
@@ -1262,7 +1232,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000016</SimpleData>
-		<SimpleData name="Uniq_S_ID">126</SimpleData>
+		<SimpleData name="Uniq_S_ID">123</SimpleData>
 		<SimpleData name="lat">-396781.633394905</SimpleData>
 		<SimpleData name="long">185512.342160221</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000016_3</SimpleData>
@@ -1272,7 +1242,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000088</SimpleData>
-		<SimpleData name="Uniq_S_ID">127</SimpleData>
+		<SimpleData name="Uniq_S_ID">124</SimpleData>
 		<SimpleData name="lat">-396724.996115333</SimpleData>
 		<SimpleData name="long">185558.505422344</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000088_1</SimpleData>
@@ -1282,7 +1252,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000088</SimpleData>
-		<SimpleData name="Uniq_S_ID">128</SimpleData>
+		<SimpleData name="Uniq_S_ID">125</SimpleData>
 		<SimpleData name="lat">-396752.150975402</SimpleData>
 		<SimpleData name="long">185572.082852373</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000088_2</SimpleData>
@@ -1292,7 +1262,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000088</SimpleData>
-		<SimpleData name="Uniq_S_ID">129</SimpleData>
+		<SimpleData name="Uniq_S_ID">126</SimpleData>
 		<SimpleData name="lat">-396699.392961554</SimpleData>
 		<SimpleData name="long">185545.315918877</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000088_3</SimpleData>
@@ -1302,7 +1272,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000057</SimpleData>
-		<SimpleData name="Uniq_S_ID">130</SimpleData>
+		<SimpleData name="Uniq_S_ID">127</SimpleData>
 		<SimpleData name="lat">-396694.349916113</SimpleData>
 		<SimpleData name="long">185618.246114493</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000057_1</SimpleData>
@@ -1312,7 +1282,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000057</SimpleData>
-		<SimpleData name="Uniq_S_ID">131</SimpleData>
+		<SimpleData name="Uniq_S_ID">128</SimpleData>
 		<SimpleData name="lat">-396663.31579032</SimpleData>
 		<SimpleData name="long">185602.341125022</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000057_2</SimpleData>
@@ -1322,7 +1292,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000057</SimpleData>
-		<SimpleData name="Uniq_S_ID">132</SimpleData>
+		<SimpleData name="Uniq_S_ID">129</SimpleData>
 		<SimpleData name="lat">-396723.444409042</SimpleData>
 		<SimpleData name="long">185633.375250823</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000057_3</SimpleData>
@@ -1332,7 +1302,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000015</SimpleData>
-		<SimpleData name="Uniq_S_ID">133</SimpleData>
+		<SimpleData name="Uniq_S_ID">130</SimpleData>
 		<SimpleData name="lat">-396661.76408403</SimpleData>
 		<SimpleData name="long">185677.598880068</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000015_1</SimpleData>
@@ -1342,7 +1312,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000015</SimpleData>
-		<SimpleData name="Uniq_S_ID">134</SimpleData>
+		<SimpleData name="Uniq_S_ID">131</SimpleData>
 		<SimpleData name="lat">-396634.609223961</SimpleData>
 		<SimpleData name="long">185662.469743746</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000015_2</SimpleData>
@@ -1352,7 +1322,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000015</SimpleData>
-		<SimpleData name="Uniq_S_ID">135</SimpleData>
+		<SimpleData name="Uniq_S_ID">132</SimpleData>
 		<SimpleData name="lat">-396693.574062968</SimpleData>
 		<SimpleData name="long">185693.115942965</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000015_3</SimpleData>
@@ -1362,7 +1332,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000067</SimpleData>
-		<SimpleData name="Uniq_S_ID">136</SimpleData>
+		<SimpleData name="Uniq_S_ID">133</SimpleData>
 		<SimpleData name="lat">-396631.117884809</SimpleData>
 		<SimpleData name="long">185736.175792509</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000067_1</SimpleData>
@@ -1372,7 +1342,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000067</SimpleData>
-		<SimpleData name="Uniq_S_ID">137</SimpleData>
+		<SimpleData name="Uniq_S_ID">134</SimpleData>
 		<SimpleData name="lat">-396604.738877886</SimpleData>
 		<SimpleData name="long">185722.598362477</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000067_2</SimpleData>
@@ -1382,7 +1352,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000067</SimpleData>
-		<SimpleData name="Uniq_S_ID">138</SimpleData>
+		<SimpleData name="Uniq_S_ID">135</SimpleData>
 		<SimpleData name="lat">-396660.600304314</SimpleData>
 		<SimpleData name="long">185751.304928823</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000067_3</SimpleData>
@@ -1392,7 +1362,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000066</SimpleData>
-		<SimpleData name="Uniq_S_ID">139</SimpleData>
+		<SimpleData name="Uniq_S_ID">136</SimpleData>
 		<SimpleData name="lat">-396599.695832444</SimpleData>
 		<SimpleData name="long">185796.304411227</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000066_1</SimpleData>
@@ -1402,7 +1372,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000066</SimpleData>
-		<SimpleData name="Uniq_S_ID">140</SimpleData>
+		<SimpleData name="Uniq_S_ID">137</SimpleData>
 		<SimpleData name="lat">-396569.049633223</SimpleData>
 		<SimpleData name="long">185780.399421764</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000066_2</SimpleData>
@@ -1412,7 +1382,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000066</SimpleData>
-		<SimpleData name="Uniq_S_ID">141</SimpleData>
+		<SimpleData name="Uniq_S_ID">138</SimpleData>
 		<SimpleData name="lat">-396629.178251947</SimpleData>
 		<SimpleData name="long">185811.045620981</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000066_3</SimpleData>
@@ -1422,7 +1392,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">142</SimpleData>
+		<SimpleData name="Uniq_S_ID">139</SimpleData>
 		<SimpleData name="lat">-396738.961471939</SimpleData>
 		<SimpleData name="long">185941.776875884</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_1</SimpleData>
@@ -1432,7 +1402,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">143</SimpleData>
+		<SimpleData name="Uniq_S_ID">140</SimpleData>
 		<SimpleData name="lat">-396714.522097877</SimpleData>
 		<SimpleData name="long">185929.751152138</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_2</SimpleData>
@@ -1442,7 +1412,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">144</SimpleData>
+		<SimpleData name="Uniq_S_ID">141</SimpleData>
 		<SimpleData name="lat">-396762.237066284</SimpleData>
 		<SimpleData name="long">185953.41467306</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_3</SimpleData>
@@ -1452,7 +1422,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000109</SimpleData>
-		<SimpleData name="Uniq_S_ID">145</SimpleData>
+		<SimpleData name="Uniq_S_ID">142</SimpleData>
 		<SimpleData name="lat">-396328.53515833</SimpleData>
 		<SimpleData name="long">185807.55428183</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000109_1</SimpleData>
@@ -1462,7 +1432,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000109</SimpleData>
-		<SimpleData name="Uniq_S_ID">146</SimpleData>
+		<SimpleData name="Uniq_S_ID">143</SimpleData>
 		<SimpleData name="lat">-396288.966647945</SimpleData>
 		<SimpleData name="long">185787.382100068</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000109_2</SimpleData>
@@ -1472,7 +1442,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000109</SimpleData>
-		<SimpleData name="Uniq_S_ID">147</SimpleData>
+		<SimpleData name="Uniq_S_ID">144</SimpleData>
 		<SimpleData name="lat">-396366.551962426</SimpleData>
 		<SimpleData name="long">185827.338537024</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000109_3</SimpleData>
@@ -1482,7 +1452,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000117</SimpleData>
-		<SimpleData name="Uniq_S_ID">148</SimpleData>
+		<SimpleData name="Uniq_S_ID">145</SimpleData>
 		<SimpleData name="lat">-396359.957210696</SimpleData>
 		<SimpleData name="long">185748.201516248</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000117_1</SimpleData>
@@ -1492,7 +1462,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000117</SimpleData>
-		<SimpleData name="Uniq_S_ID">149</SimpleData>
+		<SimpleData name="Uniq_S_ID">146</SimpleData>
 		<SimpleData name="lat">-396314.957728296</SimpleData>
 		<SimpleData name="long">185725.701775056</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000117_2</SimpleData>
@@ -1502,7 +1472,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000117</SimpleData>
-		<SimpleData name="Uniq_S_ID">150</SimpleData>
+		<SimpleData name="Uniq_S_ID">147</SimpleData>
 		<SimpleData name="lat">-396400.689500799</SimpleData>
 		<SimpleData name="long">185769.925404308</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000117_3</SimpleData>
@@ -1512,7 +1482,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000059</SimpleData>
-		<SimpleData name="Uniq_S_ID">151</SimpleData>
+		<SimpleData name="Uniq_S_ID">148</SimpleData>
 		<SimpleData name="lat">-396392.930969351</SimpleData>
 		<SimpleData name="long">185690.400456957</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000059_1</SimpleData>
@@ -1522,7 +1492,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000059</SimpleData>
-		<SimpleData name="Uniq_S_ID">152</SimpleData>
+		<SimpleData name="Uniq_S_ID">149</SimpleData>
 		<SimpleData name="lat">-396352.586605821</SimpleData>
 		<SimpleData name="long">185669.452422046</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000059_2</SimpleData>
@@ -1532,7 +1502,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000059</SimpleData>
-		<SimpleData name="Uniq_S_ID">153</SimpleData>
+		<SimpleData name="Uniq_S_ID">150</SimpleData>
 		<SimpleData name="lat">-396437.154598606</SimpleData>
 		<SimpleData name="long">185712.900198158</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000059_3</SimpleData>
@@ -1542,7 +1512,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000043</SimpleData>
-		<SimpleData name="Uniq_S_ID">154</SimpleData>
+		<SimpleData name="Uniq_S_ID">151</SimpleData>
 		<SimpleData name="lat">-396425.128874861</SimpleData>
 		<SimpleData name="long">185631.047691377</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000043_1</SimpleData>
@@ -1552,7 +1522,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000043</SimpleData>
-		<SimpleData name="Uniq_S_ID">155</SimpleData>
+		<SimpleData name="Uniq_S_ID">152</SimpleData>
 		<SimpleData name="lat">-396387.499997337</SimpleData>
 		<SimpleData name="long">185611.651362758</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000043_2</SimpleData>
@@ -1562,7 +1532,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000043</SimpleData>
-		<SimpleData name="Uniq_S_ID">156</SimpleData>
+		<SimpleData name="Uniq_S_ID">153</SimpleData>
 		<SimpleData name="lat">-396462.369825812</SimpleData>
 		<SimpleData name="long">185650.831946579</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000043_3</SimpleData>
@@ -1572,7 +1542,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000005</SimpleData>
-		<SimpleData name="Uniq_S_ID">157</SimpleData>
+		<SimpleData name="Uniq_S_ID">154</SimpleData>
 		<SimpleData name="lat">-396477.886888708</SimpleData>
 		<SimpleData name="long">185508.07496793</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000005_1</SimpleData>
@@ -1582,7 +1552,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000005</SimpleData>
-		<SimpleData name="Uniq_S_ID">158</SimpleData>
+		<SimpleData name="Uniq_S_ID">155</SimpleData>
 		<SimpleData name="lat">-396434.439112598</SimpleData>
 		<SimpleData name="long">185485.187300151</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000005_2</SimpleData>
@@ -1592,7 +1562,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000005</SimpleData>
-		<SimpleData name="Uniq_S_ID">159</SimpleData>
+		<SimpleData name="Uniq_S_ID">156</SimpleData>
 		<SimpleData name="lat">-396520.558811673</SimpleData>
 		<SimpleData name="long">185529.023002835</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000005_3</SimpleData>
@@ -1602,7 +1572,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000065</SimpleData>
-		<SimpleData name="Uniq_S_ID">160</SimpleData>
+		<SimpleData name="Uniq_S_ID">157</SimpleData>
 		<SimpleData name="lat">-396517.843325667</SimpleData>
 		<SimpleData name="long">185452.213541492</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000065_1</SimpleData>
@@ -1612,7 +1582,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000065</SimpleData>
-		<SimpleData name="Uniq_S_ID">161</SimpleData>
+		<SimpleData name="Uniq_S_ID">158</SimpleData>
 		<SimpleData name="lat">-396476.335182419</SimpleData>
 		<SimpleData name="long">185431.265506584</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000065_2</SimpleData>
@@ -1622,7 +1592,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000065</SimpleData>
-		<SimpleData name="Uniq_S_ID">162</SimpleData>
+		<SimpleData name="Uniq_S_ID">159</SimpleData>
 		<SimpleData name="lat">-396555.084276618</SimpleData>
 		<SimpleData name="long">185471.609870118</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000065_3</SimpleData>
@@ -1632,7 +1602,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000060</SimpleData>
-		<SimpleData name="Uniq_S_ID">163</SimpleData>
+		<SimpleData name="Uniq_S_ID">160</SimpleData>
 		<SimpleData name="lat">-396548.489524887</SimpleData>
 		<SimpleData name="long">185392.860775919</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000060_1</SimpleData>
@@ -1642,7 +1612,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000060</SimpleData>
-		<SimpleData name="Uniq_S_ID">164</SimpleData>
+		<SimpleData name="Uniq_S_ID">161</SimpleData>
 		<SimpleData name="lat">-396509.696867646</SimpleData>
 		<SimpleData name="long">185373.076520716</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000060_2</SimpleData>
@@ -1652,7 +1622,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000060</SimpleData>
-		<SimpleData name="Uniq_S_ID">165</SimpleData>
+		<SimpleData name="Uniq_S_ID">162</SimpleData>
 		<SimpleData name="lat">-396584.954622694</SimpleData>
 		<SimpleData name="long">185411.481251392</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000060_3</SimpleData>
@@ -1662,7 +1632,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000045</SimpleData>
-		<SimpleData name="Uniq_S_ID">166</SimpleData>
+		<SimpleData name="Uniq_S_ID">163</SimpleData>
 		<SimpleData name="lat">-396274.613364766</SimpleData>
 		<SimpleData name="long">185327.689111755</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000045_1</SimpleData>
@@ -1672,7 +1642,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000045</SimpleData>
-		<SimpleData name="Uniq_S_ID">167</SimpleData>
+		<SimpleData name="Uniq_S_ID">164</SimpleData>
 		<SimpleData name="lat">-396226.122543215</SimpleData>
 		<SimpleData name="long">185302.085957976</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000045_2</SimpleData>
@@ -1682,7 +1652,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000045</SimpleData>
-		<SimpleData name="Uniq_S_ID">168</SimpleData>
+		<SimpleData name="Uniq_S_ID">165</SimpleData>
 		<SimpleData name="lat">-396315.34565487</SimpleData>
 		<SimpleData name="long">185348.249220088</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000045_3</SimpleData>
@@ -1692,7 +1662,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">169</SimpleData>
+		<SimpleData name="Uniq_S_ID">166</SimpleData>
 		<SimpleData name="lat">-396304.968619058</SimpleData>
 		<SimpleData name="long">185274.155244751</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_4</SimpleData>
@@ -1702,7 +1672,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">170</SimpleData>
+		<SimpleData name="Uniq_S_ID">167</SimpleData>
 		<SimpleData name="lat">-396261.132916376</SimpleData>
 		<SimpleData name="long">185251.655503554</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_5</SimpleData>
@@ -1712,7 +1682,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000044</SimpleData>
-		<SimpleData name="Uniq_S_ID">171</SimpleData>
+		<SimpleData name="Uniq_S_ID">168</SimpleData>
 		<SimpleData name="lat">-396341.045790292</SimpleData>
 		<SimpleData name="long">185292.775720226</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000044_6</SimpleData>
@@ -1722,7 +1692,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000046</SimpleData>
-		<SimpleData name="Uniq_S_ID">172</SimpleData>
+		<SimpleData name="Uniq_S_ID">169</SimpleData>
 		<SimpleData name="lat">-395981.049931096</SimpleData>
 		<SimpleData name="long">185403.916683233</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000046_1</SimpleData>
@@ -1732,7 +1702,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000046</SimpleData>
-		<SimpleData name="Uniq_S_ID">173</SimpleData>
+		<SimpleData name="Uniq_S_ID">170</SimpleData>
 		<SimpleData name="lat">-396004.713452013</SimpleData>
 		<SimpleData name="long">185416.71826012</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000046_2</SimpleData>
@@ -1742,7 +1712,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000046</SimpleData>
-		<SimpleData name="Uniq_S_ID">174</SimpleData>
+		<SimpleData name="Uniq_S_ID">171</SimpleData>
 		<SimpleData name="lat">-395959.713969613</SimpleData>
 		<SimpleData name="long">185392.66681263</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000046_3</SimpleData>
@@ -1752,7 +1722,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000063</SimpleData>
-		<SimpleData name="Uniq_S_ID">175</SimpleData>
+		<SimpleData name="Uniq_S_ID">172</SimpleData>
 		<SimpleData name="lat">-396013.635763179</SimpleData>
 		<SimpleData name="long">185344.951844225</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000063_1</SimpleData>
@@ -1762,7 +1732,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000063</SimpleData>
-		<SimpleData name="Uniq_S_ID">176</SimpleData>
+		<SimpleData name="Uniq_S_ID">173</SimpleData>
 		<SimpleData name="lat">-395992.299801696</SimpleData>
 		<SimpleData name="long">185334.477826765</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000063_2</SimpleData>
@@ -1772,7 +1742,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000063</SimpleData>
-		<SimpleData name="Uniq_S_ID">177</SimpleData>
+		<SimpleData name="Uniq_S_ID">174</SimpleData>
 		<SimpleData name="lat">-396031.480385509</SimpleData>
 		<SimpleData name="long">185353.874155395</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000063_3</SimpleData>
@@ -1782,7 +1752,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000006</SimpleData>
-		<SimpleData name="Uniq_S_ID">178</SimpleData>
+		<SimpleData name="Uniq_S_ID">175</SimpleData>
 		<SimpleData name="lat">-396113.041947357</SimpleData>
 		<SimpleData name="long">185622.125380213</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000006_1</SimpleData>
@@ -1792,7 +1762,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000006</SimpleData>
-		<SimpleData name="Uniq_S_ID">179</SimpleData>
+		<SimpleData name="Uniq_S_ID">176</SimpleData>
 		<SimpleData name="lat">-396162.696548626</SimpleData>
 		<SimpleData name="long">185647.728533996</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000006_2</SimpleData>
@@ -1802,7 +1772,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000006</SimpleData>
-		<SimpleData name="Uniq_S_ID">180</SimpleData>
+		<SimpleData name="Uniq_S_ID">177</SimpleData>
 		<SimpleData name="lat">-396061.8356398</SimpleData>
 		<SimpleData name="long">185595.746373291</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000006_3</SimpleData>
@@ -1812,7 +1782,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000094</SimpleData>
-		<SimpleData name="Uniq_S_ID">181</SimpleData>
+		<SimpleData name="Uniq_S_ID">178</SimpleData>
 		<SimpleData name="lat">-396073.473436971</SimpleData>
 		<SimpleData name="long">185758.287607139</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000094_1</SimpleData>
@@ -1822,7 +1792,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000094</SimpleData>
-		<SimpleData name="Uniq_S_ID">182</SimpleData>
+		<SimpleData name="Uniq_S_ID">179</SimpleData>
 		<SimpleData name="lat">-396034.68077973</SimpleData>
 		<SimpleData name="long">185738.503351946</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000094_2</SimpleData>
@@ -1832,7 +1802,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000094</SimpleData>
-		<SimpleData name="Uniq_S_ID">183</SimpleData>
+		<SimpleData name="Uniq_S_ID">180</SimpleData>
 		<SimpleData name="lat">-396106.447195627</SimpleData>
 		<SimpleData name="long">185774.580523174</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000094_3</SimpleData>
@@ -1842,7 +1812,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000093</SimpleData>
-		<SimpleData name="Uniq_S_ID">184</SimpleData>
+		<SimpleData name="Uniq_S_ID">181</SimpleData>
 		<SimpleData name="lat">-396042.827237752</SimpleData>
 		<SimpleData name="long">185831.993655891</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000093_1</SimpleData>
@@ -1852,7 +1822,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000093</SimpleData>
-		<SimpleData name="Uniq_S_ID">185</SimpleData>
+		<SimpleData name="Uniq_S_ID">182</SimpleData>
 		<SimpleData name="lat">-396007.525919663</SimpleData>
 		<SimpleData name="long">185813.373180416</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000093_2</SimpleData>
@@ -1862,7 +1832,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000093</SimpleData>
-		<SimpleData name="Uniq_S_ID">186</SimpleData>
+		<SimpleData name="Uniq_S_ID">183</SimpleData>
 		<SimpleData name="lat">-396075.413069834</SimpleData>
 		<SimpleData name="long">185849.062425076</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000093_3</SimpleData>
@@ -1872,7 +1842,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000090</SimpleData>
-		<SimpleData name="Uniq_S_ID">187</SimpleData>
+		<SimpleData name="Uniq_S_ID">184</SimpleData>
 		<SimpleData name="lat">-396030.025660862</SimpleData>
 		<SimpleData name="long">185902.596292074</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000090_1</SimpleData>
@@ -1882,7 +1852,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000090</SimpleData>
-		<SimpleData name="Uniq_S_ID">188</SimpleData>
+		<SimpleData name="Uniq_S_ID">185</SimpleData>
 		<SimpleData name="lat">-396004.034580511</SimpleData>
 		<SimpleData name="long">185889.40678861</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000090_2</SimpleData>
@@ -1892,7 +1862,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000090</SimpleData>
-		<SimpleData name="Uniq_S_ID">189</SimpleData>
+		<SimpleData name="Uniq_S_ID">186</SimpleData>
 		<SimpleData name="lat">-396055.240888068</SimpleData>
 		<SimpleData name="long">185915.785795537</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000090_3</SimpleData>
@@ -1902,7 +1872,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000013</SimpleData>
-		<SimpleData name="Uniq_S_ID">190</SimpleData>
+		<SimpleData name="Uniq_S_ID">187</SimpleData>
 		<SimpleData name="lat">-394925.7926725</SimpleData>
 		<SimpleData name="long">185449.885982068</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000013_1</SimpleData>
@@ -1912,7 +1882,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000013</SimpleData>
-		<SimpleData name="Uniq_S_ID">191</SimpleData>
+		<SimpleData name="Uniq_S_ID">188</SimpleData>
 		<SimpleData name="lat">-394881.956969818</SimpleData>
 		<SimpleData name="long">185427.774167433</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000013_2</SimpleData>
@@ -1922,7 +1892,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000013</SimpleData>
-		<SimpleData name="Uniq_S_ID">192</SimpleData>
+		<SimpleData name="Uniq_S_ID">189</SimpleData>
 		<SimpleData name="lat">-394967.68874232</SimpleData>
 		<SimpleData name="long">185471.609870123</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000013_3</SimpleData>
@@ -1932,7 +1902,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">193</SimpleData>
+		<SimpleData name="Uniq_S_ID">190</SimpleData>
 		<SimpleData name="lat">-394862.948567769</SimpleData>
 		<SimpleData name="long">185332.732157195</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_1</SimpleData>
@@ -1942,7 +1912,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">194</SimpleData>
+		<SimpleData name="Uniq_S_ID">191</SimpleData>
 		<SimpleData name="lat">-394854.802109748</SimpleData>
 		<SimpleData name="long">185349.800926382</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_2</SimpleData>
@@ -1952,7 +1922,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">195</SimpleData>
+		<SimpleData name="Uniq_S_ID">192</SimpleData>
 		<SimpleData name="lat">-394870.707099218</SimpleData>
 		<SimpleData name="long">185314.49960829</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_3</SimpleData>
@@ -1962,7 +1932,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">196</SimpleData>
+		<SimpleData name="Uniq_S_ID">193</SimpleData>
 		<SimpleData name="lat">-395044.110277084</SimpleData>
 		<SimpleData name="long">185424.282828282</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_4</SimpleData>
@@ -1972,7 +1942,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">197</SimpleData>
+		<SimpleData name="Uniq_S_ID">194</SimpleData>
 		<SimpleData name="lat">-395035.963819064</SimpleData>
 		<SimpleData name="long">185438.636111464</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_5</SimpleData>
@@ -1982,7 +1952,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000012</SimpleData>
-		<SimpleData name="Uniq_S_ID">198</SimpleData>
+		<SimpleData name="Uniq_S_ID">195</SimpleData>
 		<SimpleData name="lat">-395054.58429454</SimpleData>
 		<SimpleData name="long">185404.110646513</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000012_6</SimpleData>
@@ -1992,7 +1962,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000026</SimpleData>
-		<SimpleData name="Uniq_S_ID">199</SimpleData>
+		<SimpleData name="Uniq_S_ID">196</SimpleData>
 		<SimpleData name="lat">-396734.112389786</SimpleData>
 		<SimpleData name="long">185045.666493605</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000026_1</SimpleData>
@@ -2002,7 +1972,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000026</SimpleData>
-		<SimpleData name="Uniq_S_ID">200</SimpleData>
+		<SimpleData name="Uniq_S_ID">197</SimpleData>
 		<SimpleData name="lat">-396691.052540248</SimpleData>
 		<SimpleData name="long">185014.632367815</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000026_2</SimpleData>
@@ -2012,7 +1982,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000026</SimpleData>
-		<SimpleData name="Uniq_S_ID">201</SimpleData>
+		<SimpleData name="Uniq_S_ID">198</SimpleData>
 		<SimpleData name="lat">-396770.577487593</SimpleData>
 		<SimpleData name="long">185072.045500521</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000026_3</SimpleData>
@@ -2022,7 +1992,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">202</SimpleData>
+		<SimpleData name="Uniq_S_ID">199</SimpleData>
 		<SimpleData name="lat">-397177.512462049</SimpleData>
 		<SimpleData name="long">185317.2150943</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_1</SimpleData>
@@ -2032,7 +2002,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">203</SimpleData>
+		<SimpleData name="Uniq_S_ID">200</SimpleData>
 		<SimpleData name="lat">-397171.693563463</SimpleData>
 		<SimpleData name="long">185324.585699168</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_2</SimpleData>
@@ -2042,7 +2012,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">204</SimpleData>
+		<SimpleData name="Uniq_S_ID">201</SimpleData>
 		<SimpleData name="lat">-397184.107213781</SimpleData>
 		<SimpleData name="long">185309.068636273</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_3</SimpleData>
@@ -2052,67 +2022,37 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">205</SimpleData>
-		<SimpleData name="lat">-397269.45105971</SimpleData>
-		<SimpleData name="long">185271.82768532</SimpleData>
+		<SimpleData name="Uniq_S_ID">202</SimpleData>
+		<SimpleData name="lat">-397249.746380597</SimpleData>
+		<SimpleData name="long">185283.037584957</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_4</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.586803700219,45.5450865173405</coordinates></Point>
+      <Point><coordinates>-73.5865623103365,45.545199692222</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">206</SimpleData>
-		<SimpleData name="lat">-397243.847905932</SimpleData>
-		<SimpleData name="long">185302.085957973</SimpleData>
+		<SimpleData name="Uniq_S_ID">203</SimpleData>
+		<SimpleData name="lat">-397240.631220822</SimpleData>
+		<SimpleData name="long">185276.822703294</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_5</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5865041691293,45.5453745364329</coordinates></Point>
+      <Point><coordinates>-73.5864403897717,45.5451496365309</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">207</SimpleData>
-		<SimpleData name="lat">-397255.873629676</SimpleData>
-		<SimpleData name="long">185288.120601368</SimpleData>
+		<SimpleData name="Uniq_S_ID">204</SimpleData>
+		<SimpleData name="lat">-397231.516061047</SimpleData>
+		<SimpleData name="long">185269.364845297</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000070_6</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5866450804863,45.5452414724028</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">208</SimpleData>
-		<SimpleData name="lat">-397238.804860491</SimpleData>
-		<SimpleData name="long">185274.931097899</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000070_7</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5864153796992,45.5451338009246</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">209</SimpleData>
-		<SimpleData name="lat">-397220.184385015</SimpleData>
-		<SimpleData name="long">185264.457080443</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000070_8</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5861683194905,45.5450515043056</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000070</SimpleData>
-		<SimpleData name="Uniq_S_ID">210</SimpleData>
-		<SimpleData name="lat">-397210.098294132</SimpleData>
-		<SimpleData name="long">185278.42243705</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000070_9</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5860521614164,45.5451833396442</coordinates></Point>
+      <Point><coordinates>-73.5863173512796,45.5450884151792</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">211</SimpleData>
+		<SimpleData name="Uniq_S_ID">205</SimpleData>
 		<SimpleData name="lat">-397298.545552641</SimpleData>
 		<SimpleData name="long">185208.207727448</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000025_1</SimpleData>
@@ -2122,67 +2062,27 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">212</SimpleData>
-		<SimpleData name="lat">-397282.640563172</SimpleData>
-		<SimpleData name="long">185196.569930274</SimpleData>
+		<SimpleData name="Uniq_S_ID">206</SimpleData>
+		<SimpleData name="lat">-397290.764599584</SimpleData>
+		<SimpleData name="long">185203.072774203</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000025_2</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5869043181844,45.5444021332557</coordinates></Point>
+      <Point><coordinates>-73.5870138477624,45.5444554028651</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">213</SimpleData>
-		<SimpleData name="lat">-397309.795423241</SimpleData>
-		<SimpleData name="long">185217.13003861</SimpleData>
+		<SimpleData name="Uniq_S_ID">207</SimpleData>
+		<SimpleData name="lat">-397305.265990135</SimpleData>
+		<SimpleData name="long">185213.845235753</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000025_3</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.587269367336,45.5445696255693</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">214</SimpleData>
-		<SimpleData name="lat">-397298.157626069</SimpleData>
-		<SimpleData name="long">185232.647101506</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000025_4</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5871348063316,45.5447163837688</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">215</SimpleData>
-		<SimpleData name="lat">-397322.597000131</SimpleData>
-		<SimpleData name="long">185202.000902289</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000025_5</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5874191287692,45.5444256147945</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">216</SimpleData>
-		<SimpleData name="lat">-397270.226912856</SimpleData>
-		<SimpleData name="long">185211.311140022</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000025_6</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5867591570975,45.5445424129324</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-H-1000025</SimpleData>
-		<SimpleData name="Uniq_S_ID">217</SimpleData>
-		<SimpleData name="lat">-397294.278360345</SimpleData>
-		<SimpleData name="long">185181.052867377</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-H-1000025_7</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5870388790225,45.5442553752613</coordinates></Point>
+      <Point><coordinates>-73.587208607062,45.544542987081</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000098</SimpleData>
-		<SimpleData name="Uniq_S_ID">218</SimpleData>
+		<SimpleData name="Uniq_S_ID">208</SimpleData>
 		<SimpleData name="lat">-397433.54399984</SimpleData>
 		<SimpleData name="long">185311.396195705</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000098_1</SimpleData>
@@ -2192,7 +2092,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000098</SimpleData>
-		<SimpleData name="Uniq_S_ID">219</SimpleData>
+		<SimpleData name="Uniq_S_ID">209</SimpleData>
 		<SimpleData name="lat">-397407.552919488</SimpleData>
 		<SimpleData name="long">185292.387793658</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000098_2</SimpleData>
@@ -2202,7 +2102,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000098</SimpleData>
-		<SimpleData name="Uniq_S_ID">220</SimpleData>
+		<SimpleData name="Uniq_S_ID">210</SimpleData>
 		<SimpleData name="lat">-397454.879961322</SimpleData>
 		<SimpleData name="long">185329.628744612</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000098_3</SimpleData>
@@ -2212,7 +2112,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000099</SimpleData>
-		<SimpleData name="Uniq_S_ID">221</SimpleData>
+		<SimpleData name="Uniq_S_ID">211</SimpleData>
 		<SimpleData name="lat">-397637.205450354</SimpleData>
 		<SimpleData name="long">185468.118530972</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000099_1</SimpleData>
@@ -2222,7 +2122,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000099</SimpleData>
-		<SimpleData name="Uniq_S_ID">222</SimpleData>
+		<SimpleData name="Uniq_S_ID">212</SimpleData>
 		<SimpleData name="lat">-397583.671583362</SimpleData>
 		<SimpleData name="long">185426.998314285</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000099_2</SimpleData>
@@ -2232,7 +2132,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000099</SimpleData>
-		<SimpleData name="Uniq_S_ID">223</SimpleData>
+		<SimpleData name="Uniq_S_ID">213</SimpleData>
 		<SimpleData name="lat">-397683.368712471</SimpleData>
 		<SimpleData name="long">185504.195702197</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000099_3</SimpleData>
@@ -2242,7 +2142,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000038</SimpleData>
-		<SimpleData name="Uniq_S_ID">224</SimpleData>
+		<SimpleData name="Uniq_S_ID">214</SimpleData>
 		<SimpleData name="lat">-397725.652708864</SimpleData>
 		<SimpleData name="long">185309.456562845</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000038_1</SimpleData>
@@ -2252,7 +2152,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000038</SimpleData>
-		<SimpleData name="Uniq_S_ID">225</SimpleData>
+		<SimpleData name="Uniq_S_ID">215</SimpleData>
 		<SimpleData name="lat">-397658.541411837</SimpleData>
 		<SimpleData name="long">185258.638181859</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000038_2</SimpleData>
@@ -2262,7 +2162,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000038</SimpleData>
-		<SimpleData name="Uniq_S_ID">226</SimpleData>
+		<SimpleData name="Uniq_S_ID">216</SimpleData>
 		<SimpleData name="lat">-397781.902061862</SimpleData>
 		<SimpleData name="long">185352.904338958</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000038_3</SimpleData>
@@ -2272,7 +2172,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000053</SimpleData>
-		<SimpleData name="Uniq_S_ID">227</SimpleData>
+		<SimpleData name="Uniq_S_ID">217</SimpleData>
 		<SimpleData name="lat">-397765.22121925</SimpleData>
 		<SimpleData name="long">185231.095395212</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000053_1</SimpleData>
@@ -2282,7 +2182,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000053</SimpleData>
-		<SimpleData name="Uniq_S_ID">228</SimpleData>
+		<SimpleData name="Uniq_S_ID">218</SimpleData>
 		<SimpleData name="lat">-397823.798131683</SimpleData>
 		<SimpleData name="long">185276.482804184</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000053_2</SimpleData>
@@ -2292,7 +2192,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000053</SimpleData>
-		<SimpleData name="Uniq_S_ID">229</SimpleData>
+		<SimpleData name="Uniq_S_ID">219</SimpleData>
 		<SimpleData name="lat">-397714.402838264</SimpleData>
 		<SimpleData name="long">185193.07859112</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000053_3</SimpleData>
@@ -2302,7 +2202,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000052</SimpleData>
-		<SimpleData name="Uniq_S_ID">230</SimpleData>
+		<SimpleData name="Uniq_S_ID">220</SimpleData>
 		<SimpleData name="lat">-397804.789729636</SimpleData>
 		<SimpleData name="long">185163.596171618</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000052_1</SimpleData>
@@ -2312,7 +2212,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000052</SimpleData>
-		<SimpleData name="Uniq_S_ID">231</SimpleData>
+		<SimpleData name="Uniq_S_ID">221</SimpleData>
 		<SimpleData name="lat">-397746.212817202</SimpleData>
 		<SimpleData name="long">185118.984615787</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000052_2</SimpleData>
@@ -2322,7 +2222,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000052</SimpleData>
-		<SimpleData name="Uniq_S_ID">232</SimpleData>
+		<SimpleData name="Uniq_S_ID">222</SimpleData>
 		<SimpleData name="lat">-397858.323596628</SimpleData>
 		<SimpleData name="long">185205.492241438</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000052_3</SimpleData>
@@ -2332,7 +2232,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000072</SimpleData>
-		<SimpleData name="Uniq_S_ID">233</SimpleData>
+		<SimpleData name="Uniq_S_ID">223</SimpleData>
 		<SimpleData name="lat">-397621.688387459</SimpleData>
 		<SimpleData name="long">185022.778825831</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000072_1</SimpleData>
@@ -2342,7 +2242,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000072</SimpleData>
-		<SimpleData name="Uniq_S_ID">234</SimpleData>
+		<SimpleData name="Uniq_S_ID">224</SimpleData>
 		<SimpleData name="lat">-397585.999142797</SimpleData>
 		<SimpleData name="long">184995.623965758</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000072_2</SimpleData>
@@ -2352,7 +2252,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000072</SimpleData>
-		<SimpleData name="Uniq_S_ID">235</SimpleData>
+		<SimpleData name="Uniq_S_ID">225</SimpleData>
 		<SimpleData name="lat">-397649.2311741</SimpleData>
 		<SimpleData name="long">185044.502713883</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000072_3</SimpleData>
@@ -2362,7 +2262,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000023</SimpleData>
-		<SimpleData name="Uniq_S_ID">236</SimpleData>
+		<SimpleData name="Uniq_S_ID">226</SimpleData>
 		<SimpleData name="lat">-397945.995001993</SimpleData>
 		<SimpleData name="long">184992.520553178</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000023_1</SimpleData>
@@ -2372,7 +2272,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000023</SimpleData>
-		<SimpleData name="Uniq_S_ID">237</SimpleData>
+		<SimpleData name="Uniq_S_ID">227</SimpleData>
 		<SimpleData name="lat">-397887.806016131</SimpleData>
 		<SimpleData name="long">184949.072777069</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000023_2</SimpleData>
@@ -2382,7 +2282,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000023</SimpleData>
-		<SimpleData name="Uniq_S_ID">238</SimpleData>
+		<SimpleData name="Uniq_S_ID">228</SimpleData>
 		<SimpleData name="lat">-398013.106299019</SimpleData>
 		<SimpleData name="long">185028.209797849</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000023_3</SimpleData>
@@ -2392,7 +2292,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000101</SimpleData>
-		<SimpleData name="Uniq_S_ID">239</SimpleData>
+		<SimpleData name="Uniq_S_ID">229</SimpleData>
 		<SimpleData name="lat">-398023.580316473</SimpleData>
 		<SimpleData name="long">185429.325873721</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000101_1</SimpleData>
@@ -2402,7 +2302,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000101</SimpleData>
-		<SimpleData name="Uniq_S_ID">240</SimpleData>
+		<SimpleData name="Uniq_S_ID">230</SimpleData>
 		<SimpleData name="lat">-397965.00340404</SimpleData>
 		<SimpleData name="long">185384.326391322</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000101_2</SimpleData>
@@ -2412,7 +2312,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000101</SimpleData>
-		<SimpleData name="Uniq_S_ID">241</SimpleData>
+		<SimpleData name="Uniq_S_ID">231</SimpleData>
 		<SimpleData name="lat">-398075.174550604</SimpleData>
 		<SimpleData name="long">185470.834016972</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000101_3</SimpleData>
@@ -2422,7 +2322,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000083</SimpleData>
-		<SimpleData name="Uniq_S_ID">242</SimpleData>
+		<SimpleData name="Uniq_S_ID">232</SimpleData>
 		<SimpleData name="lat">-397972.761935488</SimpleData>
 		<SimpleData name="long">185499.540583328</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000083_1</SimpleData>
@@ -2432,7 +2332,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000083</SimpleData>
-		<SimpleData name="Uniq_S_ID">243</SimpleData>
+		<SimpleData name="Uniq_S_ID">233</SimpleData>
 		<SimpleData name="lat">-397912.633316764</SimpleData>
 		<SimpleData name="long">185453.765247789</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000083_2</SimpleData>
@@ -2442,7 +2342,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000083</SimpleData>
-		<SimpleData name="Uniq_S_ID">244</SimpleData>
+		<SimpleData name="Uniq_S_ID">234</SimpleData>
 		<SimpleData name="lat">-398037.545673081</SimpleData>
 		<SimpleData name="long">185549.971037743</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000083_3</SimpleData>
@@ -2452,7 +2352,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000105</SimpleData>
-		<SimpleData name="Uniq_S_ID">245</SimpleData>
+		<SimpleData name="Uniq_S_ID">235</SimpleData>
 		<SimpleData name="lat">-398332.369868112</SimpleData>
 		<SimpleData name="long">185570.143219506</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000105_1</SimpleData>
@@ -2462,7 +2362,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000105</SimpleData>
-		<SimpleData name="Uniq_S_ID">246</SimpleData>
+		<SimpleData name="Uniq_S_ID">236</SimpleData>
 		<SimpleData name="lat">-398269.913689954</SimpleData>
 		<SimpleData name="long">185521.264471383</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000105_2</SimpleData>
@@ -2472,7 +2372,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000105</SimpleData>
-		<SimpleData name="Uniq_S_ID">247</SimpleData>
+		<SimpleData name="Uniq_S_ID">237</SimpleData>
 		<SimpleData name="lat">-398380.084836518</SimpleData>
 		<SimpleData name="long">185607.772097036</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000105_3</SimpleData>
@@ -2482,7 +2382,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000024</SimpleData>
-		<SimpleData name="Uniq_S_ID">248</SimpleData>
+		<SimpleData name="Uniq_S_ID">238</SimpleData>
 		<SimpleData name="lat">-398186.800421814</SimpleData>
 		<SimpleData name="long">185906.669521081</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000024_1</SimpleData>
@@ -2492,7 +2392,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000024</SimpleData>
-		<SimpleData name="Uniq_S_ID">249</SimpleData>
+		<SimpleData name="Uniq_S_ID">239</SimpleData>
 		<SimpleData name="lat">-398171.477322205</SimpleData>
 		<SimpleData name="long">185896.001540337</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000024_2</SimpleData>
@@ -2502,7 +2402,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000024</SimpleData>
-		<SimpleData name="Uniq_S_ID">250</SimpleData>
+		<SimpleData name="Uniq_S_ID">240</SimpleData>
 		<SimpleData name="lat">-398200.377851849</SimpleData>
 		<SimpleData name="long">185917.143538535</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000024_3</SimpleData>
@@ -2511,28 +2411,8 @@
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-T-1000024</SimpleData>
-		<SimpleData name="Uniq_S_ID">251</SimpleData>
-		<SimpleData name="lat">-398217.834547607</SimpleData>
-		<SimpleData name="long">185914.815979102</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000024_4</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.5994869082412,45.5502610267786</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-T-1000024</SimpleData>
-		<SimpleData name="Uniq_S_ID">252</SimpleData>
-		<SimpleData name="lat">-398201.735594852</SimpleData>
-		<SimpleData name="long">185937.315720299</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-T-1000024_5</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.599301726317,45.5504733542523</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">253</SimpleData>
+		<SimpleData name="Uniq_S_ID">241</SimpleData>
 		<SimpleData name="lat">-397355.328304678</SimpleData>
 		<SimpleData name="long">184715.928907047</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_1</SimpleData>
@@ -2542,7 +2422,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">254</SimpleData>
+		<SimpleData name="Uniq_S_ID">242</SimpleData>
 		<SimpleData name="lat">-397350.673185809</SimpleData>
 		<SimpleData name="long">184721.359879059</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_2</SimpleData>
@@ -2552,7 +2432,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">255</SimpleData>
+		<SimpleData name="Uniq_S_ID">243</SimpleData>
 		<SimpleData name="lat">-397358.819643829</SimpleData>
 		<SimpleData name="long">184711.273788178</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_3</SimpleData>
@@ -2562,7 +2442,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000089</SimpleData>
-		<SimpleData name="Uniq_S_ID">256</SimpleData>
+		<SimpleData name="Uniq_S_ID">244</SimpleData>
 		<SimpleData name="lat">-397287.829081078</SimpleData>
 		<SimpleData name="long">184765.195581745</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000089_1</SimpleData>
@@ -2572,7 +2452,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000089</SimpleData>
-		<SimpleData name="Uniq_S_ID">257</SimpleData>
+		<SimpleData name="Uniq_S_ID">245</SimpleData>
 		<SimpleData name="lat">-397243.605451824</SimpleData>
 		<SimpleData name="long">184732.221823085</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000089_2</SimpleData>
@@ -2582,7 +2462,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000089</SimpleData>
-		<SimpleData name="Uniq_S_ID">258</SimpleData>
+		<SimpleData name="Uniq_S_ID">246</SimpleData>
 		<SimpleData name="lat">-397325.457958601</SimpleData>
 		<SimpleData name="long">184794.290074681</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000089_3</SimpleData>
@@ -2592,7 +2472,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000069</SimpleData>
-		<SimpleData name="Uniq_S_ID">259</SimpleData>
+		<SimpleData name="Uniq_S_ID">247</SimpleData>
 		<SimpleData name="lat">-397270.37238532</SimpleData>
 		<SimpleData name="long">184834.634438212</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000069_1</SimpleData>
@@ -2602,7 +2482,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000069</SimpleData>
-		<SimpleData name="Uniq_S_ID">260</SimpleData>
+		<SimpleData name="Uniq_S_ID">248</SimpleData>
 		<SimpleData name="lat">-397224.597049776</SimpleData>
 		<SimpleData name="long">184799.333120119</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000069_2</SimpleData>
@@ -2612,7 +2492,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000069</SimpleData>
-		<SimpleData name="Uniq_S_ID">261</SimpleData>
+		<SimpleData name="Uniq_S_ID">249</SimpleData>
 		<SimpleData name="lat">-397314.983941147</SimpleData>
 		<SimpleData name="long">184868.771976583</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000069_3</SimpleData>
@@ -2622,7 +2502,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000040</SimpleData>
-		<SimpleData name="Uniq_S_ID">262</SimpleData>
+		<SimpleData name="Uniq_S_ID">250</SimpleData>
 		<SimpleData name="lat">-397987.066727848</SimpleData>
 		<SimpleData name="long">184469.983460134</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000040_1</SimpleData>
@@ -2632,7 +2512,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000040</SimpleData>
-		<SimpleData name="Uniq_S_ID">263</SimpleData>
+		<SimpleData name="Uniq_S_ID">251</SimpleData>
 		<SimpleData name="lat">-397942.843098593</SimpleData>
 		<SimpleData name="long">184436.233848337</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000040_2</SimpleData>
@@ -2642,7 +2522,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000040</SimpleData>
-		<SimpleData name="Uniq_S_ID">264</SimpleData>
+		<SimpleData name="Uniq_S_ID">252</SimpleData>
 		<SimpleData name="lat">-398028.186944523</SimpleData>
 		<SimpleData name="long">184500.62965935</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000040_3</SimpleData>
@@ -2652,7 +2532,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000086</SimpleData>
-		<SimpleData name="Uniq_S_ID">265</SimpleData>
+		<SimpleData name="Uniq_S_ID">253</SimpleData>
 		<SimpleData name="lat">-397831.896098883</SimpleData>
 		<SimpleData name="long">184253.908359301</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000086_1</SimpleData>
@@ -2662,7 +2542,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000086</SimpleData>
-		<SimpleData name="Uniq_S_ID">266</SimpleData>
+		<SimpleData name="Uniq_S_ID">254</SimpleData>
 		<SimpleData name="lat">-397798.922340228</SimpleData>
 		<SimpleData name="long">184229.85691181</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000086_2</SimpleData>
@@ -2672,7 +2552,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000086</SimpleData>
-		<SimpleData name="Uniq_S_ID">267</SimpleData>
+		<SimpleData name="Uniq_S_ID">255</SimpleData>
 		<SimpleData name="lat">-397862.154371532</SimpleData>
 		<SimpleData name="long">184276.408100497</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000086_3</SimpleData>
@@ -2682,7 +2562,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000039</SimpleData>
-		<SimpleData name="Uniq_S_ID">268</SimpleData>
+		<SimpleData name="Uniq_S_ID">256</SimpleData>
 		<SimpleData name="lat">-398279.175436872</SimpleData>
 		<SimpleData name="long">184584.421799002</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000039_1</SimpleData>
@@ -2692,7 +2572,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000039</SimpleData>
-		<SimpleData name="Uniq_S_ID">269</SimpleData>
+		<SimpleData name="Uniq_S_ID">257</SimpleData>
 		<SimpleData name="lat">-398224.477790163</SimpleData>
 		<SimpleData name="long">184543.689508888</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000039_2</SimpleData>
@@ -2702,7 +2582,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000039</SimpleData>
-		<SimpleData name="Uniq_S_ID">270</SimpleData>
+		<SimpleData name="Uniq_S_ID">258</SimpleData>
 		<SimpleData name="lat">-398322.235286409</SimpleData>
 		<SimpleData name="long">184616.231777937</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000039_3</SimpleData>
@@ -2712,7 +2592,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000073</SimpleData>
-		<SimpleData name="Uniq_S_ID">271</SimpleData>
+		<SimpleData name="Uniq_S_ID">259</SimpleData>
 		<SimpleData name="lat">-398329.993817858</SimpleData>
 		<SimpleData name="long">184508.388190806</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000073_1</SimpleData>
@@ -2722,7 +2602,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000073</SimpleData>
-		<SimpleData name="Uniq_S_ID">272</SimpleData>
+		<SimpleData name="Uniq_S_ID">260</SimpleData>
 		<SimpleData name="lat">-398279.175436872</SimpleData>
 		<SimpleData name="long">184471.53516642</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000073_2</SimpleData>
@@ -2732,7 +2612,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000073</SimpleData>
-		<SimpleData name="Uniq_S_ID">273</SimpleData>
+		<SimpleData name="Uniq_S_ID">261</SimpleData>
 		<SimpleData name="lat">-398379.648419126</SimpleData>
 		<SimpleData name="long">184544.853288605</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000073_3</SimpleData>
@@ -2742,7 +2622,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">274</SimpleData>
+		<SimpleData name="Uniq_S_ID">262</SimpleData>
 		<SimpleData name="lat">-398529.388076076</SimpleData>
 		<SimpleData name="long">184765.97143489</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000084_1</SimpleData>
@@ -2752,7 +2632,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">275</SimpleData>
+		<SimpleData name="Uniq_S_ID">263</SimpleData>
 		<SimpleData name="lat">-398477.793841946</SimpleData>
 		<SimpleData name="long">184728.730483938</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000084_2</SimpleData>
@@ -2762,7 +2642,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">276</SimpleData>
+		<SimpleData name="Uniq_S_ID">264</SimpleData>
 		<SimpleData name="lat">-398582.921943069</SimpleData>
 		<SimpleData name="long">184805.539945271</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000084_3</SimpleData>
@@ -2772,7 +2652,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000114</SimpleData>
-		<SimpleData name="Uniq_S_ID">277</SimpleData>
+		<SimpleData name="Uniq_S_ID">265</SimpleData>
 		<SimpleData name="lat">-398638.395442924</SimpleData>
 		<SimpleData name="long">184601.878494752</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000114_1</SimpleData>
@@ -2782,7 +2662,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000114</SimpleData>
-		<SimpleData name="Uniq_S_ID">278</SimpleData>
+		<SimpleData name="Uniq_S_ID">266</SimpleData>
 		<SimpleData name="lat">-398573.999631903</SimpleData>
 		<SimpleData name="long">184554.163526345</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000114_2</SimpleData>
@@ -2792,7 +2672,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000114</SimpleData>
-		<SimpleData name="Uniq_S_ID">279</SimpleData>
+		<SimpleData name="Uniq_S_ID">267</SimpleData>
 		<SimpleData name="lat">-398692.317236488</SimpleData>
 		<SimpleData name="long">184641.059078571</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000114_3</SimpleData>
@@ -2802,7 +2682,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000113</SimpleData>
-		<SimpleData name="Uniq_S_ID">280</SimpleData>
+		<SimpleData name="Uniq_S_ID">268</SimpleData>
 		<SimpleData name="lat">-398892.875274424</SimpleData>
 		<SimpleData name="long">184788.471176087</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000113_1</SimpleData>
@@ -2812,7 +2692,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000113</SimpleData>
-		<SimpleData name="Uniq_S_ID">281</SimpleData>
+		<SimpleData name="Uniq_S_ID">269</SimpleData>
 		<SimpleData name="lat">-398833.134582272</SimpleData>
 		<SimpleData name="long">184744.247546831</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000113_2</SimpleData>
@@ -2822,7 +2702,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000113</SimpleData>
-		<SimpleData name="Uniq_S_ID">282</SimpleData>
+		<SimpleData name="Uniq_S_ID">270</SimpleData>
 		<SimpleData name="lat">-398944.081581982</SimpleData>
 		<SimpleData name="long">184826.10005361</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000113_3</SimpleData>
@@ -2832,7 +2712,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000048</SimpleData>
-		<SimpleData name="Uniq_S_ID">283</SimpleData>
+		<SimpleData name="Uniq_S_ID">271</SimpleData>
 		<SimpleData name="lat">-398774.363706552</SimpleData>
 		<SimpleData name="long">185512.342160215</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000048_1</SimpleData>
@@ -2842,7 +2722,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000048</SimpleData>
-		<SimpleData name="Uniq_S_ID">284</SimpleData>
+		<SimpleData name="Uniq_S_ID">272</SimpleData>
 		<SimpleData name="lat">-398720.441912986</SimpleData>
 		<SimpleData name="long">185471.609870117</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000048_2</SimpleData>
@@ -2852,7 +2732,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000048</SimpleData>
-		<SimpleData name="Uniq_S_ID">285</SimpleData>
+		<SimpleData name="Uniq_S_ID">273</SimpleData>
 		<SimpleData name="lat">-398836.81988471</SimpleData>
 		<SimpleData name="long">185556.177862903</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000048_3</SimpleData>
@@ -2862,7 +2742,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000047</SimpleData>
-		<SimpleData name="Uniq_S_ID">286</SimpleData>
+		<SimpleData name="Uniq_S_ID">274</SimpleData>
 		<SimpleData name="lat">-398813.932216937</SimpleData>
 		<SimpleData name="long">185444.067083474</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000047_1</SimpleData>
@@ -2872,7 +2752,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000047</SimpleData>
-		<SimpleData name="Uniq_S_ID">287</SimpleData>
+		<SimpleData name="Uniq_S_ID">275</SimpleData>
 		<SimpleData name="lat">-398759.622496801</SimpleData>
 		<SimpleData name="long">185403.334793362</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000047_2</SimpleData>
@@ -2882,7 +2762,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000047</SimpleData>
-		<SimpleData name="Uniq_S_ID">288</SimpleData>
+		<SimpleData name="Uniq_S_ID">276</SimpleData>
 		<SimpleData name="lat">-398863.586818206</SimpleData>
 		<SimpleData name="long">185481.695960999</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000047_3</SimpleData>
@@ -2892,7 +2772,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">289</SimpleData>
+		<SimpleData name="Uniq_S_ID">277</SimpleData>
 		<SimpleData name="lat">-398926.430922937</SimpleData>
 		<SimpleData name="long">185290.836087365</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000081_1</SimpleData>
@@ -2902,7 +2782,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">290</SimpleData>
+		<SimpleData name="Uniq_S_ID">278</SimpleData>
 		<SimpleData name="lat">-398871.733276227</SimpleData>
 		<SimpleData name="long">185251.655503546</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000081_2</SimpleData>
@@ -2912,7 +2792,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">291</SimpleData>
+		<SimpleData name="Uniq_S_ID">279</SimpleData>
 		<SimpleData name="lat">-398974.533817916</SimpleData>
 		<SimpleData name="long">185326.137405456</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000081_3</SimpleData>
@@ -2922,7 +2802,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000080</SimpleData>
-		<SimpleData name="Uniq_S_ID">292</SimpleData>
+		<SimpleData name="Uniq_S_ID">280</SimpleData>
 		<SimpleData name="lat">-398984.231982226</SimpleData>
 		<SimpleData name="long">185215.190405748</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000080_1</SimpleData>
@@ -2932,7 +2812,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000080</SimpleData>
-		<SimpleData name="Uniq_S_ID">293</SimpleData>
+		<SimpleData name="Uniq_S_ID">281</SimpleData>
 		<SimpleData name="lat">-398935.741160675</SimpleData>
 		<SimpleData name="long">185180.277014227</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000080_2</SimpleData>
@@ -2942,7 +2822,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000080</SimpleData>
-		<SimpleData name="Uniq_S_ID">294</SimpleData>
+		<SimpleData name="Uniq_S_ID">282</SimpleData>
 		<SimpleData name="lat">-399031.55902406</SimpleData>
 		<SimpleData name="long">185249.715870695</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000080_3</SimpleData>
@@ -2952,7 +2832,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000079</SimpleData>
-		<SimpleData name="Uniq_S_ID">295</SimpleData>
+		<SimpleData name="Uniq_S_ID">283</SimpleData>
 		<SimpleData name="lat">-399038.541702363</SimpleData>
 		<SimpleData name="long">185139.156797556</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000079_1</SimpleData>
@@ -2962,7 +2842,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000079</SimpleData>
-		<SimpleData name="Uniq_S_ID">296</SimpleData>
+		<SimpleData name="Uniq_S_ID">284</SimpleData>
 		<SimpleData name="lat">-398982.292349365</SimpleData>
 		<SimpleData name="long">185098.424507441</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000079_2</SimpleData>
@@ -2972,7 +2852,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000079</SimpleData>
-		<SimpleData name="Uniq_S_ID">297</SimpleData>
+		<SimpleData name="Uniq_S_ID">285</SimpleData>
 		<SimpleData name="lat">-399095.95483508</SimpleData>
 		<SimpleData name="long">185180.664940805</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000079_3</SimpleData>
@@ -2982,7 +2862,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000033</SimpleData>
-		<SimpleData name="Uniq_S_ID">298</SimpleData>
+		<SimpleData name="Uniq_S_ID">286</SimpleData>
 		<SimpleData name="lat">-399094.791055363</SimpleData>
 		<SimpleData name="long">185071.269647381</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000033_1</SimpleData>
@@ -2992,7 +2872,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000033</SimpleData>
-		<SimpleData name="Uniq_S_ID">299</SimpleData>
+		<SimpleData name="Uniq_S_ID">287</SimpleData>
 		<SimpleData name="lat">-399027.679758337</SimpleData>
 		<SimpleData name="long">185022.39089925</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000033_2</SimpleData>
@@ -3002,7 +2882,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000033</SimpleData>
-		<SimpleData name="Uniq_S_ID">300</SimpleData>
+		<SimpleData name="Uniq_S_ID">288</SimpleData>
 		<SimpleData name="lat">-399161.514425818</SimpleData>
 		<SimpleData name="long">185120.924248646</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000033_3</SimpleData>
@@ -3012,7 +2892,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000076</SimpleData>
-		<SimpleData name="Uniq_S_ID">301</SimpleData>
+		<SimpleData name="Uniq_S_ID">289</SimpleData>
 		<SimpleData name="lat">-398720.441912988</SimpleData>
 		<SimpleData name="long">185023.942605541</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000076_1</SimpleData>
@@ -3022,7 +2902,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000076</SimpleData>
-		<SimpleData name="Uniq_S_ID">302</SimpleData>
+		<SimpleData name="Uniq_S_ID">290</SimpleData>
 		<SimpleData name="lat">-398669.623532003</SimpleData>
 		<SimpleData name="long">184986.313728018</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000076_2</SimpleData>
@@ -3032,7 +2912,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000076</SimpleData>
-		<SimpleData name="Uniq_S_ID">303</SimpleData>
+		<SimpleData name="Uniq_S_ID">291</SimpleData>
 		<SimpleData name="lat">-398765.053468815</SimpleData>
 		<SimpleData name="long">185055.752584485</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000076_3</SimpleData>
@@ -3042,7 +2922,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000104</SimpleData>
-		<SimpleData name="Uniq_S_ID">304</SimpleData>
+		<SimpleData name="Uniq_S_ID">292</SimpleData>
 		<SimpleData name="lat">-398663.416706843</SimpleData>
 		<SimpleData name="long">185100.36414031</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000104_1</SimpleData>
@@ -3052,7 +2932,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000104</SimpleData>
-		<SimpleData name="Uniq_S_ID">305</SimpleData>
+		<SimpleData name="Uniq_S_ID">293</SimpleData>
 		<SimpleData name="lat">-398611.43454614</SimpleData>
 		<SimpleData name="long">185061.959409639</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000104_2</SimpleData>
@@ -3062,7 +2942,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000104</SimpleData>
-		<SimpleData name="Uniq_S_ID">306</SimpleData>
+		<SimpleData name="Uniq_S_ID">294</SimpleData>
 		<SimpleData name="lat">-398711.907528395</SimpleData>
 		<SimpleData name="long">185134.889605249</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000104_3</SimpleData>
@@ -3072,7 +2952,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000022</SimpleData>
-		<SimpleData name="Uniq_S_ID">307</SimpleData>
+		<SimpleData name="Uniq_S_ID">295</SimpleData>
 		<SimpleData name="lat">-398604.451867837</SimpleData>
 		<SimpleData name="long">185171.354703062</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000022_1</SimpleData>
@@ -3082,7 +2962,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000022</SimpleData>
-		<SimpleData name="Uniq_S_ID">308</SimpleData>
+		<SimpleData name="Uniq_S_ID">296</SimpleData>
 		<SimpleData name="lat">-398545.874955403</SimpleData>
 		<SimpleData name="long">185128.294853525</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000022_2</SimpleData>
@@ -3092,7 +2972,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000022</SimpleData>
-		<SimpleData name="Uniq_S_ID">309</SimpleData>
+		<SimpleData name="Uniq_S_ID">297</SimpleData>
 		<SimpleData name="lat">-398659.537441118</SimpleData>
 		<SimpleData name="long">185213.638699459</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000022_3</SimpleData>
@@ -3102,7 +2982,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">310</SimpleData>
+		<SimpleData name="Uniq_S_ID">298</SimpleData>
 		<SimpleData name="lat">-398538.892277099</SimpleData>
 		<SimpleData name="long">185246.22453154</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000081_1</SimpleData>
@@ -3112,7 +2992,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">311</SimpleData>
+		<SimpleData name="Uniq_S_ID">299</SimpleData>
 		<SimpleData name="lat">-398490.013528976</SimpleData>
 		<SimpleData name="long">185200.061269422</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000081_2</SimpleData>
@@ -3122,7 +3002,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000081</SimpleData>
-		<SimpleData name="Uniq_S_ID">312</SimpleData>
+		<SimpleData name="Uniq_S_ID">300</SimpleData>
 		<SimpleData name="lat">-398597.857116106</SimpleData>
 		<SimpleData name="long">185288.120601359</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000081_3</SimpleData>
@@ -3132,7 +3012,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000078</SimpleData>
-		<SimpleData name="Uniq_S_ID">313</SimpleData>
+		<SimpleData name="Uniq_S_ID">301</SimpleData>
 		<SimpleData name="lat">-399353.344115874</SimpleData>
 		<SimpleData name="long">184647.653830303</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000078_1</SimpleData>
@@ -3142,7 +3022,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000078</SimpleData>
-		<SimpleData name="Uniq_S_ID">314</SimpleData>
+		<SimpleData name="Uniq_S_ID">302</SimpleData>
 		<SimpleData name="lat">-399304.853294323</SimpleData>
 		<SimpleData name="long">184611.964585641</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000078_2</SimpleData>
@@ -3152,7 +3032,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000078</SimpleData>
-		<SimpleData name="Uniq_S_ID">315</SimpleData>
+		<SimpleData name="Uniq_S_ID">303</SimpleData>
 		<SimpleData name="lat">-399397.955671703</SimpleData>
 		<SimpleData name="long">184679.851735803</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000078_3</SimpleData>
@@ -3162,7 +3042,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000021</SimpleData>
-		<SimpleData name="Uniq_S_ID">316</SimpleData>
+		<SimpleData name="Uniq_S_ID">304</SimpleData>
 		<SimpleData name="lat">-399075.200763458</SimpleData>
 		<SimpleData name="long">184549.120480903</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000021_1</SimpleData>
@@ -3172,7 +3052,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000021</SimpleData>
-		<SimpleData name="Uniq_S_ID">317</SimpleData>
+		<SimpleData name="Uniq_S_ID">305</SimpleData>
 		<SimpleData name="lat">-399015.460071306</SimpleData>
 		<SimpleData name="long">184503.73307193</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000021_2</SimpleData>
@@ -3182,7 +3062,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000021</SimpleData>
-		<SimpleData name="Uniq_S_ID">318</SimpleData>
+		<SimpleData name="Uniq_S_ID">306</SimpleData>
 		<SimpleData name="lat">-399136.881088471</SimpleData>
 		<SimpleData name="long">184594.119963298</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000021_3</SimpleData>
@@ -3192,7 +3072,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000103</SimpleData>
-		<SimpleData name="Uniq_S_ID">319</SimpleData>
+		<SimpleData name="Uniq_S_ID">307</SimpleData>
 		<SimpleData name="lat">-399127.958777305</SimpleData>
 		<SimpleData name="long">184477.741991581</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000103_1</SimpleData>
@@ -3202,7 +3082,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000103</SimpleData>
-		<SimpleData name="Uniq_S_ID">320</SimpleData>
+		<SimpleData name="Uniq_S_ID">308</SimpleData>
 		<SimpleData name="lat">-399063.175039713</SimpleData>
 		<SimpleData name="long">184428.863243454</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000103_2</SimpleData>
@@ -3212,7 +3092,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000103</SimpleData>
-		<SimpleData name="Uniq_S_ID">321</SimpleData>
+		<SimpleData name="Uniq_S_ID">309</SimpleData>
 		<SimpleData name="lat">-399190.414955463</SimpleData>
 		<SimpleData name="long">184525.069033413</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000103_3</SimpleData>
@@ -3222,7 +3102,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000051</SimpleData>
-		<SimpleData name="Uniq_S_ID">322</SimpleData>
+		<SimpleData name="Uniq_S_ID">310</SimpleData>
 		<SimpleData name="lat">-398847.875792025</SimpleData>
 		<SimpleData name="long">184377.656935896</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000051_1</SimpleData>
@@ -3232,7 +3112,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000051</SimpleData>
-		<SimpleData name="Uniq_S_ID">323</SimpleData>
+		<SimpleData name="Uniq_S_ID">311</SimpleData>
 		<SimpleData name="lat">-398794.729851605</SimpleData>
 		<SimpleData name="long">184338.088425515</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000051_2</SimpleData>
@@ -3242,7 +3122,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-L-1000051</SimpleData>
-		<SimpleData name="Uniq_S_ID">324</SimpleData>
+		<SimpleData name="Uniq_S_ID">312</SimpleData>
 		<SimpleData name="lat">-398895.590760432</SimpleData>
 		<SimpleData name="long">184413.73410713</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-L-1000051_3</SimpleData>
@@ -3252,7 +3132,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">325</SimpleData>
+		<SimpleData name="Uniq_S_ID">313</SimpleData>
 		<SimpleData name="lat">-398568.180733318</SimpleData>
 		<SimpleData name="long">184167.788660218</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_1</SimpleData>
@@ -3262,7 +3142,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">326</SimpleData>
+		<SimpleData name="Uniq_S_ID">314</SimpleData>
 		<SimpleData name="lat">-398514.258939752</SimpleData>
 		<SimpleData name="long">184127.832223264</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_2</SimpleData>
@@ -3272,7 +3152,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">327</SimpleData>
+		<SimpleData name="Uniq_S_ID">315</SimpleData>
 		<SimpleData name="lat">-398631.412764621</SimpleData>
 		<SimpleData name="long">184214.727775481</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_3</SimpleData>
@@ -3282,7 +3162,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000074</SimpleData>
-		<SimpleData name="Uniq_S_ID">328</SimpleData>
+		<SimpleData name="Uniq_S_ID">316</SimpleData>
 		<SimpleData name="lat">-398688.437970765</SimpleData>
 		<SimpleData name="long">184010.678398389</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000074_1</SimpleData>
@@ -3292,7 +3172,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000074</SimpleData>
-		<SimpleData name="Uniq_S_ID">329</SimpleData>
+		<SimpleData name="Uniq_S_ID">317</SimpleData>
 		<SimpleData name="lat">-398633.740324056</SimpleData>
 		<SimpleData name="long">183968.782328567</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000074_2</SimpleData>
@@ -3302,7 +3182,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000074</SimpleData>
-		<SimpleData name="Uniq_S_ID">330</SimpleData>
+		<SimpleData name="Uniq_S_ID">318</SimpleData>
 		<SimpleData name="lat">-398748.566589488</SimpleData>
 		<SimpleData name="long">184054.902027644</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000074_3</SimpleData>
@@ -3312,7 +3192,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000075</SimpleData>
-		<SimpleData name="Uniq_S_ID">331</SimpleData>
+		<SimpleData name="Uniq_S_ID">319</SimpleData>
 		<SimpleData name="lat">-398794.729851606</SimpleData>
 		<SimpleData name="long">183854.343989703</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000075_1</SimpleData>
@@ -3322,7 +3202,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000075</SimpleData>
-		<SimpleData name="Uniq_S_ID">332</SimpleData>
+		<SimpleData name="Uniq_S_ID">320</SimpleData>
 		<SimpleData name="lat">-398750.118295778</SimpleData>
 		<SimpleData name="long">183821.370231055</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000075_2</SimpleData>
@@ -3332,7 +3212,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000075</SimpleData>
-		<SimpleData name="Uniq_S_ID">333</SimpleData>
+		<SimpleData name="Uniq_S_ID">321</SimpleData>
 		<SimpleData name="lat">-398844.384452873</SimpleData>
 		<SimpleData name="long">183892.748720379</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000075_3</SimpleData>
@@ -3342,7 +3222,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">334</SimpleData>
+		<SimpleData name="Uniq_S_ID">322</SimpleData>
 		<SimpleData name="lat">-398888.220155557</SimpleData>
 		<SimpleData name="long">183756.974420027</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000084_1</SimpleData>
@@ -3352,7 +3232,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">335</SimpleData>
+		<SimpleData name="Uniq_S_ID">323</SimpleData>
 		<SimpleData name="lat">-398826.927757116</SimpleData>
 		<SimpleData name="long">183711.199084484</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000084_2</SimpleData>
@@ -3362,7 +3242,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000084</SimpleData>
-		<SimpleData name="Uniq_S_ID">336</SimpleData>
+		<SimpleData name="Uniq_S_ID">324</SimpleData>
 		<SimpleData name="lat">-398944.081581984</SimpleData>
 		<SimpleData name="long">183799.646342991</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000084_3</SimpleData>
@@ -3372,7 +3252,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000036</SimpleData>
-		<SimpleData name="Uniq_S_ID">337</SimpleData>
+		<SimpleData name="Uniq_S_ID">325</SimpleData>
 		<SimpleData name="lat">-399059.683700563</SimpleData>
 		<SimpleData name="long">183685.208004126</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000036_1</SimpleData>
@@ -3382,7 +3262,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000036</SimpleData>
-		<SimpleData name="Uniq_S_ID">338</SimpleData>
+		<SimpleData name="Uniq_S_ID">326</SimpleData>
 		<SimpleData name="lat">-399016.235924453</SimpleData>
 		<SimpleData name="long">183652.622172046</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000036_2</SimpleData>
@@ -3392,7 +3272,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000036</SimpleData>
-		<SimpleData name="Uniq_S_ID">339</SimpleData>
+		<SimpleData name="Uniq_S_ID">327</SimpleData>
 		<SimpleData name="lat">-399114.769273844</SimpleData>
 		<SimpleData name="long">183726.716147379</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000036_3</SimpleData>
@@ -3402,7 +3282,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000002</SimpleData>
-		<SimpleData name="Uniq_S_ID">340</SimpleData>
+		<SimpleData name="Uniq_S_ID">328</SimpleData>
 		<SimpleData name="lat">-399014.102328303</SimpleData>
 		<SimpleData name="long">184018.824856409</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000002_1</SimpleData>
@@ -3412,7 +3292,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000002</SimpleData>
-		<SimpleData name="Uniq_S_ID">341</SimpleData>
+		<SimpleData name="Uniq_S_ID">329</SimpleData>
 		<SimpleData name="lat">-398977.637230496</SimpleData>
 		<SimpleData name="long">183991.669996341</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000002_2</SimpleData>
@@ -3422,7 +3302,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000002</SimpleData>
-		<SimpleData name="Uniq_S_ID">342</SimpleData>
+		<SimpleData name="Uniq_S_ID">330</SimpleData>
 		<SimpleData name="lat">-399047.076086958</SimpleData>
 		<SimpleData name="long">184043.652157047</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000002_3</SimpleData>
@@ -3432,7 +3312,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000050</SimpleData>
-		<SimpleData name="Uniq_S_ID">343</SimpleData>
+		<SimpleData name="Uniq_S_ID">331</SimpleData>
 		<SimpleData name="lat">-399129.704446881</SimpleData>
 		<SimpleData name="long">183938.524055922</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000050_1</SimpleData>
@@ -3442,7 +3322,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000050</SimpleData>
-		<SimpleData name="Uniq_S_ID">344</SimpleData>
+		<SimpleData name="Uniq_S_ID">332</SimpleData>
 		<SimpleData name="lat">-399083.929111338</SimpleData>
 		<SimpleData name="long">183903.222737823</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000050_2</SimpleData>
@@ -3452,7 +3332,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000050</SimpleData>
-		<SimpleData name="Uniq_S_ID">345</SimpleData>
+		<SimpleData name="Uniq_S_ID">333</SimpleData>
 		<SimpleData name="lat">-399180.522827867</SimpleData>
 		<SimpleData name="long">183975.377080293</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000050_3</SimpleData>
@@ -3462,57 +3342,37 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000001</SimpleData>
-		<SimpleData name="Uniq_S_ID">346</SimpleData>
-		<SimpleData name="lat">-399135.523345467</SimpleData>
-		<SimpleData name="long">184109.987600933</SimpleData>
+		<SimpleData name="Uniq_S_ID">334</SimpleData>
+		<SimpleData name="lat">-399133.891338615</SimpleData>
+		<SimpleData name="long">184108.424950294</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000001_1</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.6095683678415,45.5334654904894</coordinates></Point>
+      <Point><coordinates>-73.6095461332717,45.5334524914681</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000001</SimpleData>
-		<SimpleData name="Uniq_S_ID">347</SimpleData>
-		<SimpleData name="lat">-399154.143820943</SimpleData>
-		<SimpleData name="long">184108.047968065</SimpleData>
+		<SimpleData name="Uniq_S_ID">335</SimpleData>
+		<SimpleData name="lat">-399128.090782394</SimpleData>
+		<SimpleData name="long">184104.696021301</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000001_2</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.6098041935187,45.5334362222832</coordinates></Point>
+      <Point><coordinates>-73.6094687551374,45.5334226845413</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-J-1000001</SimpleData>
-		<SimpleData name="Uniq_S_ID">348</SimpleData>
-		<SimpleData name="lat">-399138.626758046</SimpleData>
-		<SimpleData name="long">184128.608076408</SimpleData>
+		<SimpleData name="Uniq_S_ID">336</SimpleData>
+		<SimpleData name="lat">-399140.520545724</SimpleData>
+		<SimpleData name="long">184113.811181074</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-J-1000001_3</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.6096247877634,45.5336307822134</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-J-1000001</SimpleData>
-		<SimpleData name="Uniq_S_ID">349</SimpleData>
-		<SimpleData name="lat">-399114.575310557</SimpleData>
-		<SimpleData name="long">184109.211747787</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-J-1000001_4</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.609300391307,45.5334718456906</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
-		<SimpleData name="RUELLE_ID">RPP-J-1000001</SimpleData>
-		<SimpleData name="Uniq_S_ID">350</SimpleData>
-		<SimpleData name="lat">-399121.170062288</SimpleData>
-		<SimpleData name="long">184100.289436617</SimpleData>
-		<SimpleData name="Group_S_ID">RPP-J-1000001_5</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>-73.6093764727349,45.5333875027462</coordinates></Point>
+      <Point><coordinates>-73.6096355816097,45.5334966585987</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000034</SimpleData>
-		<SimpleData name="Uniq_S_ID">351</SimpleData>
+		<SimpleData name="Uniq_S_ID">337</SimpleData>
 		<SimpleData name="lat">-399189.639102319</SimpleData>
 		<SimpleData name="long">184385.803393917</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000034_1</SimpleData>
@@ -3522,7 +3382,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000034</SimpleData>
-		<SimpleData name="Uniq_S_ID">352</SimpleData>
+		<SimpleData name="Uniq_S_ID">338</SimpleData>
 		<SimpleData name="lat">-399125.243291298</SimpleData>
 		<SimpleData name="long">184337.312572368</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000034_2</SimpleData>
@@ -3532,7 +3392,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000034</SimpleData>
-		<SimpleData name="Uniq_S_ID">353</SimpleData>
+		<SimpleData name="Uniq_S_ID">339</SimpleData>
 		<SimpleData name="lat">-399255.9745462</SimpleData>
 		<SimpleData name="long">184435.457995184</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000034_3</SimpleData>
@@ -3542,7 +3402,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000077</SimpleData>
-		<SimpleData name="Uniq_S_ID">354</SimpleData>
+		<SimpleData name="Uniq_S_ID">340</SimpleData>
 		<SimpleData name="lat">-399389.421287109</SimpleData>
 		<SimpleData name="long">184374.553523318</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000077_1</SimpleData>
@@ -3552,7 +3412,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000077</SimpleData>
-		<SimpleData name="Uniq_S_ID">355</SimpleData>
+		<SimpleData name="Uniq_S_ID">341</SimpleData>
 		<SimpleData name="lat">-399382.826535378</SimpleData>
 		<SimpleData name="long">184383.863761054</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000077_2</SimpleData>
@@ -3562,7 +3422,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000077</SimpleData>
-		<SimpleData name="Uniq_S_ID">356</SimpleData>
+		<SimpleData name="Uniq_S_ID">342</SimpleData>
 		<SimpleData name="lat">-399396.403965413</SimpleData>
 		<SimpleData name="long">184366.4070653</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000077_3</SimpleData>
@@ -3572,7 +3432,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000055</SimpleData>
-		<SimpleData name="Uniq_S_ID">357</SimpleData>
+		<SimpleData name="Uniq_S_ID">343</SimpleData>
 		<SimpleData name="lat">-398278.205620441</SimpleData>
 		<SimpleData name="long">184064.988118532</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000055_1</SimpleData>
@@ -3582,7 +3442,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000055</SimpleData>
-		<SimpleData name="Uniq_S_ID">358</SimpleData>
+		<SimpleData name="Uniq_S_ID">344</SimpleData>
 		<SimpleData name="lat">-398211.870176559</SimpleData>
 		<SimpleData name="long">184015.333517255</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000055_2</SimpleData>
@@ -3592,7 +3452,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000055</SimpleData>
-		<SimpleData name="Uniq_S_ID">359</SimpleData>
+		<SimpleData name="Uniq_S_ID">345</SimpleData>
 		<SimpleData name="lat">-398336.782532876</SimpleData>
 		<SimpleData name="long">184109.599674356</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000055_3</SimpleData>
@@ -3602,7 +3462,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">360</SimpleData>
+		<SimpleData name="Uniq_S_ID">346</SimpleData>
 		<SimpleData name="lat">-398332.903267151</SimpleData>
 		<SimpleData name="long">183990.118290051</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_4</SimpleData>
@@ -3612,7 +3472,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">361</SimpleData>
+		<SimpleData name="Uniq_S_ID">347</SimpleData>
 		<SimpleData name="lat">-398272.386721855</SimpleData>
 		<SimpleData name="long">183946.282587368</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_5</SimpleData>
@@ -3622,7 +3482,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000010</SimpleData>
-		<SimpleData name="Uniq_S_ID">362</SimpleData>
+		<SimpleData name="Uniq_S_ID">348</SimpleData>
 		<SimpleData name="lat">-398395.359445309</SimpleData>
 		<SimpleData name="long">184037.057405312</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000010_6</SimpleData>
@@ -3632,7 +3492,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000032</SimpleData>
-		<SimpleData name="Uniq_S_ID">363</SimpleData>
+		<SimpleData name="Uniq_S_ID">349</SimpleData>
 		<SimpleData name="lat">-399814.200883898</SimpleData>
 		<SimpleData name="long">184061.108852802</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000032_1</SimpleData>
@@ -3642,7 +3502,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000032</SimpleData>
-		<SimpleData name="Uniq_S_ID">364</SimpleData>
+		<SimpleData name="Uniq_S_ID">350</SimpleData>
 		<SimpleData name="lat">-399771.528960934</SimpleData>
 		<SimpleData name="long">184029.298873862</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000032_2</SimpleData>
@@ -3652,7 +3512,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000032</SimpleData>
-		<SimpleData name="Uniq_S_ID">365</SimpleData>
+		<SimpleData name="Uniq_S_ID">351</SimpleData>
 		<SimpleData name="lat">-399850.665981705</SimpleData>
 		<SimpleData name="long">184089.427492585</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000032_3</SimpleData>
@@ -3662,7 +3522,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000004</SimpleData>
-		<SimpleData name="Uniq_S_ID">366</SimpleData>
+		<SimpleData name="Uniq_S_ID">352</SimpleData>
 		<SimpleData name="lat">-399916.225572443</SimpleData>
 		<SimpleData name="long">183955.592825102</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000004_1</SimpleData>
@@ -3672,7 +3532,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000004</SimpleData>
-		<SimpleData name="Uniq_S_ID">367</SimpleData>
+		<SimpleData name="Uniq_S_ID">353</SimpleData>
 		<SimpleData name="lat">-399882.088034071</SimpleData>
 		<SimpleData name="long">183930.377597898</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000004_2</SimpleData>
@@ -3682,7 +3542,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-T-1000004</SimpleData>
-		<SimpleData name="Uniq_S_ID">368</SimpleData>
+		<SimpleData name="Uniq_S_ID">354</SimpleData>
 		<SimpleData name="lat">-399947.647624808</SimpleData>
 		<SimpleData name="long">183979.644272597</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-T-1000004_3</SimpleData>
@@ -3692,7 +3552,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">369</SimpleData>
+		<SimpleData name="Uniq_S_ID">355</SimpleData>
 		<SimpleData name="lat">-399773.468593795</SimpleData>
 		<SimpleData name="long">183940.075762212</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_1</SimpleData>
@@ -3702,7 +3562,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">370</SimpleData>
+		<SimpleData name="Uniq_S_ID">356</SimpleData>
 		<SimpleData name="lat">-399762.606649768</SimpleData>
 		<SimpleData name="long">183931.153451043</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_2</SimpleData>
@@ -3712,7 +3572,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">371</SimpleData>
+		<SimpleData name="Uniq_S_ID">357</SimpleData>
 		<SimpleData name="lat">-399784.330537824</SimpleData>
 		<SimpleData name="long">183948.610146799</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_3</SimpleData>
@@ -3722,7 +3582,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">372</SimpleData>
+		<SimpleData name="Uniq_S_ID">358</SimpleData>
 		<SimpleData name="lat">-399795.580408423</SimpleData>
 		<SimpleData name="long">183912.92090214</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_4</SimpleData>
@@ -3732,7 +3592,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">373</SimpleData>
+		<SimpleData name="Uniq_S_ID">359</SimpleData>
 		<SimpleData name="lat">-399782.778831534</SimpleData>
 		<SimpleData name="long">183907.102003549</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_5</SimpleData>
@@ -3742,7 +3602,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000102</SimpleData>
-		<SimpleData name="Uniq_S_ID">374</SimpleData>
+		<SimpleData name="Uniq_S_ID">360</SimpleData>
 		<SimpleData name="lat">-399808.769911884</SimpleData>
 		<SimpleData name="long">183919.51565387</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000102_6</SimpleData>
@@ -3752,7 +3612,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000087</SimpleData>
-		<SimpleData name="Uniq_S_ID">375</SimpleData>
+		<SimpleData name="Uniq_S_ID">361</SimpleData>
 		<SimpleData name="lat">-397650.798340842</SimpleData>
 		<SimpleData name="long">184767.30832688</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000087_1</SimpleData>
@@ -3762,7 +3622,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000087</SimpleData>
-		<SimpleData name="Uniq_S_ID">376</SimpleData>
+		<SimpleData name="Uniq_S_ID">362</SimpleData>
 		<SimpleData name="lat">-397642.338203525</SimpleData>
 		<SimpleData name="long">184761.174727336</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000087_2</SimpleData>
@@ -3772,7 +3632,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000087</SimpleData>
-		<SimpleData name="Uniq_S_ID">377</SimpleData>
+		<SimpleData name="Uniq_S_ID">363</SimpleData>
 		<SimpleData name="lat">-397657.566450694</SimpleData>
 		<SimpleData name="long">184772.384409271</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000087_3</SimpleData>
@@ -3782,7 +3642,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">378</SimpleData>
+		<SimpleData name="Uniq_S_ID">364</SimpleData>
 		<SimpleData name="lat">-397259.781369282</SimpleData>
 		<SimpleData name="long">184646.434114977</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_4</SimpleData>
@@ -3792,7 +3652,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">379</SimpleData>
+		<SimpleData name="Uniq_S_ID">365</SimpleData>
 		<SimpleData name="lat">-397256.29156264</SimpleData>
 		<SimpleData name="long">184651.087190508</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_5</SimpleData>
@@ -3802,7 +3662,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-H-1000003</SimpleData>
-		<SimpleData name="Uniq_S_ID">380</SimpleData>
+		<SimpleData name="Uniq_S_ID">366</SimpleData>
 		<SimpleData name="lat">-397263.694182791</SimpleData>
 		<SimpleData name="long">184641.781039456</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-H-1000003_6</SimpleData>
@@ -3812,7 +3672,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000035</SimpleData>
-		<SimpleData name="Uniq_S_ID">381</SimpleData>
+		<SimpleData name="Uniq_S_ID">367</SimpleData>
 		<SimpleData name="lat">-399542.220665341</SimpleData>
 		<SimpleData name="long">183536.887106005</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000035_1</SimpleData>
@@ -3822,7 +3682,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000035</SimpleData>
-		<SimpleData name="Uniq_S_ID">382</SimpleData>
+		<SimpleData name="Uniq_S_ID">368</SimpleData>
 		<SimpleData name="lat">-399476.654601144</SimpleData>
 		<SimpleData name="long">183489.08733017</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000035_2</SimpleData>
@@ -3832,7 +3692,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#ruellessitesID">
 		<SimpleData name="RUELLE_ID">RPP-I-1000035</SimpleData>
-		<SimpleData name="Uniq_S_ID">383</SimpleData>
+		<SimpleData name="Uniq_S_ID">369</SimpleData>
 		<SimpleData name="lat">-399601.864633416</SimpleData>
 		<SimpleData name="long">183581.302826917</SimpleData>
 		<SimpleData name="Group_S_ID">RPP-I-1000035_3</SimpleData>

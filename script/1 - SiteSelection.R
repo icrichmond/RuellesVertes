@@ -96,10 +96,10 @@ rv_sp <- rv_sp %>%
   dplyr::mutate(Group_S_ID = paste0(RUELLE_ID, "_", 1:n()))
 # join rv_sp to spt to save kml layer for google maps 
 rv_sp <- arrange(rv_sp, Uniq_S_ID)
-spt <- cbind(rv_sp, spt)
-spt <- st_as_sf(spt)
-spt <- select(spt, -c(Uniq_S_ID.1, lat.1, lon))
-st_write(spt, "output/ruellessitesID.kml", driver = "kml")
+spt <- select(spt, -c(lat,lon))
+spt_kml <- inner_join(rv_sp, spt)
+spt_kml <- st_as_sf(spt_kml)
+st_write(spt_kml, "output/ruellessitesID.kml", driver = "kml")
 
 # save as long dataset 
 write_csv(rv_sp, "output/Ruelles_SamplingPoints_Long.csv")
