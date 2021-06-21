@@ -34,9 +34,7 @@ rv_sp_w <- pivot_wider(rv_sp,
 rv_sp_w <- rv_sp_w %>%
   dplyr::select(c(RUELLE_ID, lat_S1, lon_S1, lat_S2, lon_S2,
                   lat_S3, lon_S3, lat_S4, lon_S4,
-                  lat_S5, lon_S5, lat_S6, lon_S6,
-                  lat_S7, lon_S7, lat_S8, lon_S8,
-                  lat_S9, lon_S9))
+                  lat_S5, lon_S5, lat_S6, lon_S6))
 
 #### Full Dataset #### 
 full <- inner_join(grp, rv_sp_w)
