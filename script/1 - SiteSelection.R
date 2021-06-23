@@ -98,7 +98,6 @@ saveRDS(lns_ss, "output/FinalRuelles.rds")
 #### Final Sites ####
 # Emily created create three sampling points along the ruelles in QGIS
 # 1/4 in, 1/2 in, 3/4 in 
-# for oddly shaped ruelles, more sampling points were added 
 # import shapefile 
 spt <- read_sf("output/sampling_points/ruellessites.shp")
 spt <- st_transform(spt, crs = "+init=epsg:6624")
