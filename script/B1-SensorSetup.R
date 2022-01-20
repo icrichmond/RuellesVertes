@@ -8,7 +8,7 @@ sens <- read.csv("input/sensors/temp_sensors.csv")
 sens <- st_as_sf(sens, coords = c("long", "lat"), crs = 4326)
 
 # canopy data - sourced from http://observatoire.cmm.qc.ca/observatoire-grand-montreal/produits-cartographiques/donnees-georeferencees/
-cc <- read_stars("input/sensors/66023_IndiceCanopee_2019.tif") 
+cc <- read_stars("input/spatial/66023_IndiceCanopee_2019.tif") 
 
 # Buffers -------------------------------------------
 # create several buffers between 10 - 100 m around each sensor 
@@ -26,7 +26,7 @@ buffers <- purrr::map(.x = b,
 #cc <- cc[bb] # crop raster to extent
 # cc <- st_as_sf(cc) # transform to sf object
 # NOTE: operating now with laptop so vectorized canopy cover in GEE and importing here
-cc <- read_sf("input/sensors/canopycover.shp")
+cc <- read_sf("input/spatial/canopycover.shp")
 cc <- st_transform(cc, st_crs(sens))
 # intersect buffers with canopy
 ints <- purrr::map(.x = buffers, .f = function(x){st_intersection(x, cc)})%>%
