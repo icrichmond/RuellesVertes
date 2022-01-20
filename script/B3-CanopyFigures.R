@@ -31,5 +31,5 @@ dev.off()
 full_clean <- lapply(full, function(x){x %>% select(c(RuelleID:perwat, Avg_max_daily_temp:Avg_min_daily_temp))})
 
 # Save ---------------------------------------------------------------
-saveRDS(full, "output/fulldataframe.rds")
-write.xlsx(full_clean, file = "output/fulldataframe.xlsx", colNames = T)
+saveRDS(full, "output/canopy/fulldataframe.rds")
+write.xlsx(full_clean, file = "output/canopy/fulldataframe.xlsx", colNames = T)

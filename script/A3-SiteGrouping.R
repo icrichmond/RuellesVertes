@@ -9,7 +9,7 @@ easypackages::packages("sf", "tidyverse")
 # grouping was done manually to maximize sampling efficiency 
 grp <- read_csv("input/RuellesVertes_Groups.csv")
 # load kml file of sampling points to extract points in epsg 4326
-rv_sp <- st_read("output/ruellessitesID.kml")
+rv_sp <- st_read("output/ruelles-sampling/ruellessitesID.kml")
 
 #### Clean Data ####
 # clean rv_sp to get coordinates 
@@ -37,4 +37,4 @@ rv_sp_w <- rv_sp_w %>%
 
 #### Full Dataset #### 
 full <- inner_join(grp, rv_sp_w)
-write.csv(full, "output/RuellesVertes_SamplingGrouped.csv")
+write.csv(full, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")

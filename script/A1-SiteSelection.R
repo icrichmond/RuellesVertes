@@ -54,10 +54,10 @@ rv_r <- rbind(rv_m, rv_r)
 # transform to projection with units as metres with Quebec Albers 
 rv_r <- st_transform(rv_r, crs = "+init=epsg:6624")
 # save cleaned shapefiles as .rds objects
-saveRDS(rv_r, "output/RuellesRosemont.rds")
+saveRDS(rv_r, "output/ruelles-sampling/RuellesRosemont.rds")
 # save ruelles as a shapefile so that sampling points can be calculated in QGIS 
 write_sf(rv_r, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
-st_write(rv_r, "output/rosemontruelles.kml", driver = "kml")
+st_write(rv_r, "output/ruelles-sampling/rosemontruelles.kml", driver = "kml")
 # get the extent of our study area so we can clip the roads layer 
 bb <- st_bbox(rv_r)
 
@@ -67,7 +67,7 @@ parcs <- read_sf("input/parcs/Espace_Vert.shp")
 # filter for Montreal's large parks 
 parcs <- st_transform(parcs, crs="+init=epsg:6624")
 parcs <- st_crop(parcs,bb)
-saveRDS(parcs, "output/ParksRosemont.rds")
+saveRDS(parcs, "output/parks/ParksRosemont.rds")
 
 ## Montreal Roads ##
 # for mapping 
@@ -78,7 +78,7 @@ rds <- st_crop(rds, bb)
 # select only major roads
 mjrds <- subset(rds, rdcls_en == "Freeway" | rdcls_en == "Expressway-Highway" |
                   rdcls_en == "Arterial")
-saveRDS(mjrds, "output/MajorRoadsRosemont.rds")
+saveRDS(mjrds, "output/roads/MajorRoadsRosemont.rds")
 
 #### Eliminating Outliers #### 
 # we are removing any ruelles that fall outside a set of criteria.
@@ -92,7 +92,7 @@ y <- as_tibble(y) %>%
   select(-geometry)
 # remove any ruelles from lns_ss that are found in y 
 lns_ss <- anti_join(rv_r, y)
-saveRDS(lns_ss, "output/FinalRuelles.rds")
+saveRDS(lns_ss, "output/ruelles-sampling/FinalRuelles.rds")
 
 
 #### Final Sites ####
@@ -106,7 +106,7 @@ spt <- st_transform(spt, crs = "+init=epsg:6624")
 spt <- spt %>% 
   tibble::rowid_to_column("Uniq_S_ID") %>%
   dplyr::select(-id)
-saveRDS(spt, "output/ruellessitesID.rds")
+saveRDS(spt, "output/ruelles-sampling/ruellessitesID.rds")
 # extract coordinates into more readable format 
 spt <- spt %>%
   dplyr::mutate(lat = sf::st_coordinates(.)[,1],
@@ -133,10 +133,10 @@ rv_sp <- arrange(rv_sp, Uniq_S_ID)
 spt <- select(spt, -c(lat,lon))
 spt_kml <- inner_join(rv_sp, spt)
 spt_kml <- st_as_sf(spt_kml)
-st_write(spt_kml, "output/ruellessitesID.kml", driver = "kml")
+st_write(spt_kml, "output/ruelles-sampling/ruellessitesID.kml", driver = "kml")
 
 # save as long dataset 
-write_csv(rv_sp, "output/Ruelles_SamplingPoints_Long.csv")
+write_csv(rv_sp, "output/ruelles-sampling/Ruelles_SamplingPoints_Long.csv")
   
 # create wide dataset 
 # remove Group_S_ID column and recreate without ruelle id 
@@ -150,4 +150,4 @@ rv_sp_w <- pivot_wider(rv_sp_w,
                        names_from = Group_S_ID,
                        values_from = c(lat,long))
 # save wide dataset
-write_csv(rv_sp_w, "output/Ruelles_SamplingPoints_Wide.csv")
+write_csv(rv_sp_w, "output/ruelles-sampling/Ruelles_SamplingPoints_Wide.csv")

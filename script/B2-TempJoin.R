@@ -4,9 +4,9 @@ lapply(p, library, character.only = T)
 
 
 # Data ---------------------------------------------------------
-sens <- readRDS("output/sensorsspatial.rds")
+sens <- readRDS("output/canopy/sensorsspatial.rds")
 temp <- read.csv("input/sensors/temp_final.csv")
-canopy <- readRDS("output/canopymetrics.rds")
+canopy <- readRDS("output/canopy/canopymetrics.rds")
 
 
 # Joining ------------------------------------------------------
@@ -22,4 +22,4 @@ canopyfull <- purrr::map(.x = canopy, .f = function(x){inner_join(x, tempsens, b
 
 
 # Save ----------------------------------------------------------
-saveRDS(canopyfull, "output/canopytempfull.rds")
+saveRDS(canopyfull, "output/canopy/canopytempfull.rds")

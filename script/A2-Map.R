@@ -6,17 +6,17 @@ easypackages::packages("sf", "tidyverse", "mapview", "ggspatial")
 
 #### Load Data ####
 # Ruelles Vertes
-rv_r <- readRDS("output/RuellesRosemont.rds")
+rv_r <- readRDS("output/ruelles-sampling/RuellesRosemont.rds")
 # All roads
-rds <- readRDS("output/RoadsRosemontPlateau.rds")
+rds <- readRDS("output/roads/RoadsRosemontPlateau.rds")
 # Parks
-parcs <- readRDS("output/ParksRosemont.rds")
+parcs <- readRDS("output/parks/ParksRosemont.rds")
 # Major roads
-mjrds <- readRDS("output/MajorRoadsRosemont.rds")
+mjrds <- readRDS("output/roads/MajorRoadsRosemont.rds")
 # Final ruelles
-lns_ss <- readRDS("output/FinalRuelles.rds")
+lns_ss <- readRDS("output/ruelles-sampling/FinalRuelles.rds")
 # Sampling points
-spt <- readRDS("output/ruellessitesID.rds")
+spt <- readRDS("output/ruelles-sampling/ruellessitesID.rds")
 
 #### Mapview ####
 # we can use mapview to investigate our spatial data like we would in Arc or Q
