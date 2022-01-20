@@ -50,3 +50,4 @@ canopy <- purrr::map(.x = dists, .f = function(x){x %>% group_by(RuelleID) %>% s
                                                                                      perwat = wat/totarea)})
 
 # Save -----------------------------------------------
+saveRDS(canopy, "output/canopymetrics.rds")
