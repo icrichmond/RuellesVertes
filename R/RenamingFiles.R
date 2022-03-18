@@ -4,7 +4,7 @@
 rename_file <- function(str, extra){
   file_name <- tools::file_path_sans_ext(str)
   file_ext <- tools::file_ext(str)
-  return(paste0(file_ext, '_', extra, '.', file_name))
+  return(paste0(file_name, '-', extra, '.', file_ext))
 }
 
 rename_batch <- function(path = "./",
