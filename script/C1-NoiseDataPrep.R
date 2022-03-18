@@ -16,8 +16,9 @@ lapply(folders, function(x) rename_batch(paste0("D:/Ruelles-Vertes/", x), "WAV")
 # Formatting Data -----------------------------------
 # get all .wav file details 
 details <- file.info(dir(path = "D:/Ruelles-Vertes/", pattern = ".WAV", recursive = T, full.names = TRUE), extra_cols = FALSE)
-# add file names as a column without the full path
+# add file names and subfolders as columns without the full path
 details$filenames <- list.files(path = "D:/Ruelles-Vertes", pattern = ".WAV", recursive = T, full.names = FALSE, include.dirs = FALSE)
+details$subfolder <- sub("/.*", "", details$filenames)    
 details$filenames <- sub(".*?\\/", "", details$filenames)
 # select just the part of the name that contains the date/time 
 details$starttimes <- details$filenames |> (\(.)  sub(".*?\\/", "", .))() |> (\(.)  gsub("\\-.*", "", .))()
