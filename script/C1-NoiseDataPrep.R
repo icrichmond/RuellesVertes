@@ -27,5 +27,8 @@ details$starttimes <- as.POSIXct(details$starttimes, format = '%Y%m%d_%H%M%S', t
 # Filtering Data -------------------------------------
 # need to filter files for common dates 
 # 2021-08-18 to 2021-09-05
+common <- with(details, details[(starttimes >= "2021-08-18" & starttimes <= "2021-09-05"), ])
 
-
+# Store ----------------------------------------------
+# save intermediate item
+saveRDS(common, "input/sensors/noise_common.rds")
