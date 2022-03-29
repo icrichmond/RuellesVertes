@@ -35,13 +35,7 @@ afternoon <- timecat(subfiles, subfiles$starttimes, 120000, 140000)
 evening <- timecat(subfiles, subfiles$starttimes, 170000, 190000)
 
 
-# Acoustic Complexity Index (ACI) --------------------
-
-# Normalized Difference Soundscape Index (NDSI) ------
-
-
-
-test <- morning[c(1, 500, 1000, 1500, 2000), ]
+# Noise Analysis -------------------------------------
 
 testf <- as.list(by(morning, morning$subfolder, FUN = rownames))
 
