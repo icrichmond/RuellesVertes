@@ -9,9 +9,9 @@ source("R/RenamingFiles.R")
 # noise data is extremely large - stored on a separate drive 
 # there is a separate folder for each ruelle with .wav files named by date-time 
 # need .wav files to have ruelle ID in name
-# (ONLY RUN ONCE)
-folders <- as.list(list.files(path = "D:/Ruelles-Vertes"))
-lapply(folders, function(x) rename_batch(paste0("D:/Ruelles-Vertes/", x), "WAV"))
+# (ONLY RUN ONCE - ALREADY RUN)
+#folders <- as.list(list.files(path = "D:/Ruelles-Vertes"))
+#lapply(folders, function(x) rename_batch(paste0("D:/Ruelles-Vertes/", x), "WAV"))
 
 # Formatting Data -----------------------------------
 # get all .wav file details 
@@ -29,6 +29,11 @@ details$starttimes <- as.POSIXct(details$starttimes, format = '%Y%m%d_%H%M%S', t
 # need to filter files for common dates 
 # 2021-08-18 to 2021-09-05
 common <- with(details, details[(starttimes >= "2021-08-18" & starttimes <= "2021-09-05"), ])
+
+# label subfolder as factor 
+# each Ruelle (subfolder) has ~ 30 GB of data, more manageable to loop through individually
+common$subfolder <- as.factor(common$subfolder)
+
 
 # Store ----------------------------------------------
 # save intermediate item
