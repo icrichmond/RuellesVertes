@@ -11,13 +11,36 @@ files <- readRDS("input/sensors/noise_common.rds")
 
 # Noise Analysis -------------------------------------
 
-testf <- as.list(by(morning, morning$subfolder, FUN = rownames))
 
-testf <- lapply(testf, function(x) lapply(x, function(x){
-  w <- readWave(x) # need to figure out names
-  a <- ACI(w) # need to export as df
-  n <- NDSI(soundscapespec(w)) # need to wrap in figure call 
-}))
+
+
+testf <- lapply(morning, function(x) lapply(x, function(x){
+  # read files as waves and name that list
+  w <- readWave(x)
+  names(w) <- morning
+  
+  # calculate ACI for each file 
+  a <- ACI(w) 
+  
+  # calculate NDSI 
+  #n <- NDSI(soundscapespec(w)) # need to wrap in figure call 
+  
+  # clean-up and export data
+  rm(w) # get rid of big files
+  return(as.data.frame(a))
+
+  }))
+
+
+
+fnames <- as.list(rownames(i))
+waves <- lapply(fnames, function(x) readWave(x))
+names(waves) <- fnames
+
+
+
+
+
 # Function --------------------------------------------
 noise <- function(files, startdate, enddate){
   
