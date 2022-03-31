@@ -1,7 +1,7 @@
 #' @param path path to wav folder dir (containing subfolders)
-get_wav_paths <- function(path) {
+get_wav_paths <- function(paths) {
   DT <- data.table(
-    path = dir(path, full.names = TRUE, recursive = TRUE)
+    path = paths
   )
   
   DT[, filename := basename(path)]
