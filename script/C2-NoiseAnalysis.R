@@ -9,35 +9,37 @@
 files <- readRDS("input/sensors/noise_common.rds")
 
 
+
 # Noise Analysis -------------------------------------
 
 
-
-
-testf <- lapply(morning, function(x) lapply(x, function(x){
-  # read files as waves and name that list
-  w <- readWave(x)
-  names(w) <- morning
-  
-  # calculate ACI for each file 
-  a <- ACI(w) 
-  
-  # calculate NDSI 
-  #n <- NDSI(soundscapespec(w)) # need to wrap in figure call 
-  
-  # clean-up and export data
-  rm(w) # get rid of big files
-  return(as.data.frame(a))
-
-  }))
+# going to be lists of morning, afternoon, evening 
+# then lists of folders, then lists of values
 
 
 
-fnames <- as.list(rownames(i))
-waves <- lapply(fnames, function(x) readWave(x))
-names(waves) <- fnames
+df <- lapply(subtest, function(x) do.call("rbind", x))
+
+dfcalc <- lapply(df, function(x) x %>% 
+                   rename(ACI = unlist.a. , 
+                          NDSI = unlist.n.) %>%
+                   summarise(meanACI = mean(ACI), 
+                          sdACI = sd(ACI), 
+                          rangeACI = list(range(ACI)),
+                          meanNDSI = mean(NDSI), 
+                          sdNDSI = sd(NDSI), 
+                          rangeNDSI = list(range(NDSI))))
+
+dfall <- do.call("rbind", dfcalc) 
+dfall$RuelleID <- rownames(dfall)
 
 
+
+# for in the actual function 
+u <- subtest |> (\(x) unlist(x, recursive = F))() |> (\(x) unlist(x, recursive = F))()
+mn <- unlist(m)
+names(u) <- mn
+df <- do.call("rbind", u)
 
 
 
@@ -63,10 +65,29 @@ noise <- function(files, startdate, enddate){
   
   # get rownames by subfolder for each time category
   subs <- lapply(cats, function(x) as.list(by(x, x$subfolder, FUN = rownames)))
-  
+
   # loop through subfolders for each time category and perform noise analysis
-  return(subs)
+  noisedata <- lapply(subs, function(x) lapply(x, function(y) lapply(y, function(z) {
+    # read files as waves and name that list
+    w <- readWave(z)
+    
+    # calculate ACI for each file 
+    a <- ACI(w) 
+    
+    # calculate NDSI 
+    n <- NDSI(soundscapespec(w, plot = F))
+    
+    # remove extremely large wave files
+    rm(w) 
+    
+    # create a dataframe for both measures for each wave file
+    d <- data.frame(unlist(a), unlist(n))
+    
+  })))
   
+  return(noisedata)
+  
+  # clean data to usable format
   
 }
 
