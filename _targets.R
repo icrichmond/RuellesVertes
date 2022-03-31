@@ -30,7 +30,7 @@ targets_noise <- c(
   ),
   tar_target(
     wav_paths,
-    get_wav_paths(wav_files)
+    parse_wav_paths(wav_files)
   ),
   tar_target(
     wav_categorized,
