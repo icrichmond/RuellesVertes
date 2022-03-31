@@ -6,8 +6,7 @@
 lapply(dir('R', '*.R', full.names = TRUE), source)
 
 
-tar_option_set(format = 'qs',
-               workspace_on_error = TRUE)
+tar_option_set(format = 'qs')
 
 
 
