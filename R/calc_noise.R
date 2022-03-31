@@ -1,6 +1,6 @@
-calc_noise <- function(path) {
+calc_noise <- function(DT) {
   # read files as waves and name that list
-  w <- readWave(path)
+  w <- readWave(DT$path)
   
   # calculate ACI for each file 
   a <- ACI(w)
@@ -9,5 +9,5 @@ calc_noise <- function(path) {
   n <- NDSI(soundscapespec(w, plot = F))
   
   # create a dataframe for both measures for each wave file
-  return(data.frame(ACI = a, NDSI = n))
+  return(data.frame(ACI = a, NDSI = n, path = DT$path))
 }
