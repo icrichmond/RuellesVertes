@@ -1,4 +1,4 @@
-noisedata <- function(path) {
+calc_noise <- function(path) {
   # read files as waves and name that list
   w <- readWave(path)
   
@@ -8,10 +8,6 @@ noisedata <- function(path) {
   # calculate NDSI 
   n <- NDSI(soundscapespec(w, plot = F))
   
-  # remove extremely large wave files
-  rm(w) 
-  
   # create a dataframe for both measures for each wave file
-  d <- data.frame(unlist(a), unlist(n))
-  
+  return(data.frame(ACI = a, NDSI = n))
 }
