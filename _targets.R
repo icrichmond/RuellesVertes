@@ -50,6 +50,14 @@ targets_noise <- c(
     wav_noise,
     calc_noise(wav_filtered),
     pattern = map(wav_filtered)
+  ),
+  tar_target(
+    merge_noise,
+    merge(
+      wav_noise,
+      wav_filtered,
+      by = 'path'
+    )
   )
 )
 
