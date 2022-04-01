@@ -7,10 +7,4 @@ clean_parks <- function(rv, parcs) {
  # filter for Montreal's large parks 
   parcs <- st_transform(parcs, crs="+init=epsg:6624")
   parcs <- st_crop(parcs,bb)
-  saveRDS(parcs, "output/parks/ParksRosemont.rds")
-  
-  # subset for grand parcs
-  parcs_g <- subset(parcs, TYPO1 == "Grand parc")
-  
-  return(parcs_g)
 }

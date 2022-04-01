@@ -12,7 +12,5 @@ clean_roads <- function(rv, rds) {
   mjrds <- subset(rds, rdcls_en == "Freeway" | rdcls_en == "Expressway-Highway" |
                     rdcls_en == "Arterial")
   
-  saveRDS(mjrds, "output/roads/MajorRoadsRosemont.rds")
-  
   return(mjrds)
 }

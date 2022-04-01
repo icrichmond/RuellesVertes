@@ -10,8 +10,7 @@ sites_final <- function(rv, spt) {
   spt <- spt %>% 
     tibble::rowid_to_column("Uniq_S_ID") %>%
     dplyr::select(-id)
-  saveRDS(spt, "output/ruelles-sampling/ruellessitesID.rds")
-  
+
   # extract coordinates into more readable format 
   spt <- spt %>%
     dplyr::mutate(lat = sf::st_coordinates(.)[,1],
