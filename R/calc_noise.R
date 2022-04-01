@@ -9,5 +9,5 @@ calc_noise <- function(DT) {
   n <- NDSI(soundscapespec(w, plot = F))
   
   # create a dataframe for both measures for each wave file
-  return(data.frame(ACI = a, NDSI = n, path = DT$path))
+  return(data.table(ACI = a, NDSI = n, path = DT$path))
 }
