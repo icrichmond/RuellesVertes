@@ -8,8 +8,6 @@ transform_sensors <- function(sens, cc) {
   proj <- st_crs(cc)
   sens <- st_transform(sens, proj)
   
-  saveRDS(sens, "output/canopy/sensorsspatial.rds")
-  
   return(sens)
   
 }

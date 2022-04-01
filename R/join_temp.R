@@ -12,9 +12,6 @@ join_temp <- function(sens, temp, canopy) {
     purrr::set_names(., nm = paste0("buffer",b))
   
   
-  # Save ----------------------------------------------------------
-  saveRDS(canopyfull, "output/canopy/canopytempfull.rds")
-  
   return(canopyfull)
 
   }

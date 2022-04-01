@@ -36,9 +36,5 @@ buff_canopy <- function(sens, cc) {
                                                                                            perbuild = build/totarea,
                                                                                            percan = can/totarea,
                                                                                            perwat = wat/totarea)})
-  
-  # Save -----------------------------------------------
-  saveRDS(canopy, "output/canopy/canopymetrics.rds")
-  
   return(canopy)
 }
