@@ -62,5 +62,9 @@ targets_grouping <- c(
   tar_target(
     sites_group,
     group_sites(grp, ruelles_kml)
+  ),
+  tar_target(
+    output,
+    write_sample_output()
   )
 )
