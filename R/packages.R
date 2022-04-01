@@ -11,3 +11,4 @@ library(seewave)
 # This package helps detect function conflicts
 library(conflicted)
 
+library(qs)
