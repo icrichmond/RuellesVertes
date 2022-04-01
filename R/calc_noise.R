@@ -1,4 +1,7 @@
 calc_noise <- function(DT) {
+  
+  tryCatch({
+  
   # read files as waves and name that list
   w <- readWave(DT$path)
   
@@ -10,4 +13,8 @@ calc_noise <- function(DT) {
   
   # create a dataframe for both measures for each wave file
   return(data.table(ACI = a, NDSI = n, path = DT$path))
-}
+  
+  }, error = function(e){cat("ERROR: ", conditionMessage(e), "\n")}
+  
+  )}
+
