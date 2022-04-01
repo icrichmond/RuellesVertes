@@ -26,6 +26,4 @@ group_sites <- function(grp, rv_sp) {
   
   # full dataset
   full <- inner_join(grp, rv_sp_w)
-  write.csv(full, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")
-
 }

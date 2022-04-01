@@ -44,6 +44,10 @@ targets_clean <- c(
   tar_targets(
     map, 
     plot_map(ruelles_filtered, parks_cleaned, roads_cleaned, final_sites)
+  ),
+  tar_target(
+    output,
+    write_sample_output(ruelles_filtered, final_sites)
   )
     
 )
@@ -64,7 +68,7 @@ targets_grouping <- c(
     group_sites(grp, ruelles_kml)
   ),
   tar_target(
-    output,
-    write_sample_output()
+    site_output, 
+    write.csv(sites_group, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")
   )
 )
