@@ -5,7 +5,6 @@ parse_wav_paths <- function(paths) {
   )
   
   DT[, filename := basename(path)]
-  # TODO: fix 3 to whatever in your D path
   DT[, folder := tstrsplit(path, '/')[[3]]]
   
   DT[, datetime_char := tstrsplit(filename, '-')[[1]]]
