@@ -26,12 +26,16 @@ targets_clean <- c(
     clean_parks(ruelles_filtered, parks_data)
   ),
   tar_target(
+    parks_large, 
+    subset(parks_cleaned, TYPO1 == "Grand parc")
+  ),
+  tar_target(
     roads_cleaned, 
     clean_roads(ruelles_filtered, roads_data)
   ),
   tar_target(
     ruelles_outliers,
-    clean_outliers(ruelles_filtered, parks_cleaned)
+    clean_outliers(ruelles_filtered, parks_large)
   ),
   tar_target(
     final_sites, 
