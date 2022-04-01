@@ -1,5 +1,5 @@
 #' @param path path to wav folder dir (containing subfolders)
-clean_parks <- function(rv, spt) {
+sites_final <- function(rv, spt) {
   #### Final Sites ####
   # Emily created create three sampling points along the ruelles in QGIS
   # 1/4 in, 1/2 in, 3/4 in 

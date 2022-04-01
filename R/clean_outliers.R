@@ -1,5 +1,5 @@
 #' @param path path to wav folder dir (containing subfolders)
-clean_parks <- function(rv, parcs) {
+clean_outliers <- function(rv, parcs) {
   
   y <- sf::st_join(rv_r, parcs_g, left = F, join = st_is_within_distance, dist = 100) %>%
   group_by(RUELLE_ID) %>%

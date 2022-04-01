@@ -1,5 +1,5 @@
 #' @param path path to wav folder dir (containing subfolders)
-filter_ruelles <- function(rv_r, parcs, mjrds, spt) {
+plot_map <- function(rv_r, parcs, mjrds, spt) {
   
   ggplot() + 
   geom_sf(data = rv_r, col = "black") + 

@@ -1,5 +1,5 @@
 #' @param path path to wav folder dir (containing subfolders)
-filter_ruelles <- function(grp, rv_sp) {
+group_sites <- function(grp, rv_sp) {
   
   # clean rv_sp to get coordinates 
   # select relevant columns
