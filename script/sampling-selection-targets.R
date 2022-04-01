@@ -39,6 +39,7 @@ targets_clean <- c(
   ),
   tar_target(
     final_sites, 
+    # TODO: clean outputs in sites_final function
     sites_final(ruelles_cleaned, sample_pts)
   ),
   tar_targets(
