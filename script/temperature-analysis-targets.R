@@ -34,5 +34,9 @@ targets_temp <- c(
   tar_target(
     temp_plot, 
     plot_temp(temp_join)
+  ), 
+  tar_target(
+    temp_output, 
+    write.xlsx(temp_plot, file = "output/canopy/fulldataframe.xlsx", colNames = T)
   )
 )
