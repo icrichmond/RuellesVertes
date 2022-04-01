@@ -59,8 +59,5 @@ sites_final <- function(rv, spt) {
                          id_cols = RUELLE_ID,
                          names_from = Group_S_ID,
                          values_from = c(lat,long))
-  # save wide dataset
-  write_csv(rv_sp_w, "output/ruelles-sampling/Ruelles_SamplingPoints_Wide.csv")
-  
   return(rv_sp_w)
 }

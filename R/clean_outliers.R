@@ -11,7 +11,5 @@ clean_outliers <- function(rv, parcs) {
   # remove any ruelles from lns_ss that are found in y 
   lns_ss <- anti_join(rv_r, y)
   
-  saveRDS(lns_ss, "output/ruelles-sampling/FinalRuelles.rds")
-  
   return(lns_ss)
 }

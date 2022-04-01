@@ -49,10 +49,6 @@ filter_ruelles <- function(rv) {
   # transform to projection with units as metres with Quebec Albers 
   rv_r <- st_transform(rv_r, crs = "+init=epsg:6624")
   
-  # save ruelles as a shapefile so that sampling points can be calculated in QGIS 
-  write_sf(rv_r, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
-  st_write(rv_r, "output/ruelles-sampling/rosemontruelles.kml", driver = "kml")
-  
   return(rv_r)
 
   }

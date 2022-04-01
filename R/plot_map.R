@@ -11,6 +11,4 @@ plot_map <- function(rv_r, parcs, mjrds, spt) {
   annotation_north_arrow(location = "tl", which_north = "true", style = north_arrow_fancy_orienteering) +
   theme(panel.grid.major = element_line(color = gray(.1), linetype = "dashed", size = 0.1),
         panel.background = element_rect(fill = NA))
-  ggsave("graphics/AllRuelles_MjrRds_Parcs_Rosemont.jpg",dpi = 400)
-
   }
