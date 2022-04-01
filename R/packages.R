@@ -12,3 +12,12 @@ library(seewave)
 library(conflicted)
 
 library(qs)
+
+library(stars)
+library(sf)
+library(purrr)
+library(dplyr)
+library(stringr)
+library(ggspatial)
+library(ggplot2)
+library(openxlsx)
