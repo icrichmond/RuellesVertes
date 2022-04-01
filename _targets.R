@@ -23,7 +23,7 @@ max_date <- as.POSIXct('2021-08-22')
 targets_noise <- c(
   tar_target(
     wav_files,
-    sample(dir(folder_path, full.names = TRUE, recursive = TRUE), 500),
+    dir(folder_path, full.names = TRUE, recursive = TRUE),
     format = 'file'
   ),
   tar_target(
