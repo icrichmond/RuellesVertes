@@ -10,10 +10,8 @@ tar_option_set(format = 'qs')
 
 
 
-
 # Variables ---------------------------------------------------------------
-# TODO: fix this to your drive
-folder_path <- file.path('input', 'Ruelles-Vertes')
+folder_path <- file.path('D:', 'Ruelles-Vertes/')
 
 # TODO: fix these dates
 min_date <- as.POSIXct('2021-08-10')
@@ -25,7 +23,7 @@ max_date <- as.POSIXct('2021-08-22')
 targets_noise <- c(
   tar_target(
     wav_files,
-    dir(folder_path, full.names = TRUE, recursive = TRUE),
+    sample(dir(folder_path, full.names = TRUE, recursive = TRUE), 500),
     format = 'file'
   ),
   tar_target(
@@ -58,6 +56,10 @@ targets_noise <- c(
       wav_filtered,
       by = 'path'
     )
+  ),
+  tar_target(
+    summ_noise, 
+    summarise_noise(merge_noise)
   )
 )
 
