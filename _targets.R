@@ -12,14 +12,6 @@ tar_option_set(format = 'qs')
 
 # Variables ---------------------------------------------------------------
 
-# Sampling 
-
-
-
-# Temperature
-
-
-
 # Noise 
 
 folder_path <- file.path('D:', 'Ruelles-Vertes/')
@@ -38,4 +30,3 @@ source(file.path('script', 'noise-analysis-targets.R'))
 # Targets: all ------------------------------------------------------------
 # Automatically grab all the "targets_*" lists above
 lapply(grep('targets', ls(), value = TRUE), get)
-
