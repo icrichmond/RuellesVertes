@@ -42,8 +42,8 @@ targets_noise <- c(
     summarise_noise(merge_noise)
   ),
   tar_target(
-    outputs,
-    create_outputs()
+    noise_outputs,
+    write.csv(summ_noise, "outputs/SummarizedNoiseData.csv")
   )
 )
 
