@@ -22,7 +22,7 @@ sites_final <- function(rv, spt) {
   # five ruelles have NA values because the end/extension 
   # of the ruelle was given a different ID. But they are
   # effectively sampled - so drop all NAs from dataset
-  rv_sp <- drop_na(rv_sp)
+  rv_sp <- tidyr::drop_na(rv_sp)
   
   # join spt dataframe based on sampling id 
   spt_df <- as.data.frame(spt)
@@ -40,7 +40,6 @@ sites_final <- function(rv, spt) {
   
   
   return(rv_sp)
-  
-  ## TODO: create output of spt 
+
   
 }
