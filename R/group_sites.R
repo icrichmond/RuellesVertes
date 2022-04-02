@@ -6,8 +6,8 @@ group_sites <- function(grp, rv_sp) {
   rv_sp <- select(rv_sp, c(RUELLE_ID, geometry))
   # extract coordinates
   rv_sp <- rv_sp %>%
-    dplyr::mutate(lat = sf::st_coordinates(.)[,1],
-                  lon = sf::st_coordinates(.)[,2])
+    dplyr::mutate(lat = sf::st_coordinates(geometry)[,1],
+                  lon = sf::st_coordinates(geometry)[,2])
   # create unique sampling point IDs 
   rv_sp <- rv_sp %>% 
     as_tibble(rv_sp) %>%
