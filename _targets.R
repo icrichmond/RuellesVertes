@@ -13,10 +13,10 @@ tar_option_set(format = 'qs')
 # Variables ---------------------------------------------------------------
 
 # Noise 
-
+# folder path to all .wav files
 folder_path <- file.path('D:', 'Ruelles-Vertes/')
 
-## note: change these dates as needed for different analysis
+## note: change these dates as needed for noise different analysis
 min_date <- as.POSIXct('2021-08-10')
 max_date <- as.POSIXct('2021-08-22')
 
