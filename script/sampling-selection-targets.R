@@ -39,8 +39,15 @@ targets_clean <- c(
   ),
   tar_target(
     final_sites, 
-    # TODO: clean outputs in sites_final function
     sites_final(ruelles_cleaned, sample_pts)
+  ),
+  tar_targets(
+    final_sites_kml, 
+    kml_final_sites(final_sites)
+  ),
+  tar_target(
+    final_sites_wide, 
+    wide_final_sites(final_sites)
   ),
   tar_targets(
     map, 
@@ -48,7 +55,7 @@ targets_clean <- c(
   ),
   tar_target(
     output,
-    write_sample_output(ruelles_filtered, final_sites)
+    write_sample_output(ruelles_filtered, final_sites, final_sites_kml, final_sites_wide)
   )
     
 )

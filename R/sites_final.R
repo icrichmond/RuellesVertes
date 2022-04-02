@@ -1,6 +1,6 @@
 #' @param path path to wav folder dir (containing subfolders)
 sites_final <- function(rv, spt) {
-  #### Final Sites ####
+  
   # Emily created create three sampling points along the ruelles in QGIS
   # 1/4 in, 1/2 in, 3/4 in 
   spt <- st_transform(spt, crs = "+init=epsg:6624")
@@ -38,26 +38,7 @@ sites_final <- function(rv, spt) {
     dplyr::group_by(RUELLE_ID) %>%
     dplyr::mutate(Group_S_ID = paste0(RUELLE_ID, "_", 1:n()))
   
-  # join rv_sp to spt to save kml layer for google maps 
-  rv_sp <- arrange(rv_sp, Uniq_S_ID)
-  spt <- select(spt, -c(lat,lon))
-  spt_kml <- inner_join(rv_sp, spt)
-  spt_kml <- st_as_sf(spt_kml)
-  st_write(spt_kml, "output/ruelles-sampling/ruellessitesID.kml", driver = "kml")
   
-  # save as long dataset 
-  write_csv(rv_sp, "output/ruelles-sampling/Ruelles_SamplingPoints_Long.csv")
+  return(rv_sp)
   
-  # create wide dataset 
-  # remove Group_S_ID column and recreate without ruelle id 
-  rv_sp_w <- select(rv_sp, -Group_S_ID)
-  rv_sp_w <- rv_sp_w %>% 
-    dplyr::group_by(RUELLE_ID) %>%
-    dplyr::mutate(Group_S_ID = paste0("S", 1:n()))
-  # pivot wider
-  rv_sp_w <- pivot_wider(rv_sp_w, 
-                         id_cols = RUELLE_ID,
-                         names_from = Group_S_ID,
-                         values_from = c(lat,long))
-  return(rv_sp_w)
 }
