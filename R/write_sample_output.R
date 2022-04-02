@@ -1,18 +1,19 @@
 #' @param path path to wav folder dir (containing subfolders)
-write_sample_output <- function(ruelles_filtered, final_sites, final_sites_kml, final_sites_wide) {
+write_sample_output <- function(rf, final_sites, final_sites_kml, final_sites_wide, sites_group) {
   
   # save ruelles as a shapefile so that sampling points can be calculated in QGIS 
-  write_sf(ruelles_filtered, dsn = 'output/ruelles-shp/', layer = 'cleanruellesrosemont',  driver="ESRI Shapefile")
-  st_write(ruelles_filtered, "output/ruelles-sampling/rosemontruelles.kml", driver = "kml")
+  st_write(rf, 'output/ruelles-shp/cleanruellesrosemont.shp', append=F)
+  st_write(rf, 'output/ruelles-sampling/rosemontruelles.kml', append=F)
   
   # save as long dataset 
-  write_csv(final_sites, "output/ruelles-sampling/Ruelles_SamplingPoints_Long.csv")
+  write.csv(final_sites, "output/ruelles-sampling/Ruelles_SamplingPoints_Long.csv")
   
   # save kml layer for google maps 
-  st_write(final_sites_kml, "output/ruelles-sampling/ruellessitesID.kml", driver = "kml")
+  st_write(final_sites_kml, "output/ruelles-sampling/ruellessitesID.kml", append=F)
   
   # save wide dataset
-  write_csv(final_sites_wide, "output/ruelles-sampling/Ruelles_SamplingPoints_Wide.csv")
+  write.csv(final_sites_wide, "output/ruelles-sampling/Ruelles_SamplingPoints_Wide.csv")
   
+  write.csv(sites_group, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")
   
 }
