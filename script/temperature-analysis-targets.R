@@ -3,13 +3,11 @@
 targets_temp <- c(
   tar_target(
     sensors, 
-    "input/sensors/temp_sensors.csv",
-    format = "file"
+    read.csv("input/sensors/temp_sensors.csv")
   ),
   tar_target(
     temp, 
-    "input/sensors/temp_final.csv",
-    format = "file"
+    read.csv("input/sensors/temp_final.csv")
   ),
   tar_target(
     land_cover,
@@ -21,7 +19,7 @@ targets_temp <- c(
   ),
   tar_target(
     sensors_transform,
-    transform_sensors(sensors)
+    transform_sensors(sensors, land_cover)
   ),
   tar_target(
     canopy_buff,
