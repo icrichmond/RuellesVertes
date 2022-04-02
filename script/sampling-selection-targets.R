@@ -34,22 +34,26 @@ targets_clean <- c(
     clean_roads(ruelles_filtered, roads_data)
   ),
   tar_target(
+    spts_cleaned, 
+    clean_spts(sample_pts)
+  ),
+  tar_target(
     ruelles_outliers,
     clean_outliers(ruelles_filtered, parks_large)
   ),
   tar_target(
     final_sites, 
-    sites_final(ruelles_cleaned, sample_pts)
+    sites_final(ruelles_filtered, sample_pts)
   ),
-  tar_targets(
+  tar_target(
     final_sites_kml, 
-    kml_final_sites(final_sites)
+    kml_final_sites(final_sites, spts_cleaned)
   ),
   tar_target(
     final_sites_wide, 
-    wide_final_sites(final_sites)
+    wide_final_sites(ruelles_filtered, spts_cleaned)
   ),
-  tar_targets(
+  tar_target(
     map, 
     plot_map(ruelles_filtered, parks_cleaned, roads_cleaned, final_sites)
   ),
@@ -61,22 +65,21 @@ targets_clean <- c(
 )
 
 
-targets_grouping <- c(
-  tar_target(
-    grp, 
-    "input/RuellesVertes_Groups.csv",
-    format = "file"
-  ),
-  tar_target(
-    ruelles_kml, 
-    st_read("output/ruelles-sampling/ruellessitesID.kml")
-  ),
-  tar_target(
-    sites_group,
-    group_sites(grp, ruelles_kml)
-  ),
-  tar_target(
-    site_output, 
-    write.csv(sites_group, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")
-  )
-)
+#targets_grouping <- c(
+#  tar_target(
+#    grp, 
+#    read.csv("input/RuellesVertes_Groups.csv")
+#  ),
+#  tar_target(
+#    ruelles_kml, 
+#    st_read("output/ruelles-sampling/ruellessitesID.kml")
+#  ),
+#  tar_target(
+#    sites_group,
+#    group_sites(grp, ruelles_kml)
+#  ),
+#  tar_target(
+#    site_output, 
+#    write.csv(sites_group, "output/ruelles-sampling/RuellesVertes_SamplingGrouped.csv")
+#  )
+#)
