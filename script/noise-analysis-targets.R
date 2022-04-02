@@ -42,8 +42,16 @@ targets_noise <- c(
     summarise_noise(merge_noise)
   ),
   tar_target(
+    brief_noise, 
+    summ_noise[, lapply(.SD, first), by=c("folder", "time_cat"), .SDcols=c("meanACI", "sdACI", "minACI", "maxACI", "meanNDSI", "sdNDSI", "minNDSI", "maxNDSI")] 
+  ),
+  tar_target(
     noise_outputs,
-    write.csv(summ_noise, "output/SummarizedNoiseDataFull.csv")
+    write.csv(summ_noise, "output/noise/NoiseDataFull.csv")
+  ),
+  tar_target(
+    brief_noise_output,
+    write.csv(brief_noise, "output/noise/NoiseDataSummarized.csv")
   )
 )
 
