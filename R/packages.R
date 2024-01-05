@@ -10,7 +10,7 @@ library(seewave)
 
 # This package helps detect function conflicts
 library(conflicted)
-
+conflict_prefer('between', 'data.table', 'dplyr')
 library(qs)
 
 library(stars)
