@@ -27,8 +27,8 @@ model_data <- function(temp_plot, rv, road_area, var){
   # select relevant buffers from the list
   temp_plot <- temp_plot[c('buffer50', 'buffer100')]
   
-  temp_plot[['buffer50']]$road_area_m2 <- roadlist[['buffer50']]$road_area_m2
-  temp_plot[['buffer100']]$road_area_m2 <- roadlist[['buffer100']]$road_area_m2
+  temp_plot[['buffer50']]$road_area_m2 <- road_area[['buffer50']]$road_area_m2
+  temp_plot[['buffer100']]$road_area_m2 <- road_area[['buffer100']]$road_area_m2
   
   # add missing variables
   rv_na <- drop_na(rv)
@@ -60,6 +60,8 @@ model_data <- function(temp_plot, rv, road_area, var){
   pdf(paste0("graphics/diagnostics/", var, "_diagnostics.pdf"))
   print(mod_figs)
   dev.off()
+  
+  return(mod)
   
   
 }
