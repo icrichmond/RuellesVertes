@@ -25,7 +25,7 @@ max_date <- as.POSIXct('2021-08-22', tz = "UTC")
 source(file.path('script', 'sampling-selection-targets.R'))
 source(file.path('script', 'temperature-analysis-targets.R'))
 source(file.path('script', 'noise-analysis-targets.R'))
-
+source(file.path('script', 'model-targets.R'))
 
 # Targets: all ------------------------------------------------------------
 # Automatically grab all the "targets_*" lists above
