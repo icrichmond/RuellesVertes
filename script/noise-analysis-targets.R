@@ -45,6 +45,7 @@ targets_noise <- c(
     brief_noise, 
     summ_noise[, lapply(.SD, first), by=c("folder", "time_cat"), .SDcols=c("meanACI", "sdACI", "minACI", "maxACI", "meanNDSI", "sdNDSI", "minNDSI", "maxNDSI")] 
   ),
+  
   tar_target(
     noise_outputs,
     write.csv(summ_noise, "output/noise/NoiseDataFull.csv")
@@ -52,6 +53,11 @@ targets_noise <- c(
   tar_target(
     brief_noise_output,
     write.csv(brief_noise, "output/noise/NoiseDataSummarized.csv")
+  ),
+  
+  tar_target(
+    road_area,
+    calc_road_area(sensors)
   )
 )
 
