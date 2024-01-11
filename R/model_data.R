@@ -1,4 +1,4 @@
-model_data <- function(temp_plot, rv, var){
+model_data <- function(temp_plot, rv, road_area, var){
   
   
   # Bind list of buffers together 
@@ -27,6 +27,9 @@ model_data <- function(temp_plot, rv, var){
   # select relevant buffers from the list
   temp_plot <- temp_plot[c('buffer50', 'buffer100')]
   
+  temp_plot[['buffer50']]$road_area_m2 <- roadlist[['buffer50']]$road_area_m2
+  temp_plot[['buffer100']]$road_area_m2 <- roadlist[['buffer100']]$road_area_m2
+  
   # add missing variables
   rv_na <- drop_na(rv)
   full_plot <- lapply(temp_plot, function(x){cbind(x, mean_NDSI = rv_na$mean_NDSI)})
@@ -44,7 +47,7 @@ model_data <- function(temp_plot, rv, var){
   
   aes2 <- lm(full[,var] ~ WildlifeSupport + MaintainedGardens, data = full)
   
-  buff <- map(.x = full_plot, .f = function(x){lm(x[,var] ~ perimpgr + perveggr + perbuild + percan, data = x)}) %>%
+  buff <- map(.x = full_plot, .f = function(x){lm(x[,var] ~ perimpgr + perveggr + perbuild + percan + road_area_m2, data = x)}) %>%
     set_names(., nm = paste0(var, "_", b))
   
   # diagnostics
