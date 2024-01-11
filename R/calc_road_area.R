@@ -18,6 +18,8 @@ calc_road_area <- function(sensors){
   road_area <- list(buff50, buff100)
   names(road_area) <- c('buffer50', 'buffer100')
   
+  return(road_area)
+  
   
   
 }
