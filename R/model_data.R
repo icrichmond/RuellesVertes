@@ -11,8 +11,7 @@ model_data <- function(temp_plot, rv, road_area, var){
   rv.vars <- rv %>% 
     select(c("RuelleID", "Food_coverage_per_m2", "Floral_coverage_per_m2",
              "mean_NDSI", "Avg_max_daily_temp", "Avg_min_daily_temp",
-             "X50m_road_buffer", "X100m_road_buffer", "Ruelle_length_m","Ruelle_area_m2", 
-             "Groundcover_avg", "Midstorey_avg", "Canopy_avg",
+             "Ruelle_length_m","Ruelle_area_m2", "Groundcover_avg", "Midstorey_avg", "Canopy_avg",
              "PublicArt", "PlayEquipment","WildlifeSupport","MaintainedGardens","StructureCondition")) %>%
     mutate_if(is.character, as.factor)
   rv.vars$RuelleID <- gsub("_", "-", rv.vars$RuelleID)
