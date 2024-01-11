@@ -26,4 +26,7 @@ library(openxlsx)
 library(tidyr)
 library(units)
 
+library(gt)
+library(gtsummary)
+
 conflict_prefer('filter', 'dplyr', 'stats')
