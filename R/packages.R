@@ -24,3 +24,6 @@ library(broom.mixed)
 library(patchwork)
 library(openxlsx)
 library(tidyr)
+library(units)
+
+conflict_prefer('filter', 'dplyr', 'stats')
