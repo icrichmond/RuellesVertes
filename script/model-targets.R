@@ -33,7 +33,7 @@ model_targets <- c(
   
   tar_render(
     model_summary,
-    
+    'output/ModelSummary.qmd'
   )
   
   

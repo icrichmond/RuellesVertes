@@ -1,0 +1,110 @@
+---
+title: "Model Summary & Update"
+format: html
+knitr:
+  opts_knit:
+    root.dir: "C:/Users/I_RICHMO/Documents/Repositories/ruelles-vertes"
+---
+
+```{r, echo = F, eval = T, message = F, warning = F}
+source('R/packages.R')
+
+```
+
+# New Model Structure
+
+## Hypothesis-Based
+
+Most of the changes to the model approach is based on the desire to make our work more rooted in hypotheses, which I think makes it more easier to interpret. In addition, due to our low sample size (n = 24), splitting models into groups of explanatory variables reduces the risk of overfitting.
+
+### Explanatory Variables
+
++-------------------------+---------------------------+--------------------+
+| Group                   | Variable                  | Unit               |
++=========================+===========================+====================+
+| Vegetation Within Alley | Canopy cover              | \%                 |
++-------------------------+---------------------------+--------------------+
+|                         | Midstorey cover           | \%                 |
++-------------------------+---------------------------+--------------------+
+|                         | Ground cover              | \%                 |
++-------------------------+---------------------------+--------------------+
+| Alley Structure         | Alley length              | metres             |
++-------------------------+---------------------------+--------------------+
+|                         | Alley area                | metres^2^          |
++-------------------------+---------------------------+--------------------+
+| Aesthetic Features 1    | Public art                | common/rare/absent |
++-------------------------+---------------------------+--------------------+
+|                         | Children's play equipment | common/rare/absent |
++-------------------------+---------------------------+--------------------+
+|                         | Maintained structures     | common/rare/absent |
++-------------------------+---------------------------+--------------------+
+| Aesthetic Features 2    | Wildlife support          | common/rare/absent |
++-------------------------+---------------------------+--------------------+
+|                         | Maintained gardens        | common/rare/absent |
++-------------------------+---------------------------+--------------------+
+| Surrounding Land Cover  | Canopy cover              | \%                 |
+|                         |                           |                    |
+| (50 m & 100 m)          |                           |                    |
++-------------------------+---------------------------+--------------------+
+|                         | Vegetation cover          | \%                 |
++-------------------------+---------------------------+--------------------+
+|                         | Building cover            | \%                 |
++-------------------------+---------------------------+--------------------+
+|                         | Impervious cover          | \%                 |
++-------------------------+---------------------------+--------------------+
+|                         | Road area                 | metres^2^          |
++-------------------------+---------------------------+--------------------+
+
+### Models
+
+Temperature:
+
+$$
+Temp \sim Vegetation \ within \ alleys \ + \ Alley \ structure
+$$ $$
+Temp \sim Surrounding \ land \ cover \ 50m
+$$ $$
+Temp \sim Surrounding \ land \ cover \ 100m
+$$
+
+Noise:
+
+$$
+Noise \sim Vegetation \ within \ alleys \ + \ Alley \ structure
+$$
+
+$$
+Noise \sim Aesthetic \ features  \ 1
+$$
+
+$$
+Noise \sim Aesthetics \ features \ 2
+$$\
+
+$$
+Noise \sim Surrounding \ land \ cover \ 50m
+$$ $$
+Noise \sim Surrounding \ land \ cover \ 100m
+$$
+
+Habitat Provisioning:
+
+$$ Habitat \sim Vegetation \ within \ alleys \ + \ Alley \ structure $$
+
+$$ Habitat \sim Aesthetic \ features  \ 2 $$
+
+Food Provisioning:
+
+$$ Food \sim Vegetation \ within \ alleys \ + \ Alley \ structure $$
+
+$$ Food \sim Aesthetic \ features  \ 1 $$
+
+$$ Food \sim Aesthetics \ features \ 2 $$
+
+# Model Outputs
+
+```{r, echo = F, eval = T}
+tar_load(model_max_temp)
+
+
+```
