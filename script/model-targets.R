@@ -29,6 +29,8 @@ model_targets <- c(
   tar_target(
     model_food,
     model_data(temp_plot, rv, "Food_coverage_per_m2")
-  )
+  ),
+  
+  
   
 )
