@@ -12,7 +12,7 @@ model_data <- function(temp_plot, rv, road_area, var){
   
   # scale numeric variables
   rv.vars <- rv.vars %>%
-    mutate_if(is.numeric, scale)
+    mutate_if(is.numeric, ~as.numeric(scale(.x)))
   
   # Buffer distances
   b <- c(50, 100)
@@ -31,7 +31,7 @@ model_data <- function(temp_plot, rv, road_area, var){
   full_plot <- lapply(full_plot, function(x){cbind(x, Food_coverage_per_m2 = rv_na$Food_coverage_per_m2)})
   
   # scale numeric variables
-  full_plot <- lapply(full_plot, function(x){t <- x %>% mutate_if(is.numeric, scale)})
+  full_plot <- lapply(full_plot, function(x){t <- x %>% mutate_if(is.numeric, ~as.numeric(scale(.x)))})
 
   # Models ------------------------------------------------------
   
