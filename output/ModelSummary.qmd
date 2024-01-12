@@ -5,6 +5,9 @@ format:
     self-contained: true
     fig-width: 15
     fig-height: 15
+    toc: true
+    toc-depth: 2
+    toc-location: right
 knitr:
   opts_knit:
     root.dir: "C:/Users/I_RICHMO/Documents/Repositories/ruelles-vertes"
@@ -388,7 +391,7 @@ noise_aes2 <- dwplot(model_noise[[1]]$aes2_mean_NDSI,
 
 noise_b50 <- dwplot(model_noise[[2]]$mean_NDSI_50,
                   dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black")) %>% relabel_predictors(`PublicArtYes common` = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
   theme_classic() + 
   geom_vline(xintercept = 0, linetype = "dotted") +
   theme(legend.position = "none", 
@@ -468,7 +471,238 @@ food_aes2 <- dwplot(model_food[[1]]$aes2_Food_coverage_per_m2,
 print(food_vs + (food_aes1 / food_aes2) + plot_annotation("Figure 5. Food provision", theme = theme(plot.title = element_text(size = 20))))
 ```
 
-## Regression: Significant Relationships
+## Significant Relationships
+
+```{r, echo = F, eval = T}
+RV_vars <- readRDS('output/RV_vars.rds')
+buffer_vars <- readRDS('output/buffer_vars.rds')
+
+df <- buffer_vars$buffer100
+
+
+f1 <- lm(Avg_min_daily_temp_s ~ perveggr_s + perbuild_s + percan_s + road_area_m2_s, data = df)
+
+df$fitted = predict(f1)
+
+scaled <- ggplot(df, aes(x = perbuild_s, y = Avg_min_daily_temp_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fitted))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df$perbuild) + mean(df$perbuild), 1)) +
+  scale_y_continuous(name = "Average Minimum Temperature (\u00B0C)", 
+                     breaks = aty,
+                     labels = round(aty * sd(df$Avg_min_daily_temp) + mean(df$Avg_min_daily_temp), 1)) + 
+      labs(x = "Building Cover (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+
+```
+
+```{r, echo = F, eval = T}
+
+f2 <- lm(mean_NDSI ~ WildlifeSupport + MaintainedGardens, data = RV_vars)
+
+fitdf <- drop_na(RV_vars)
+fitdf$fittedgard = predict(f2)
+
+scaled <- ggplot(fitdf, aes(x = MaintainedGardens, y = mean_NDSI)) +
+  geom_boxplot() + 
+  geom_point(aes(x = MaintainedGardens, y = fittedgard))
+
+
+```
+
+```{r, echo = F, eval = T}
+
+df50 <- buffer_vars$buffer50
+
+f3 <- lm(mean_NDSI_s ~ perveggr_s + perbuild_s + percan_s + road_area_m2_s, data = df50)
+
+df50$fittednoise = predict(f3)
+
+scaled <- ggplot(df50, aes(x = perveggr_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df50$perveggr) + mean(df50$perveggr), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df50$mean_NDSI) + mean(df50$mean_NDSI), 1)) + 
+      labs(x = "Vegetation Cover @ 50 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+```{r, echo = F, eval = T}
+
+scaled <- ggplot(df50, aes(x = percan_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df50$percan) + mean(df50$percan), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df50$mean_NDSI) + mean(df50$mean_NDSI), 1)) + 
+      labs(x = "Canopy Cover @ 50 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+```{r, echo = F, eval = T}
+scaled <- ggplot(df50, aes(x = perbuild_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df50$perbuild) + mean(df50$perbuild), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df50$mean_NDSI) + mean(df50$mean_NDSI), 1)) + 
+      labs(x = "Building Cover @ 50 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+```{r, echo = F, eval = T}
+
+df100 <- buffer_vars$buffer100
+
+f4 <- lm(mean_NDSI_s ~ perveggr_s + perbuild_s + percan_s + road_area_m2_s, data = df100)
+
+df100$fittednoise = predict(f3)
+
+scaled <- ggplot(df100, aes(x = perveggr_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df100$perveggr) + mean(df100$perveggr), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df100$mean_NDSI) + mean(df100$mean_NDSI), 1)) + 
+      labs(x = "Vegetation Cover @ 100 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+```{r, echo = F, eval = T}
+
+scaled <- ggplot(df100, aes(x = percan_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df100$percan) + mean(df100$percan), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df100$mean_NDSI) + mean(df100$mean_NDSI), 1)) + 
+      labs(x = "Canopy Cover @ 100 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+```{r, echo = F, eval = T}
+scaled <- ggplot(df100, aes(x = perbuild_s, y = mean_NDSI_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittednoise))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(df100$perbuild) + mean(df100$perbuild), 1)) +
+  scale_y_continuous(name = "Average NDSI", 
+                     breaks = aty,
+                     labels = round(aty * sd(df100$mean_NDSI) + mean(df100$mean_NDSI), 1)) + 
+      labs(x = "Building Cover @ 100 m (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+```{r, echo = F, eval = T}
+
+f5 <- lm(Floral_coverage_per_m2_s ~ Groundcover_avg_s + Midstorey_avg_s + Canopy_avg_s + Ruelle_length_m_s + Ruelle_area_m2_s, data = RV_vars)
+
+RV_vars$fittedground = predict(f5)
+
+scaled <- ggplot(RV_vars, aes(x = Groundcover_avg_s, y = Floral_coverage_per_m2_s)) +
+  geom_point() + 
+  stat_smooth(method = lm, aes(y = fittedground))
+
+
+atx <- c(as.numeric(na.omit(layer_scales(scaled)$x$break_positions())))
+aty <- c(as.numeric(na.omit(layer_scales(scaled)$y$break_positions())))
+    
+    
+# unscale axis labels for interpretation
+scaled +
+  scale_x_continuous(breaks = atx,
+                     labels = round(atx * sd(RV_vars$Groundcover_avg) + mean(RV_vars$Groundcover_avg), 1)) +
+  scale_y_continuous(name = "Floral Coverage (/m2)", 
+                     breaks = aty,
+                     labels = round(aty * sd(RV_vars$Floral_coverage_per_m2) + mean(RV_vars$Floral_coverage_per_m2), 1)) + 
+      labs(x = "Ground Vegetation Cover (%)", colour = NULL, fill = "Credible Interval") +
+  theme_classic() + 
+  theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
+                                            color = "black"))
+```
+
+
 
 # Takeaways
 
@@ -487,3 +721,7 @@ print(food_vs + (food_aes1 / food_aes2) + plot_annotation("Figure 5. Food provis
 -   Food provisioning had no significant relationships
 
     -   Take-home: more driven by sociodemographics?
+
+-   Do we want to compare differences in directions/magnitudes of effect of canopy/veg cover between within alley measurements and landscape level measurements?
+
+-   Do we want to investigate anything interesting or limit to relationships with p-values \< 0.05?
