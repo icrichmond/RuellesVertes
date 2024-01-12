@@ -29,4 +29,6 @@ library(units)
 library(gt)
 library(gtsummary)
 
+library(dotwhisker)
+
 conflict_prefer('filter', 'dplyr', 'stats')
