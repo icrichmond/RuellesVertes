@@ -11,8 +11,13 @@ model_data <- function(temp_plot, rv, road_area, var){
   rv.vars$RuelleID <- gsub("_", "-", rv.vars$RuelleID)
   
   # scale numeric variables
-  rv.vars <- rv.vars %>%
+  rv.vars.s <- rv.vars %>%
     mutate_if(is.numeric, ~as.numeric(scale(.x)))
+  
+  # save altogether for figs
+  rv.vars.full <- inner_join(rv.vars, rv.vars.s, by = "RuelleID", suffix = c("", "_s"))
+  saveRDS(rv.vars.full, 'output/RV_vars.rds')
+  
   
   # Buffer distances
   b <- c(50, 100)
@@ -31,18 +36,28 @@ model_data <- function(temp_plot, rv, road_area, var){
   full_plot <- lapply(full_plot, function(x){cbind(x, Food_coverage_per_m2 = rv_na$Food_coverage_per_m2)})
   
   # scale numeric variables
-  full_plot <- lapply(full_plot, function(x){t <- x %>% mutate_if(is.numeric, ~as.numeric(scale(.x)))})
+  full_plot_s <- lapply(full_plot, function(x){t <- x %>% mutate_if(is.numeric, ~as.numeric(scale(.x)))})
+  
+  # save for plotting
+  df50 <- inner_join(full_plot$buffer50, full_plot_s$buffer50, inner_join, by = "RuelleID", suffix = c("", "_s"))
+  df100 <- inner_join(full_plot$buffer100, full_plot_s$buffer100, inner_join, by = "RuelleID", suffix = c("", "_s"))
+  
+  lis <- list(df50, df100)
+  names(lis) <- c('buffer50', 'buffer100')
+  
+  saveRDS(lis, 'output/buffer_vars.rds')
+  
 
   # Models ------------------------------------------------------
   
   # model
-  veg <- lm(rv.vars[,var] ~ Groundcover_avg + Midstorey_avg + Canopy_avg + 
+  veg <- lm(rv.vars.s[,var] ~ Groundcover_avg + Midstorey_avg + Canopy_avg + 
                   Ruelle_length_m + Ruelle_area_m2, data = rv.vars)
   
 
-  aes1 <- lm(rv.vars[,var] ~ PublicArt + PlayEquipment + StructureCondition, data = rv.vars)
+  aes1 <- lm(rv.vars.s[,var] ~ PublicArt + PlayEquipment + StructureCondition, data = rv.vars)
   
-  aes2 <- lm(rv.vars[,var] ~ WildlifeSupport + MaintainedGardens, data = rv.vars)
+  aes2 <- lm(rv.vars.s[,var] ~ WildlifeSupport + MaintainedGardens, data = rv.vars)
   
   buff <- map(.x = full_plot, .f = function(x){lm(x[,var] ~ perveggr + perbuild + percan + road_area_m2, data = x)}) %>%
     set_names(., nm = paste0(var, "_", b))
