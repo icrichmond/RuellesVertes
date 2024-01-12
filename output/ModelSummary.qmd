@@ -3,6 +3,8 @@ title: "Model Summary & Update"
 format: 
   html:
     self-contained: true
+    fig-width: 15
+    fig-height: 15
 knitr:
   opts_knit:
     root.dir: "C:/Users/I_RICHMO/Documents/Repositories/ruelles-vertes"
@@ -10,7 +12,6 @@ knitr:
 
 ```{r, echo = F, eval = T, message = F, warning = F}
 source('R/packages.R')
-
 ```
 
 # New Model Structure
@@ -21,41 +22,43 @@ Most of the changes to the model approach is based on the desire to make our wor
 
 ### Explanatory Variables
 
-+-------------------------+---------------------------+--------------------+
-| Group                   | Variable                  | Unit               |
-+=========================+===========================+====================+
-| Vegetation Within Alley | Canopy cover              | \%                 |
-+-------------------------+---------------------------+--------------------+
-|                         | Midstorey cover           | \%                 |
-+-------------------------+---------------------------+--------------------+
-|                         | Ground cover              | \%                 |
-+-------------------------+---------------------------+--------------------+
-| Alley Structure         | Alley length              | metres             |
-+-------------------------+---------------------------+--------------------+
-|                         | Alley area                | metres^2^          |
-+-------------------------+---------------------------+--------------------+
-| Aesthetic Features 1    | Public art                | common/rare/absent |
-+-------------------------+---------------------------+--------------------+
-|                         | Children's play equipment | common/rare/absent |
-+-------------------------+---------------------------+--------------------+
-|                         | Maintained structures     | common/rare/absent |
-+-------------------------+---------------------------+--------------------+
-| Aesthetic Features 2    | Wildlife support          | common/rare/absent |
-+-------------------------+---------------------------+--------------------+
-|                         | Maintained gardens        | common/rare/absent |
-+-------------------------+---------------------------+--------------------+
-| Surrounding Land Cover  | Canopy cover              | \%                 |
-|                         |                           |                    |
-| (50 m & 100 m)          |                           |                    |
-+-------------------------+---------------------------+--------------------+
-|                         | Vegetation cover          | \%                 |
-+-------------------------+---------------------------+--------------------+
-|                         | Building cover            | \%                 |
-+-------------------------+---------------------------+--------------------+
-|                         | Impervious cover          | \%                 |
-+-------------------------+---------------------------+--------------------+
-|                         | Road area                 | metres^2^          |
-+-------------------------+---------------------------+--------------------+
++-------------------------+----------------------------------+--------------------+
+| Group                   | Variable                         | Unit               |
++=========================+==================================+====================+
+| Vegetation Within Alley | Canopy cover                     | \%                 |
++-------------------------+----------------------------------+--------------------+
+|                         | Midstorey cover                  | \%                 |
++-------------------------+----------------------------------+--------------------+
+|                         | Ground cover                     | \%                 |
++-------------------------+----------------------------------+--------------------+
+| Alley Structure         | Alley length                     | metres             |
++-------------------------+----------------------------------+--------------------+
+|                         | Alley area                       | metres^2^          |
++-------------------------+----------------------------------+--------------------+
+| Aesthetic Features 1    | Public art                       | common/rare/absent |
++-------------------------+----------------------------------+--------------------+
+|                         | Children's play equipment        | common/rare/absent |
++-------------------------+----------------------------------+--------------------+
+|                         | Maintained structures            | common/rare/absent |
++-------------------------+----------------------------------+--------------------+
+| Aesthetic Features 2    | Wildlife support                 | common/rare/absent |
++-------------------------+----------------------------------+--------------------+
+|                         | Maintained gardens               | common/rare/absent |
++-------------------------+----------------------------------+--------------------+
+| Surrounding Land Cover  | Canopy cover                     | \%                 |
+|                         |                                  |                    |
+| (50 m & 100 m)          |                                  |                    |
++-------------------------+----------------------------------+--------------------+
+|                         | Vegetation cover                 | \%                 |
++-------------------------+----------------------------------+--------------------+
+|                         | Building cover                   | \%                 |
++-------------------------+----------------------------------+--------------------+
+|                         | Impervious cover                 | \%                 |
+|                         |                                  |                    |
+|                         | (removed - redundant with roads) |                    |
++-------------------------+----------------------------------+--------------------+
+|                         | Road area                        | metres^2^          |
++-------------------------+----------------------------------+--------------------+
 
 ### Models
 
@@ -107,7 +110,7 @@ $$ Food \sim Aesthetics \ features \ 2 $$
 
 ## Temperature
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
 tar_load(model_max_temp)
 
 tbl_regression(model_max_temp[[1]]$veg_Avg_max_daily_temp,
@@ -121,8 +124,7 @@ tbl_regression(model_max_temp[[1]]$veg_Avg_max_daily_temp,
   tab_header(title = "Table 1a. Average maximum temperature explained by vegetation within the ruelle and ruelle structure")
 
 tbl_regression(model_max_temp[[2]]$Avg_max_daily_temp_50,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
@@ -131,8 +133,7 @@ tbl_regression(model_max_temp[[2]]$Avg_max_daily_temp_50,
   tab_header(title = "Table 1b. Average maximum temperature explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
 tbl_regression(model_max_temp[[2]]$Avg_max_daily_temp_100,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
@@ -153,8 +154,7 @@ tbl_regression(model_min_temp[[1]]$veg_Avg_min_daily_temp,
   tab_header(title = "Table 1d. Average minimum temperature explained by vegetation within the ruelle and ruelle structure")
 
 tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_50,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
@@ -163,8 +163,7 @@ tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_50,
   tab_header(title = "Table 1e. Average minimum temperature explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
 tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_100,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
@@ -177,7 +176,7 @@ tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_100,
 
 ## Noise
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
 tar_load(model_noise)
 
 tbl_regression(model_noise[[1]]$veg_mean_NDSI,
@@ -206,8 +205,7 @@ tbl_regression(model_noise[[1]]$aes2_mean_NDSI,
   tab_header(title = "Table 2c. Noise explained by aesthetic features in group 2")
 
 tbl_regression(model_noise[[2]]$mean_NDSI_50,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
@@ -216,19 +214,18 @@ tbl_regression(model_noise[[2]]$mean_NDSI_50,
   tab_header(title = "Table 2d. Noise explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
 tbl_regression(model_noise[[2]]$mean_NDSI_100,
-               label = list(perimpgr = "Impervious Cover (%)", 
-                            perveggr = "Vegetation Cover (%)",
+               label = list(perveggr = "Vegetation Cover (%)",
                             perbuild = "Building Cover (%)",
                             percan = "Canopy Cover (%)",
                             road_area_m2 = "Road Area (m2)"),
                intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
   as_gt() %>% 
-  tab_header(title = "Table 2e. Boise explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
+  tab_header(title = "Table 2e. Noise explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
 ```
 
 ## Floral Habitat
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
 tar_load(model_habitat)
 
 tbl_regression(model_habitat[[1]]$veg_Floral_coverage_per_m2,
@@ -253,7 +250,7 @@ tbl_regression(model_habitat[[1]]$aes2_Floral_coverage_per_m2,
 
 ## Food
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
 tar_load(model_food)
 
 tbl_regression(model_food[[1]]$veg_Food_coverage_per_m2,
@@ -285,24 +282,208 @@ tbl_regression(model_food[[1]]$aes2_Food_coverage_per_m2,
 
 # Figures
 
-There are no significant relationships between food provisioning and temperature and any of the variables measured. Below we visualize just the models that contain significant relationships.
+## Box & Whisker: All Models
 
-```{r, echo = F, eval = T}
+Looking at a visual representation of each of the models:
 
-dwplot(model_noise[[1]]$aes2_mean_NDSI) + 
-  theme_classic() 
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
 
-dwplot(model_noise[[2]]$mean_NDSI_50, dot_args = list(colour = "black")) + 
- # relabel_predictors(c(perimpgr = "Impervious Cover (%)", 
- #                           perveggr = "Vegetation Cover (%)",
- #                           perbuild = "Building Cover (%)",
- #                           percan = "Canopy Cover (%)",
- #                           road_area_m2 = "Road Area (m2)")) +
+tmax_vs <- dwplot(model_max_temp[[1]]$veg_Avg_max_daily_temp,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(Groundcover_avg = "Ground Cover (%)", Midstorey_avg = "Midstorey Cover (%)", Canopy_avg = "Canopy Cover (%)", Ruelle_length_m = "Ruelle Length (m)", Ruelle_area_m2 = "Ruelle Area (m2)")+
   theme_classic() + 
-  theme(legend.position = "none") + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
   labs(x = "Estimate") 
 
-dwplot(model_noise[[2]]$mean_NDSI_100)
+tmax_b50 <- dwplot(model_max_temp[[2]]$Avg_max_daily_temp_50,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  labs(x = "Estimate", subtitle = "50 m buffer")
+  
 
-dwplot(model_habitat[[1]]$veg_Floral_coverage_per_m2)
+tmax_b100 <- dwplot(model_max_temp[[2]]$Avg_max_daily_temp_100,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  labs(x = "Estimate", subtitle = "100 m buffer")
+  
+print(tmax_vs + tmax_b50 / tmax_b100 + plot_annotation("Figure 1. Average maximum temperature", theme = theme(plot.title = element_text(size = 20))))
 ```
+
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
+tmin_vs <- dwplot(model_min_temp[[1]]$veg_Avg_min_daily_temp,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(Groundcover_avg = "Ground Cover (%)", Midstorey_avg = "Midstorey Cover (%)", Canopy_avg = "Canopy Cover (%)", Ruelle_length_m = "Ruelle Length (m)", Ruelle_area_m2 = "Ruelle Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+tmin_b50 <- dwplot(model_min_temp[[2]]$Avg_min_daily_temp_50,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  labs(x = "Estimate", subtitle = "50 m buffer")
+  
+
+tmin_b100 <- dwplot(model_min_temp[[2]]$Avg_min_daily_temp_100,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  geom_vline(xintercept = 0, linetype = "dotted") + 
+  labs(x = "Estimate", subtitle = "100 m buffer")
+  
+print(tmin_vs + tmin_b50 / tmin_b100 + plot_annotation("Figure 2. Average minimum temperature", theme = theme(plot.title = element_text(size = 20))))
+```
+
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
+noise_vs <- dwplot(model_noise[[1]]$veg_mean_NDSI,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(Groundcover_avg = "Ground Cover (%)", Midstorey_avg = "Midstorey Cover (%)", Canopy_avg = "Canopy Cover (%)", Ruelle_length_m = "Ruelle Length (m)", Ruelle_area_m2 = "Ruelle Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+noise_aes1 <- dwplot(model_noise[[1]]$aes1_mean_NDSI,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black"),
+                  show_intercept = T) %>% relabel_predictors(`PublicArtYes common` = "Public Art: Common", `PublicArtYes rare` = "Public Art: Rare", `PlayEquipmentYes common` = "Play Equipment: Common", `PlayEquipmentYes rare` = "Play Equipment: Rare", `StructureConditionYes common` = "StructureCondition: Common", `StructureConditionYes rare` = "Maintained Structures: Rare")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+noise_aes2 <- dwplot(model_noise[[1]]$aes2_mean_NDSI,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black"),
+                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+
+noise_b50 <- dwplot(model_noise[[2]]$mean_NDSI_50,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(`PublicArtYes common` = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  labs(x = "Estimate", subtitle = "50 m buffer")
+  
+
+noise_b100 <- dwplot(model_noise[[2]]$mean_NDSI_100,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(perveggr = "Vegetation Cover (%)", perbuild = "Building Cover (%)", percan = "Canopy Cover (%)", road_area_m2 = "Road Area (m2)")+
+  theme_classic() + 
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16),
+        plot.subtitle = element_text(size = 16)) + 
+  geom_vline(xintercept = 0, linetype = "dotted") + 
+  labs(x = "Estimate", subtitle = "100 m buffer")
+  
+print((noise_vs + noise_aes1 + noise_aes2) / (noise_b50 + noise_b100) + plot_annotation("Figure 3. Average noise", theme = theme(plot.title = element_text(size = 20))))
+```
+
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
+habitat_vs <- dwplot(model_habitat[[1]]$veg_Floral_coverage_per_m2,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(Groundcover_avg = "Ground Cover (%)", Midstorey_avg = "Midstorey Cover (%)", Canopy_avg = "Canopy Cover (%)", Ruelle_length_m = "Ruelle Length (m)", Ruelle_area_m2 = "Ruelle Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate")
+
+
+habitat_aes2 <- dwplot(model_habitat[[1]]$aes2_Floral_coverage_per_m2,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black"),
+                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+
+print((habitat_vs + habitat_aes2) + plot_annotation("Figure 4. Floral Habitat", theme = theme(plot.title = element_text(size = 20))))
+```
+
+```{r, echo = F, eval = T, fig.width=16, fig.height=10}
+food_vs <- dwplot(model_food[[1]]$veg_Food_coverage_per_m2,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black")) %>% relabel_predictors(Groundcover_avg = "Ground Cover (%)", Midstorey_avg = "Midstorey Cover (%)", Canopy_avg = "Canopy Cover (%)", Ruelle_length_m = "Ruelle Length (m)", Ruelle_area_m2 = "Ruelle Area (m2)")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate")
+
+food_aes1 <- dwplot(model_food[[1]]$aes1_Food_coverage_per_m2,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black"),
+                  show_intercept = T) %>% relabel_predictors(`PublicArtYes common` = "Public Art: Common", `PublicArtYes rare` = "Public Art: Rare", `PlayEquipmentYes common` = "Play Equipment: Common", `PlayEquipmentYes rare` = "Play Equipment: Rare", `StructureConditionYes common` = "StructureCondition: Common", `StructureConditionYes rare` = "Maintained Structures: Rare")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+food_aes2 <- dwplot(model_food[[1]]$aes2_Food_coverage_per_m2,
+                  dot_args = list(color = "red"), 
+                  whisker_args = list(color = "black"),
+                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
+  theme_classic() + 
+  geom_vline(xintercept = 0, linetype = "dotted") +
+  theme(legend.position = "none", 
+        axis.text = element_text(size = 16)) + 
+  labs(x = "Estimate") 
+
+print(food_vs + (food_aes1 / food_aes2) + plot_annotation("Figure 5. Food provision", theme = theme(plot.title = element_text(size = 20))))
+```
+
+## Regression: Significant Relationships
+
+# Takeaways
+
+-   We find no significant relationships between maximum temp values and our variables of interest
+
+    -   Minimum temperature is only significantly positively related to building cover at 100 m
+
+    -   Take-home: temperature should maybe have been measured differently (we could still try some different metrics - variation?)
+
+-   Noise influenced by many of our measured metrics
+
+-   Floral habitat significantly related to ground cover
+
+    -   Take-home: our ground cover metric worked
+
+-   Food provisioning had no significant relationships
+
+    -   Take-home: more driven by sociodemographics?
