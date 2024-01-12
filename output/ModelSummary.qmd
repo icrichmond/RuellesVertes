@@ -473,7 +473,7 @@ print(food_vs + (food_aes1 / food_aes2) + plot_annotation("Figure 5. Food provis
 
 ## Significant Relationships
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 RV_vars <- readRDS('output/RV_vars.rds')
 buffer_vars <- readRDS('output/buffer_vars.rds')
 
@@ -507,21 +507,23 @@ scaled +
 
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 
 f2 <- lm(mean_NDSI ~ WildlifeSupport + MaintainedGardens, data = RV_vars)
 
 fitdf <- drop_na(RV_vars)
 fitdf$fittedgard = predict(f2)
 
-scaled <- ggplot(fitdf, aes(x = MaintainedGardens, y = mean_NDSI)) +
+ggplot(fitdf, aes(x = MaintainedGardens, y = mean_NDSI)) +
   geom_boxplot() + 
-  geom_point(aes(x = MaintainedGardens, y = fittedgard))
+  geom_jitter() + 
+  theme_classic() +
+  labs(y = "Average NDSI", x = "Maintained Gardens")
 
 
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 
 df50 <- buffer_vars$buffer50
 
@@ -551,7 +553,7 @@ scaled +
                                             color = "black"))
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 
 scaled <- ggplot(df50, aes(x = percan_s, y = mean_NDSI_s)) +
   geom_point() + 
@@ -575,7 +577,7 @@ scaled +
                                             color = "black"))
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 scaled <- ggplot(df50, aes(x = perbuild_s, y = mean_NDSI_s)) +
   geom_point() + 
   stat_smooth(method = lm, aes(y = fittednoise))
@@ -598,7 +600,7 @@ scaled +
                                             color = "black"))
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 
 df100 <- buffer_vars$buffer100
 
@@ -628,7 +630,7 @@ scaled +
                                             color = "black"))
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 
 scaled <- ggplot(df100, aes(x = percan_s, y = mean_NDSI_s)) +
   geom_point() + 
@@ -652,7 +654,7 @@ scaled +
                                             color = "black"))
 ```
 
-```{r, echo = F, eval = T}
+```{r, echo = F, eval = T, message=F, warning=F}
 scaled <- ggplot(df100, aes(x = perbuild_s, y = mean_NDSI_s)) +
   geom_point() + 
   stat_smooth(method = lm, aes(y = fittednoise))
@@ -674,7 +676,9 @@ scaled +
   theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
                                             color = "black"))
 ```
-```{r, echo = F, eval = T}
+
+
+```{r, echo = F, eval = T, message=F, warning=F}
 
 f5 <- lm(Floral_coverage_per_m2_s ~ Groundcover_avg_s + Midstorey_avg_s + Canopy_avg_s + Ruelle_length_m_s + Ruelle_area_m2_s, data = RV_vars)
 
