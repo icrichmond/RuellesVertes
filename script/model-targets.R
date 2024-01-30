@@ -32,8 +32,13 @@ model_targets <- c(
   ),
   
   tar_render(
-    model_summary,
-    'output/ModelSummary.qmd'
+    model_tables,
+    'output/ModelTables.qmd'
+  ),
+  
+  tar_render(
+    model_boxwhisker,
+    'output/BoxWhisker.qmd'
   )
   
   
