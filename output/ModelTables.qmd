@@ -500,7 +500,7 @@ scaled +
   scale_y_continuous(name = "Average Minimum Temperature (\u00B0C)", 
                      breaks = aty,
                      labels = round(aty * sd(df$Avg_min_daily_temp) + mean(df$Avg_min_daily_temp), 1)) + 
-      labs(x = "Building Cover (%)", colour = NULL, fill = "Credible Interval") +
+      labs(x = "Building Cover @ 100 m (%)", colour = NULL, fill = "Credible Interval") +
   theme_classic() + 
   theme(plot.title = element_text(hjust = 0.5, size = 14, face = 'bold',
                                             color = "black"))
