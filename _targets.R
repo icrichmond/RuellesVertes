@@ -29,6 +29,11 @@ min_date <- as.POSIXct('2021-08-10', tz = "UTC")
 max_date <- as.POSIXct('2021-08-22', tz = "UTC")
 
 
+
+# Scripts -----------------------------------------------------------------
+tar_source('script')
+
+
 # Targets: all ------------------------------------------------------------
 # Automatically grab all the "targets_*" lists above
 lapply(grep('targets', ls(), value = TRUE), get)
