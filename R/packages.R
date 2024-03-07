@@ -1,6 +1,7 @@
 # Packages ----------------------------------------------------------------
 library(targets)
 library(tarchetypes)
+library(renv)
 
 library(data.table)
 library(parsedate)
