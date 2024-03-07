@@ -2,6 +2,10 @@
 # Alec Robitaille & Isabella Richmond
 
 
+# TODO 
+# dummy data for noise 
+# download spatial and road files in code
+
 # Source ------------------------------------------------------------------
 library(targets)
 tar_source('R')
