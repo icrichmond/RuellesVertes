@@ -27,7 +27,12 @@ restore()
 
 # Noise 
 # folder path to all .wav files
-folder_path <- file.path('D:', 'Ruelles-Vertes/')
+### NOTE !!! #### 
+# For your own project/needs: make sure to change this file path to wherever you have .wav files stored 
+# For reproducing this analysis: change this line to 
+folder_path <- file.path('input/example-audio-files/')
+#folder_path <- file.path('D:', 'Ruelles-Vertes/')
+
 
 ## note: change these dates as needed for noise different analysis
 min_date <- as.POSIXct('2021-08-10', tz = "UTC")
