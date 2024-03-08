@@ -17,6 +17,12 @@ targets_temp <- c(
     vec_land_cover,
     read_sf("input/spatial/canopycover.shp") 
   ),
+  
+  tar_target(
+    road_area,
+    calc_road_area(sensors)
+  ),
+  
   tar_target(
     sensors_transform,
     transform_sensors(sensors, land_cover)
