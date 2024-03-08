@@ -9,11 +9,6 @@ buff_canopy <- function(sens, cc) {
                         .f = function(x){st_buffer(sens, x)}) %>%
     purrr::set_names(., nm = paste0("buffer", b))
   
-  # prepare canopy cover 
-  #bb <- st_bbox(buffers$buffer100) # get extent of largest buffer
-  #cc <- cc[bb] # crop raster to extent
-  # cc <- st_as_sf(cc) # transform to sf object
-  # NOTE: operating now with laptop so vectorized canopy cover in GEE and importing here
   cc <- st_transform(cc, st_crs(sens))
   
   # intersect buffers with canopy
