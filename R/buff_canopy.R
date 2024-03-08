@@ -44,8 +44,6 @@ buff_canopy <- function(sens, cc) {
     })%>%
     purrr::set_names(., nm = paste0("int", b))
   
-  ints <- purrr::map(.x = ints, .f = function(x){st_make_valid(x)})
-  
   
   return(ints)
 }
