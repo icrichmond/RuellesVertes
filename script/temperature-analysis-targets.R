@@ -11,7 +11,8 @@ targets_temp <- c(
   ),
   tar_target(
     land_cover,
-    read_stars("input/spatial/66023_IndiceCanopee_2019.tif") 
+    download_tif("https://observatoire.cmm.qc.ca/documents/carte/canope/2019/IC_TIFF/660_IndiceCanopee_2019_TIF.zip", 
+                 "input/mon-canopy") 
   ),
   tar_target(
     vec_land_cover,
