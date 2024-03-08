@@ -1,4 +1,3 @@
-#' @param path path to wav folder dir (containing subfolders)
 buff_canopy <- function(sens, cc) {
   
   # produce buffers every 10 m
@@ -9,11 +8,18 @@ buff_canopy <- function(sens, cc) {
                         .f = function(x){st_buffer(sens, x)}) %>%
     purrr::set_names(., nm = paste0("buffer", b))
   
-  
   # intersect buffers with canopy
-  ints <- purrr::map(.x = buffers, .f = function(x){st_intersection(x, cc)})%>%
+  ints <- purrr::map(.x = buffers, .f = function(x){
+    
+    can <- aggregate(cc, x, FUN = function(y) sum(y == 4)/length(y)) %>% 
+      st_as_sf() %>% 
+      rename(percan = `660_IndiceCanopee_2019.tif`)
+    
+    })%>%
     purrr::set_names(., nm = paste0("int", b))
+  
   ints <- purrr::map(.x = ints, .f = function(x){st_make_valid(x)})
+  
   
   # Canopy Cover Stats ---------------------------------
   # we want to calculate the percent area that is taken up by each land cover type
