@@ -9,7 +9,6 @@ buff_canopy <- function(sens, cc) {
                         .f = function(x){st_buffer(sens, x)}) %>%
     purrr::set_names(., nm = paste0("buffer", b))
   
-  cc <- st_transform(cc, st_crs(sens))
   
   # intersect buffers with canopy
   ints <- purrr::map(.x = buffers, .f = function(x){st_intersection(x, cc)})%>%
