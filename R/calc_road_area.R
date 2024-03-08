@@ -3,7 +3,8 @@ calc_road_area <- function(sensors){
   sensors_t <- st_as_sf(sensors, coords = c("long", "lat"), crs = 4326) %>% 
     filter(RuelleID != "RPP-H-1000012b")
   
-  roads_shp <- download_shp('https://donnees.montreal.ca/dataset/0acbc6c8-bbfc-4aae-a0fa-ec74ba0686c6/resource/102dd6af-836d-443e-9bee-bfdd2f525fb8/download/voi_voirie_s_v22_shp.zip', 'input/roads_shp.zip')
+  roads_shp <- download_shp('https://donnees.montreal.ca/dataset/0acbc6c8-bbfc-4aae-a0fa-ec74ba0686c6/resource/102dd6af-836d-443e-9bee-bfdd2f525fb8/download/voi_voirie_s_v22_shp.zip', 
+                            'input/roads_shp/')
   
   # select roads
   roads <- roads_shp %>% 
