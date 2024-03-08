@@ -24,7 +24,7 @@ targets_temp <- c(
   ),
   tar_target(
     canopy_buff,
-    buff_canopy(sensors_transform, vec_land_cover)
+    buff_canopy(sensors_transform, land_cover)
   ),
   tar_target(
     temp_join, 
