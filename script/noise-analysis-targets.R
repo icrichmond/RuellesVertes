@@ -53,11 +53,6 @@ targets_noise <- c(
   tar_target(
     brief_noise_output,
     write.csv(brief_noise, "output/noise/NoiseDataSummarized.csv")
-  ),
-  
-  tar_target(
-    road_area,
-    calc_road_area(sensors)
   )
 )
 
