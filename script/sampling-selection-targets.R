@@ -7,8 +7,10 @@ targets_clean <- c(
   ),
   tar_target(
     parks_data,
-    read_sf("input/parcs/Espace_Vert.shp")
+    download_shp("https://data.montreal.ca/dataset/2e9e4d2f-173a-4c3d-a5e3-565d79baa27d/resource/c57baaf4-0fa8-4aa4-9358-61eb7457b650/download/shapefile.zip",
+                 "input/parcs/")
   ),
+  
   tar_target(
     roads_data,
     read_sf("input/roads/road_segment_1.shp")
