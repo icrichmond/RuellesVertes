@@ -11,6 +11,8 @@ buff_canopy <- function(sens, cc) {
   # intersect buffers with canopy
   ints <- purrr::map(.x = buffers, .f = function(x){
     
+    x <- x %>% mutate(totarea = st_area(geometry))
+    
     can <- aggregate(cc, x, FUN = function(y) sum(y == 4)/length(y)) %>% 
       st_as_sf() %>% 
       rename(percan = `660_IndiceCanopee_2019.tif`)
@@ -32,7 +34,7 @@ buff_canopy <- function(sens, cc) {
       rename(perwat = `660_IndiceCanopee_2019.tif`)
     
     df <- data.frame(RuelleID = x$RuelleID, 
-                     totarea = st_area(x$geometry),
+                     totarea = x$totarea,
                      percan = can$percan,
                      perimpgr = impgr$perimpgr,
                      perveggr = veggr$perveggr,
