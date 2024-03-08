@@ -4,7 +4,7 @@ _targets/
 input/Ruelles-Vertes
 
 # Large roads shapefile
-/input/spatial/
+/input/mon-canopy/
 
 # History files
 .Rhistory
