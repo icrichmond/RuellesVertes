@@ -12,8 +12,8 @@ calc_road_area <- function(sensors){
   
   # create 50 m buffer surrounding sensors
   # create 100 m buffer surrounding sensors
-  buff50 <- road_area(sensors_t, roads, 50)
-  buff100 <- road_area(sensors_t, roads, 100)
+  buff50 <- buffer_road_area(sensors_t, roads, 50)
+  buff100 <- buffer_road_area(sensors_t, roads, 100)
 
   road_area <- list(buff50, buff100)
   names(road_area) <- c('buffer50', 'buffer100')
@@ -24,7 +24,7 @@ calc_road_area <- function(sensors){
   
 }
 
-road_area <- function(sensors_t, roads, distance){
+buffer_road_area <- function(sensors_t, roads, distance){
   b <- st_buffer(st_transform(sensors_t, st_crs(roads)), distance)
   
   # intersect impervious surfaces with buffer
