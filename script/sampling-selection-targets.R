@@ -3,7 +3,8 @@
 targets_clean <- c(
   tar_target(
     ruelles_data,
-    read_sf("input/ruelles/ruelles-vertes.shp")
+    download_shp("https://donnees.montreal.ca/dataset/ab3ce7bb-09a7-49d7-8f76-461ed4c39937/resource/e1440534-f438-43d3-ab7b-bcd09d72d3cd/download/ruelles-vertes.zip",
+                 "input/ruelles/") 
   ),
   tar_target(
     parks_data,
