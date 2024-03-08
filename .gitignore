@@ -5,6 +5,7 @@ input/Ruelles-Vertes
 
 # Large roads shapefile
 /input/mon-canopy/
+/input/roads_shp/
 
 # History files
 .Rhistory
