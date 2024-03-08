@@ -40,10 +40,10 @@ wide_final_sites <- function(rv_r, spt) {
     dplyr::group_by(RUELLE_ID) %>%
     dplyr::mutate(Group_S_ID = paste0("S", 1:n()))
   # pivot wider
-  rv_sp_w <- pivot_wider(rv_sp_w, 
-                       id_cols = RUELLE_ID,
-                       names_from = Group_S_ID,
-                       values_from = c(lat,long))
+  rv_sp_w <- st_drop_geometry(rv_sp_w ) %>% 
+    pivot_wider(id_cols = RUELLE_ID,
+                names_from = Group_S_ID,
+                values_from = c(lat,long))
   return(rv_sp_w)
 
 }
