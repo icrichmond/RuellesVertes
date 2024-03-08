@@ -4,7 +4,6 @@ _targets/
 input/Ruelles-Vertes
 
 # Large roads shapefile
-/input/roads/
 /input/spatial/
 
 # History files
