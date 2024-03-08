@@ -47,20 +47,5 @@ buff_canopy <- function(sens, cc) {
   ints <- purrr::map(.x = ints, .f = function(x){st_make_valid(x)})
   
   
-  # Canopy Cover Stats ---------------------------------
-  # we want to calculate the percent area that is taken up by each land cover type
-  ## Metrics of disturbance
-  dists <- purrr::map(.x = ints, .f = function(x){x %>% group_by(RuelleID, label) %>% mutate(area = st_area(geometry))})
-  canopy <- purrr::map(.x = dists, .f = function(x){x %>% group_by(RuelleID) %>% summarise(totarea = sum(area), 
-                                                                                           impergr = sum(area[label == 1]),
-                                                                                           veggr = sum(area[label == 3]),
-                                                                                           build = sum(area[label == 2]),
-                                                                                           can = sum(area[label == 4]),
-                                                                                           wat = sum(area[label == 5]),
-                                                                                           perimpgr = impergr/totarea, 
-                                                                                           perveggr = veggr/totarea,
-                                                                                           perbuild = build/totarea,
-                                                                                           percan = can/totarea,
-                                                                                           perwat = wat/totarea)})
-  return(canopy)
+  return(ints)
 }
