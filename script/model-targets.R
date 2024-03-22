@@ -31,6 +31,21 @@ model_targets <- c(
     model_data(temp_plot, rv, road_area, "Food_coverage_per_m2")
   ),
   
+  tar_target(
+    figure_1,
+    create_figure_1(model_max_temp, model_min_temp, model_noise, model_habitat, model_food)
+  ),
+  
+  tar_target(
+    figure_2,
+    create_figure_2(rv)
+  ),
+  
+  tar_target(
+    figure_3,
+    create_figure_3(temp_plot, road_area, rv)
+  ),
+  
   tar_render(
     model_tables,
     'output/ModelTables.qmd'
