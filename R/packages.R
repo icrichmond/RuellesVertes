@@ -30,6 +30,7 @@ library(units)
 library(gt)
 library(gtsummary)
 
+library(marginaleffects)
 library(dotwhisker)
 
 conflict_prefer('filter', 'dplyr', 'stats')
