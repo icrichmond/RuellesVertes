@@ -4,7 +4,7 @@ create_figure_3 <- function(temp_plot, road_area, rv) {
   
   b50 <- temp_plot$buffer50
   rv$RuelleID <- gsub("_", "-", rv$RuelleID)
-  df <- inner_join(b100, rv, by = "RuelleID")
+  df <- inner_join(b50, rv, by = "RuelleID")
   
   mod <- lm(mean_NDSI ~ perveggr + perbuild + percan + road_area_m2, data = df)
   
