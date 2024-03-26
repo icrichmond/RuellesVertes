@@ -8,4 +8,7 @@ Urban green infrastructure – the network of greenspaces across cities – can 
 ## Repository Use 
 This repository is built using a [`{targets}`](https://books.ropensci.org/targets/) workflow. To run the analysis from this paper, clone this repository, run `install.packages('renv')` and then install all dependencies using `renv::restore()` . After successfully installing packages, run `targets::tar_make()` in the console to run the entire workflow. All pieces of the workflow are defined in the files found in the script/ folder. To load any individual step of the workflow to your environment, use `targets::tar_load(NAME)`. 
 
+## Noise Data
+The noise data used in this analysis is too large to host on GitHub or Zotero (~ 715 GB). I have set up this repository to include a small subset of the data used so the code can run as published, however, you will get different results for the noise portion of the analyses using this small subset. If you would like to use this code to process your own data, please change the file pathway found in the _targets.R file. If you would like to rerun the workflow in full with the entire dataset, please email me and I will be more than happy to share the full dataset with you.
+
 For any questions related to code, data, or workflow please email isabella.richmond@mail.concordia.ca
