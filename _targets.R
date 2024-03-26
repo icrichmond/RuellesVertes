@@ -2,10 +2,6 @@
 # Alec Robitaille & Isabella Richmond
 
 
-# TODO 
-# dummy data for noise
-# workflow problems 
-
 # Source ------------------------------------------------------------------
 library(targets)
 tar_source('R')
