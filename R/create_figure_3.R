@@ -11,17 +11,11 @@ create_figure_3 <- function(temp_plot, road_area, rv) {
   can <- plot_predictions(mod, condition = c("percan")) + 
     geom_point(data = df, aes(x = percan, y = mean_NDSI)) + 
     labs(x = "Percent Canopy Cover @ 50 m", y = "Mean NDSI") + 
-    theme_classic()
+    theme_classic() + 
+    theme(axis.text = element_text(size = 14),
+          legend.text = element_text(size = 14),
+          legend.title = element_text(size = 14))
   
-  #build <- plot_predictions(mod, condition = c("perbuild")) + 
-  #  geom_point(data = df, aes(x = perbuild, y = mean_NDSI)) + 
-  #  labs(x = "Percent Building Cover @ 50 m", y = "Mean NDSI") + 
-  #  theme_classic()
-  
-  
-  p <- can #+ build
-
-  
-  ggsave('graphics/Figure3.png', p, width = 10, height = 8, units = c('in'), dpi = 450)
+  ggsave('graphics/Figure3.png', can, width = 10, height = 8, units = c('in'), dpi = 450)
     
 }

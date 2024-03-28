@@ -3,10 +3,10 @@ create_figure_1 <- function(model_max_temp, model_min_temp, model_noise, model_h
   maxtemp <- plot_temp_model(model_max_temp) + ggtitle("a) Maximum air\ntemperature")
   mintemp <- plot_temp_model(model_min_temp) + ggtitle("b) Minimum air\ntemperature")
   
-  habitat <- plot_provisioning(model_habitat) + ggtitle("e) Habitat provision for\npollinators")
+  habitat <- plot_provisioning(model_habitat) + ggtitle("e) Habitat\nprovision for\npollinators")
   food <- plot_provisioning(model_food) + ggtitle("d) Food provision")
   
-  noise <- plot_noise(model_noise) + ggtitle("c) Anthropogenic noise")
+  noise <- plot_noise(model_noise) + ggtitle("c) Anthropogenic\nnoise")
   
   legend <- get_legend(noise)
   
@@ -47,8 +47,8 @@ plot_temp_model <- function(model){
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c( "#21908CFF", "#440154FF", "#47C16EFF", "#FDE725FF")) +
     theme(legend.position = "none",
-          plot.title = element_text(size = 14, face = "bold"),
-          axis.text = element_text(size = 14))
+          plot.title = element_text(size = 16, face = "bold"),
+          axis.text = element_text(size = 16))
   
   return(maxtemp_plot)
   
@@ -90,8 +90,8 @@ plot_provisioning <- function(model) {
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c("#FDE725FF", "#47C16EFF", "#440154FF")) + 
     theme(legend.position = "none",
-          plot.title = element_text(size = 14, face = "bold"),
-          axis.text = element_text(size = 14))
+          plot.title = element_text(size = 16, face = "bold"),
+          axis.text = element_text(size = 16))
   
   return(floral_plot)
   
@@ -139,10 +139,10 @@ plot_noise <- function(model){
                                 "Public art: common", "Public art: rare", "Main roads (50m buffer)", "Building cover (50m buffer)", "Vegetation cover (50m buffer)", "Canopy cover (50m buffer)", 
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c("#FDE725FF", "#47C16EFF", "#21908CFF", "#440154FF")) + 
-    theme(plot.title = element_text(size = 14, face = "bold"),
-          axis.text = element_text(size = 14),
-          legend.text = element_text(size = 14),
-          legend.title = element_text(size = 14))
+    theme(plot.title = element_text(size = 16, face = "bold"),
+          axis.text = element_text(size = 16),
+          legend.text = element_text(size = 16),
+          legend.title = element_text(size = 16))
   
   return(plot)
 }
