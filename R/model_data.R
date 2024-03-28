@@ -59,7 +59,7 @@ model_data <- function(temp_plot, rv, road_area, var){
   
   aes2 <- lm(rv.vars.s[,var] ~ WildlifeSupport + MaintainedGardens, data = rv.vars)
   
-  buff <- map(.x = full_plot, .f = function(x){lm(x[,var] ~ perveggr + perbuild + percan + road_area_m2, data = x)}) %>%
+  buff <- map(.x = full_plot_s, .f = function(x){lm(x[,var] ~ perveggr + perbuild + percan + road_area_m2, data = x)}) %>%
     set_names(., nm = paste0(var, "_", b))
   
   # diagnostics
