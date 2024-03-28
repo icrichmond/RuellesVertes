@@ -1,7 +1,7 @@
 create_figure_1 <- function(model_max_temp, model_min_temp, model_noise, model_habitat, model_food){
   
-  maxtemp <- plot_temp(model_max_temp) + ggtitle("a) Maximum air\ntemperature")
-  mintemp <- plot_temp(model_min_temp) + ggtitle("b) Minimum air\ntemperature")
+  maxtemp <- plot_temp_model(model_max_temp) + ggtitle("a) Maximum air\ntemperature")
+  mintemp <- plot_temp_model(model_min_temp) + ggtitle("b) Minimum air\ntemperature")
   
   habitat <- plot_provisioning(model_habitat) + ggtitle("e) Habitat provision for\npollinators")
   food <- plot_provisioning(model_food) + ggtitle("d) Food provision")
@@ -15,11 +15,11 @@ create_figure_1 <- function(model_max_temp, model_min_temp, model_noise, model_h
                         plot_grid(noise + theme(legend.position = "none"), legend, ncol = 1, nrow = 2, align = 'v', rel_heights = c(3,1)),
                         rel_widths = c(2, 1)) 
   
-  ggsave('graphics/Figure1.png', all_mods, width = 14, height = 14, units = 'in', dpi = 450)
+  ggsave('graphics/Figure1.png', all_mods, width = 18, height = 14, units = 'in', dpi = 450)
   
 }
 
-plot_temp <- function(model){
+plot_temp_model <- function(model){
   
   maxt_v <- tidy(model[[1]][[1]]) %>% 
     mutate(model = "Vegetation Within Alley + Structural Form",
@@ -47,7 +47,8 @@ plot_temp <- function(model){
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c( "#21908CFF", "#440154FF", "#47C16EFF", "#FDE725FF")) +
     theme(legend.position = "none",
-          plot.title = element_text(size = 14, face = "bold"))
+          plot.title = element_text(size = 14, face = "bold"),
+          axis.text = element_text(size = 14))
   
   return(maxtemp_plot)
   
@@ -89,7 +90,8 @@ plot_provisioning <- function(model) {
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c("#FDE725FF", "#47C16EFF", "#440154FF")) + 
     theme(legend.position = "none",
-          plot.title = element_text(size = 14, face = "bold"))
+          plot.title = element_text(size = 14, face = "bold"),
+          axis.text = element_text(size = 14))
   
   return(floral_plot)
   
@@ -137,7 +139,10 @@ plot_noise <- function(model){
                                 "Public art: common", "Public art: rare", "Main roads (50m buffer)", "Building cover (50m buffer)", "Vegetation cover (50m buffer)", "Canopy cover (50m buffer)", 
                                 "Alley area","Alley length", "Ground cover", "Midstory cover","Canopy cover")) + 
     scale_color_manual(values = c("#FDE725FF", "#47C16EFF", "#21908CFF", "#440154FF")) + 
-    theme(plot.title = element_text(size = 14, face = "bold"))
+    theme(plot.title = element_text(size = 14, face = "bold"),
+          axis.text = element_text(size = 14),
+          legend.text = element_text(size = 14),
+          legend.title = element_text(size = 14))
   
   return(plot)
 }
