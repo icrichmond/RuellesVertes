@@ -1,5 +1,7 @@
 # Testing a rapid assessment approach for measuring ecosystem services in urban green alleys 
 
+[![DOI](https://zenodo.org/badge/374765335.svg)](https://zenodo.org/doi/10.5281/zenodo.10891664)
+
 Marie C Dade, Isabella C Richmond, Jesse T Rieb, Erin Crockett, Kayleigh Hutt-Taylor, Serena Sinno, Karina Benessaiah, Catherine Destrempes, Jackie Hamilton, Fatemeh Izadi, L. Emily Kroft, Lingshan Li, Michael Paulauskas, Klara J Winkler, Elena M Bennett, Carly D Ziter
 
 ## Abstract 
