@@ -106,20 +106,6 @@ tbl_regression(model_noise[[1]]$veg_mean_NDSI,
   as_gt() %>% 
   tab_header(title = "Table 2a. Noise explained by vegetation within the ruelle and ruelle structure")
 
-tbl_regression(model_noise[[1]]$aes1_mean_NDSI,
-               label = list(PublicArt = "Public Art", 
-                            PlayEquipment = "Play Equipment",
-                            StructureCondition = "Maintained Structures"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 2b. Noise explained by aesthetic features in group 1")
-
-tbl_regression(model_noise[[1]]$aes2_mean_NDSI,
-               label = list(WildlifeSupport = "Wildlife Support", 
-                            MaintainedGardens = "Maintained Gardens"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 2c. Noise explained by aesthetic features in group 2")
 
 tbl_regression(model_noise[[2]]$mean_NDSI_50,
                label = list(perveggr = "Vegetation Cover (%)",
@@ -128,7 +114,7 @@ tbl_regression(model_noise[[2]]$mean_NDSI_50,
                             road_area_m2 = "Road Area (m2)"),
                intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
   as_gt() %>% 
-  tab_header(title = "Table 2d. Noise explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
+  tab_header(title = "Table 2b. Noise explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
 tbl_regression(model_noise[[2]]$mean_NDSI_100,
                label = list(perveggr = "Vegetation Cover (%)",
@@ -137,7 +123,7 @@ tbl_regression(model_noise[[2]]$mean_NDSI_100,
                             road_area_m2 = "Road Area (m2)"),
                intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
   as_gt() %>% 
-  tab_header(title = "Table 2e. Noise explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
+  tab_header(title = "Table 2c. Noise explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
 ```
 
 ## Floral Habitat
@@ -155,22 +141,6 @@ tbl_regression(model_habitat[[1]]$veg_Floral_coverage_per_m2,
   as_gt() %>% 
   tab_header(title = "Table 3a. Floral habitat explained by vegetation within the ruelle and ruelle structure")
 
-tbl_regression(model_habitat[[1]]$aes1_Floral_coverage_per_m2,
-               label = list(PublicArt = "Public Art", 
-                            PlayEquipment = "Play Equipment",
-                            StructureCondition = "Maintained Structures"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 3b. Floral habitat explained by aesthetic features in group 1")
-
-
-
-tbl_regression(model_habitat[[1]]$aes2_Floral_coverage_per_m2,
-               label = list(WildlifeSupport = "Wildlife Support", 
-                            MaintainedGardens = "Maintained Gardens"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 3c. Floral habitat explained by aesthetic features in group 2")
 
 ```
 
@@ -189,20 +159,6 @@ tbl_regression(model_food[[1]]$veg_Food_coverage_per_m2,
   as_gt() %>% 
   tab_header(title = "Table 4a. Food provision explained by vegetation within the ruelle and ruelle structure")
 
-tbl_regression(model_food[[1]]$aes1_Food_coverage_per_m2,
-               label = list(PublicArt = "Public Art", 
-                            PlayEquipment = "Play Equipment",
-                            StructureCondition = "Maintained Structures"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 4b. Food provision explained by aesthetic features in group 1")
-
-tbl_regression(model_food[[1]]$aes2_Food_coverage_per_m2,
-               label = list(WildlifeSupport = "Wildlife Support", 
-                            MaintainedGardens = "Maintained Gardens"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 4c. Food provision explained by aesthetic features in group 2")
 
 ```
 

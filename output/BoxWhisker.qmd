@@ -114,26 +114,6 @@ noise_vs <- dwplot(model_noise[[1]]$veg_mean_NDSI,
         axis.text = element_text(size = 16)) + 
   labs(x = "Estimate") 
 
-noise_aes1 <- dwplot(model_noise[[1]]$aes1_mean_NDSI,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`PublicArtYes common` = "Public Art: Common", `PublicArtYes rare` = "Public Art: Rare", `PlayEquipmentYes common` = "Play Equipment: Common", `PlayEquipmentYes rare` = "Play Equipment: Rare", `StructureConditionYes common` = "StructureCondition: Common", `StructureConditionYes rare` = "Maintained Structures: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
-
-noise_aes2 <- dwplot(model_noise[[1]]$aes2_mean_NDSI,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
-
 
 noise_b50 <- dwplot(model_noise[[2]]$mean_NDSI_50,
                   dot_args = list(color = "red"), 
@@ -156,7 +136,7 @@ noise_b100 <- dwplot(model_noise[[2]]$mean_NDSI_100,
   geom_vline(xintercept = 0, linetype = "dotted") + 
   labs(x = "Estimate", subtitle = "100 m buffer")
   
-print((noise_vs + noise_aes1 + noise_aes2) / (noise_b50 + noise_b100) + plot_annotation("Figure 3. Average noise", theme = theme(plot.title = element_text(size = 20))))
+print((noise_vs) / (noise_b50 + noise_b100) + plot_annotation("Figure 3. Average noise", theme = theme(plot.title = element_text(size = 20))))
 ```
 
 
@@ -174,28 +154,9 @@ habitat_vs <- dwplot(model_habitat[[1]]$veg_Floral_coverage_per_m2,
         axis.text = element_text(size = 16)) + 
   labs(x = "Estimate")
 
-habitat_aes1 <- dwplot(model_habitat[[1]]$aes1_Floral_coverage_per_m2,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`PublicArtYes common` = "Public Art: Common", `PublicArtYes rare` = "Public Art: Rare", `PlayEquipmentYes common` = "Play Equipment: Common", `PlayEquipmentYes rare` = "Play Equipment: Rare", `StructureConditionYes common` = "StructureCondition: Common", `StructureConditionYes rare` = "Maintained Structures: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
-
-habitat_aes2 <- dwplot(model_habitat[[1]]$aes2_Floral_coverage_per_m2,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
 
 
-print(habitat_vs + (habitat_aes1 / habitat_aes2) + plot_annotation("Figure 4. Floral Habitat", theme = theme(plot.title = element_text(size = 20))))
+print(habitat_vs + plot_annotation("Figure 4. Floral Habitat", theme = theme(plot.title = element_text(size = 20))))
 ```
 
 
@@ -212,25 +173,5 @@ food_vs <- dwplot(model_food[[1]]$veg_Food_coverage_per_m2,
         axis.text = element_text(size = 16)) + 
   labs(x = "Estimate")
 
-food_aes1 <- dwplot(model_food[[1]]$aes1_Food_coverage_per_m2,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`PublicArtYes common` = "Public Art: Common", `PublicArtYes rare` = "Public Art: Rare", `PlayEquipmentYes common` = "Play Equipment: Common", `PlayEquipmentYes rare` = "Play Equipment: Rare", `StructureConditionYes common` = "StructureCondition: Common", `StructureConditionYes rare` = "Maintained Structures: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
-
-food_aes2 <- dwplot(model_food[[1]]$aes2_Food_coverage_per_m2,
-                  dot_args = list(color = "red"), 
-                  whisker_args = list(color = "black"),
-                  show_intercept = T) %>% relabel_predictors(`(Intercept)` = "Intercept - Absent", `WildlifeSupportYes rare` = "Wildlife Support: Rare", `MaintainedGardensYes common` = "Maintained Gardens: Common", `MaintainedGardensYes rare` = "Maintained Gardens: Rare")+
-  theme_classic() + 
-  geom_vline(xintercept = 0, linetype = "dotted") +
-  theme(legend.position = "none", 
-        axis.text = element_text(size = 16)) + 
-  labs(x = "Estimate") 
-
-print(food_vs + (food_aes1 / food_aes2) + plot_annotation("Figure 5. Food provision", theme = theme(plot.title = element_text(size = 20))))
+print(food_vs  + plot_annotation("Figure 5. Food provision", theme = theme(plot.title = element_text(size = 20))))
 ```
