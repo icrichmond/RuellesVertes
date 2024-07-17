@@ -49,15 +49,6 @@ tbl_regression(model_max_temp[[2]]$Avg_max_daily_temp_50,
   as_gt() %>% 
   tab_header(title = "Table 1b. Average maximum temperature explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
-tbl_regression(model_max_temp[[2]]$Avg_max_daily_temp_100,
-               label = list(perveggr = "Vegetation Cover (%)",
-                            perbuild = "Building Cover (%)",
-                            percan = "Canopy Cover (%)",
-                            road_area_m2 = "Road Area (m2)"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 1c. Average maximum temperature explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
-
 tar_load(model_min_temp)
 
 tbl_regression(model_min_temp[[1]]$veg_Avg_min_daily_temp,
@@ -68,7 +59,7 @@ tbl_regression(model_min_temp[[1]]$veg_Avg_min_daily_temp,
                             Ruelle_area_m2 = "Ruelle Area (m2)"),
                intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
   as_gt() %>% 
-  tab_header(title = "Table 1d. Average minimum temperature explained by vegetation within the ruelle and ruelle structure")
+  tab_header(title = "Table 1c. Average minimum temperature explained by vegetation within the ruelle and ruelle structure")
 
 tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_50,
                label = list(perveggr = "Vegetation Cover (%)",
@@ -77,16 +68,7 @@ tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_50,
                             road_area_m2 = "Road Area (m2)"),
                intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
   as_gt() %>% 
-  tab_header(title = "Table 1e. Average minimum temperature explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
-
-tbl_regression(model_min_temp[[2]]$Avg_min_daily_temp_100,
-               label = list(perveggr = "Vegetation Cover (%)",
-                            perbuild = "Building Cover (%)",
-                            percan = "Canopy Cover (%)",
-                            road_area_m2 = "Road Area (m2)"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 1f. Average minimum temperature explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
+  tab_header(title = "Table 1d. Average minimum temperature explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
 
 ```
@@ -116,14 +98,6 @@ tbl_regression(model_noise[[2]]$mean_NDSI_50,
   as_gt() %>% 
   tab_header(title = "Table 2b. Noise explained by surrounding landcover variables within a 50 m buffer surrounding the sensor")
 
-tbl_regression(model_noise[[2]]$mean_NDSI_100,
-               label = list(perveggr = "Vegetation Cover (%)",
-                            perbuild = "Building Cover (%)",
-                            percan = "Canopy Cover (%)",
-                            road_area_m2 = "Road Area (m2)"),
-               intercept = T, estimate_fun = function(x) style_number(x, digits = 3)) %>% 
-  as_gt() %>% 
-  tab_header(title = "Table 2c. Noise explained by surrounding landcover variables within a 100 m buffer surrounding the sensor")
 ```
 
 ## Floral Habitat
