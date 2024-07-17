@@ -2,7 +2,7 @@ model_targets <- c(
   
   tar_file_read(
     rv,
-    'input/RuelleVerte_data_all_metadata_2023Sept.csv',
+    'input/RuelleVerte_data_all_metadata_2024Jul.csv',
     read.csv(!!.x)
   ),
   
