@@ -32,11 +32,6 @@ model_targets <- c(
   ),
   
   tar_target(
-    figure_1,
-    create_figure_1(model_max_temp, model_min_temp, model_noise, model_habitat, model_food)
-  ),
-  
-  tar_target(
     figure_2,
     create_figure_2(rv)
   ),
