@@ -34,6 +34,36 @@ create_figure_2 <- function(rv, temp_plot) {
   )
   
   # plot
+  df_x_scales <- data.frame(
+    Panel = c("Ruelle_length_m", "Ruelle_area_m2", "Groundcover_avg",
+              "Midstorey_avg", "Canopy_avg"),
+    xmin = c(0, 0, 0, 0, 0),
+    xmax = c(350, 1700, 100, 100, 100),
+    n = c(5, 5, 5, 5, 5)
+  )
+  
+  df_y_scales <- data.frame(
+    Panel = c("Food_coverage_per_m2", "Floral_coverage_per_m2", "mean_NDSI",
+              "Avg_min_daily_temp.x", "Avg_max_daily_temp.x"),
+    ymin = c(0, 0, -1, 15, 15),
+    ymax = c(0.13, 0.13, 1, 30, 30),
+    n = c(5, 5, 5, 5, 5)
+  )
+  
+  df_x_scales <- split(df_x_scales, df_x_scales$Panel)
+  df_y_scales <- split(df_y_scales, df_y_scales$Panel)
+  
+  
+  x_scales <- lapply(df_x_scales, function(x) {
+    scale_x_continuous(limits = c(x$xmin, x$xmax), n.breaks = x$n)
+  })
+  
+  y_scales <- lapply(df_y_scales, function(x) {
+    scale_y_continuous(limits = c(x$ymin, x$ymax), n.breaks = x$n)
+  })
+  
+  
+  
   plot <- inner_join(exp, resp, by = "RuelleID", relationship = 'many-to-many') %>% 
     ggplot(aes(x = x_value, y = y_value)) +
     geom_point() + 
@@ -48,12 +78,13 @@ create_figure_2 <- function(rv, temp_plot) {
           strip.text = element_text(size = 10, colour = "black"),
           panel.background = element_rect(colour = "black", fill = NA),
           panel.grid = element_blank(),
-          axis.text = element_text(colour = "black"))
+          axis.text = element_text(colour = "black")) +
+    facetted_pos_scales(x = x_scales, y = y_scales)
   
-  ggsave('graphics/Figure2.png', plot, height = 10, width = 10, units = 'in', dpi = 450)
+  
+  ggsave('graphics/Figure2.png', plot, height = 8, width = 10, units = 'in', dpi = 450)
            
            
-
              
 }
 
