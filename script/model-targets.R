@@ -36,11 +36,6 @@ model_targets <- c(
     create_figure_2(rv, temp_plot)
   ),
   
-  tar_target(
-    figure_3,
-    create_figure_3(temp_plot, road_area, rv)
-  ),
-  
   tar_file_read(
     rv_vars_full,
     'output/RV_vars.rds',
@@ -51,6 +46,11 @@ model_targets <- c(
     buffer_vars_full,
     'output/buffer_vars.rds',
     readRDS(!!.x)
+  ),
+  
+  tar_target(
+    figure_3,
+    create_figure_3(rv_vars_full, buffer_vars_full)
   ),
   
   tar_target(
