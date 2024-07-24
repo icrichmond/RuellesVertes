@@ -15,7 +15,7 @@ loo_cv_table <- function(rv_vars_full, buffer_vars_full){
     
     fm <- as.formula(paste(x, "~ Groundcover_avg_s + Midstorey_avg_s + Canopy_avg_s + 
                              Ruelle_length_m_s + Ruelle_area_m2_s"))
-    eval(bquote(   lm(.(fm), data = rv_vars_full)))
+    eval(bquote(   glm(.(fm), data = rv_vars_full)))
     })
   
   names(rv_mods) <- deps
@@ -23,13 +23,26 @@ loo_cv_table <- function(rv_vars_full, buffer_vars_full){
   buff_mods <- lapply(deps, FUN = function(x){
     fm <- as.formula(paste(x, " ~ perveggr_s + perbuild_s + percan_s + road_area_m2_s"))
     
-    eval(bquote(   lm(.(fm), data = full_plot)))
+    eval(bquote(   glm(.(fm), data = full_plot)))
   })
   
   names(buff_mods) <- deps
   
   # run LOO-CV and make a table with statistics
   
+  loocv <- lapply(rv_mods, function(x){
+    delta <- cv.glm(rv_vars_full, x, K = nrow(rv_vars_full))$delta[1]
+    K <- cv.glm(rv_vars_full, x, K = nrow(rv_vars_full))$K
+    r2 <- with(summary(x), 1 - deviance/null.deviance)
+    
+    mds <- c(delta, K, r2)
+    })
   
-  cv <- cv.glm(rv_vars_full, rv_mods$Avg_max_daily_temp_s, K = nrow(rv_vars_full))
+  loocv_buff <- lapply(buff_mods, function(x){
+    delta <- cv.glm(full_plot, x, K = nrow(full_plot))$delta[1]
+    K <- cv.glm(full_plot, x, K = nrow(full_plot))$K
+    r2 <- with(summary(x), 1 - deviance/null.deviance)
+      
+    mds <- c(delta, K, r2)})
+
 }
