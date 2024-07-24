@@ -1,0 +1,137 @@
+---
+title: "Supplementary Materials"
+format:
+  pdf:
+    fig-height: 12
+    fig-width: 12
+knitr:
+  opts_knit:
+    root.dir: "C:/Users/I_RICHMO/Documents/Repositories/RuellesVertes"
+---
+
+***Testing a rapid assessment approach for measuring ecosystem services in urban green alleys***
+
+S2. Model diagnostic plots
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| include: false
+#| label: setup
+
+
+library(targets)
+tar_source('R')
+
+tar_load(model_max_temp)
+tar_load(model_min_temp)
+tar_load(model_noise)
+tar_load(model_habitat)
+tar_load(model_food)
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: max-temp-ruelle
+
+print(resid_plots(model_max_temp[[1]]$veg_Avg_max_daily_temp, ""))
+
+```
+
+Figure 1. Diagnostic plots for average maximum temperature, as a function of ruelle length, ruelle area, average groundcover, average midstorey cover, and average canopy cover.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: max-temp-buffer
+
+print(resid_plots(model_max_temp[[2]]$Avg_max_daily_temp_50, ""))
+
+```
+
+Figure 2. Diagnostic plots for average maximum temperature, as a function of percent vegetation, percent building, percent canopy, and road area within a 50 m buffer.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: min-temp-ruelle
+
+print(resid_plots(model_min_temp[[1]]$veg_Avg_min_daily_temp, ""))
+
+```
+
+Figure 3. Diagnostic plots for average minimum temperature, as a function of ruelle length, ruelle area, average groundcover, average midstorey cover, and average canopy cover.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: min-temp-buffer
+
+print(resid_plots(model_min_temp[[2]]$Avg_min_daily_temp_50, ""))
+
+```
+
+Figure 4. Diagnostic plots for average minimum temperature, as a function of percent vegetation, percent building, percent canopy, and road area within a 50 m buffer.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: noise-ruelle
+
+print(resid_plots(model_noise[[1]]$veg_mean_NDSI, ""))
+
+```
+
+Figure 5. Diagnostic plots for average normalized difference sound index (NDSI), as a function of ruelle length, ruelle area, average groundcover, average midstorey cover, and average canopy cover.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: noise-buffer
+
+print(resid_plots(model_noise[[2]]$mean_NDSI_50, ""))
+
+```
+
+Figure 6. Diagnostic plots for average normalized difference sound index (NDSI), as a function of percent vegetation, percent building, percent canopy, and road area within a 50 m buffer.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: floral-ruelle
+
+print(resid_plots(model_habitat[[1]]$veg_Floral_coverage_per_m2, ""))
+
+```
+
+Figure 7. Diagnostic plots for floral coverage (per m2), as a function of ruelle length, ruelle area, average groundcover, average midstorey cover, and average canopy cover.
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: food-ruelle
+
+print(resid_plots(model_food[[1]]$veg_Food_coverage_per_m2, ""))
+
+```
+
+Figure 8. Diagnostic plots for food coverage (per m2), as a function of ruelle length, ruelle area, average groundcover, average midstorey cover, and average canopy cover.

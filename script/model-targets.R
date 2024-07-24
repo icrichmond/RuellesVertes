@@ -66,6 +66,11 @@ model_targets <- c(
   tar_render(
     model_boxwhisker,
     'output/BoxWhisker.qmd'
+  ),
+  
+  tar_render(
+    model_diagnostics,
+    'graphics/diagnostics/DiagnosticPlots.qmd'
   )
   
   

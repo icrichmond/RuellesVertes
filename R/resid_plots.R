@@ -26,5 +26,5 @@ resid_plots <- function(model, modelname){
   # plot with patchwork 
   (p1 | p2) /
     (p3 | p4) +
-    patchwork::plot_annotation(title = paste("Diagnostic plots", modelname))
+    patchwork::plot_annotation(title = modelname)
 }
