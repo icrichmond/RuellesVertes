@@ -11,7 +11,7 @@ knitr:
 
 ***Testing a rapid assessment approach for measuring ecosystem services in urban green alleys***
 
-S2. Model diagnostic plots
+S3. Model diagnostic plots
 
 ```{r}
 #| echo: false

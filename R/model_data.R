@@ -51,9 +51,9 @@ model_data <- function(temp_plot, rv, road_area, var){
   
   # model
   veg <- lm(rv.vars.s[,var] ~ Groundcover_avg + Midstorey_avg + Canopy_avg + 
-                  Ruelle_length_m + Ruelle_area_m2, data = rv.vars.s)
+                     Ruelle_area_m2, data = rv.vars.s)
   
-  buff <- map(.x = full_plot_s, .f = function(x){lm(x[,var] ~ perveggr + perbuild + percan + road_area_m2, data = x)}) %>%
+  buff <- map(.x = full_plot_s, .f = function(x){lm(x[,var] ~ perveggr + percan + road_area_m2, data = x)}) %>%
     set_names(., nm = paste0(var, "_", b))
   
   # diagnostics
